@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-06-10'
+date-meta: '2022-09-06'
 author-meta:
 - John Doe
 - Jane Roe
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Manuscript Title" />
   <meta property="og:title" content="Manuscript Title" />
   <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2021-06-10" />
-  <meta name="citation_publication_date" content="2021-06-10" />
+  <meta name="dc.date" content="2022-09-06" />
+  <meta name="citation_publication_date" content="2022-09-06" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -35,15 +35,15 @@ header-includes: |-
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <link rel="canonical" href="https://manubot.github.io/rootstock/" />
-  <meta property="og:url" content="https://manubot.github.io/rootstock/" />
-  <meta property="twitter:url" content="https://manubot.github.io/rootstock/" />
-  <meta name="citation_fulltext_html_url" content="https://manubot.github.io/rootstock/" />
-  <meta name="citation_pdf_url" content="https://manubot.github.io/rootstock/manuscript.pdf" />
-  <link rel="alternate" type="application/pdf" href="https://manubot.github.io/rootstock/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://manubot.github.io/rootstock/v/defe787b0ad8a21a745cc82c3117770896caaf8b/" />
-  <meta name="manubot_html_url_versioned" content="https://manubot.github.io/rootstock/v/defe787b0ad8a21a745cc82c3117770896caaf8b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://manubot.github.io/rootstock/v/defe787b0ad8a21a745cc82c3117770896caaf8b/manuscript.pdf" />
+  <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
+  <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
+  <meta property="twitter:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
+  <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
+  <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9eb22e906abddeb019583c03398d49d1b01f352a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9eb22e906abddeb019583c03398d49d1b01f352a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9eb22e906abddeb019583c03398d49d1b01f352a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://manubot.github.io/rootstock/v/defe787b0ad8a21a745cc82c3117770896caaf8b/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9eb22e906abddeb019583c03398d49d1b01f352a/))
 was automatically generated
-from [manubot/rootstock@defe787](https://github.com/manubot/rootstock/tree/defe787b0ad8a21a745cc82c3117770896caaf8b)
-on June 10, 2021.
+from [uiceds/cee-492-term-project-fall-2022-cmyy@9eb22e9](https://github.com/uiceds/cee-492-term-project-fall-2022-cmyy/tree/9eb22e906abddeb019583c03398d49d1b01f352a)
+on September 6, 2022.
 </em></small>
 
 ## Authors
