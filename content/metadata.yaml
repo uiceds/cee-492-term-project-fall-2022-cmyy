@@ -27,3 +27,14 @@ authors:
       - Department of Something, University of Whatever
     funders:
       - Grant XXXXXXXX
+      
+  - github: TensorYue
+    name: Chengyou Yue
+    initials: CY
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: None
+    email: yue21@illinois.edu
+    affiliations:
+      - Department of Something, University of Whatever
+    funders:
+      - Grant XXXXXXXX
