@@ -13,14 +13,17 @@ authors:
     twitter: johndoe
     email: yuehtil2@illinois.edu
     affiliations:
-      - Department of CEE, University of Illiois
+      - Department of Something, University of Whatever
     funders:
       - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
+  - 
+  - github: Minjiang-Zhu
+    name: Minjiang Zhu
+    initials: JD
     orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+    twitter: johndoe
+    email: mz51@uiuc.edu
     affiliations:
       - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+    funders:
+      - Grant XXXXXXXX
