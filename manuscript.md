@@ -7,8 +7,10 @@ keywords:
 lang: en-US
 date-meta: '2022-09-06'
 author-meta:
-- John Doe
-- Jane Roe
+- Yu-Sian Lin
+- Yueh-Ti
+- Minjiang Zhu
+- Chengyou Yue
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,23 +29,31 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of CEE, University of Illiois" />
+  <meta name="citation_author" content="Yu-Sian Lin" />
+  <meta name="citation_author_institution" content="Department of CEE, University of Illinois" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@none" />
+  <meta name="citation_author" content="Yueh-Ti" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author" content="Minjiang Zhu" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@johndoe" />
+  <meta name="citation_author" content="Chengyou Yue" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@None" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta property="twitter:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1917731b195a18e9e49bb34ae345ff73bce5ff3a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1917731b195a18e9e49bb34ae345ff73bce5ff3a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1917731b195a18e9e49bb34ae345ff73bce5ff3a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/218d1fccba68fa07d012e3725455cf71f172fb97/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/218d1fccba68fa07d012e3725455cf71f172fb97/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/218d1fccba68fa07d012e3725455cf71f172fb97/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1917731b195a18e9e49bb34ae345ff73bce5ff3a/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/218d1fccba68fa07d012e3725455cf71f172fb97/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-cmyy@1917731](https://github.com/uiceds/cee-492-term-project-fall-2022-cmyy/tree/1917731b195a18e9e49bb34ae345ff73bce5ff3a)
+from [uiceds/cee-492-term-project-fall-2022-cmyy@218d1fc](https://github.com/uiceds/cee-492-term-project-fall-2022-cmyy/tree/218d1fccba68fa07d012e3725455cf71f172fb97)
 on September 6, 2022.
 </em></small>
 
@@ -75,7 +85,19 @@ on September 6, 2022.
 
 
 
-+ **John Doe**<br>
++ **Yu-Sian Lin**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [yslin0114](https://github.com/yslin0114)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [none](https://twitter.com/none)<br>
+  <small>
+     Department of CEE, University of Illinois
+     · Funded by Grant XXXXXXXX
+  </small>
+
++ **Yueh-Ti**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
@@ -83,17 +105,32 @@ on September 6, 2022.
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [johndoe](https://twitter.com/johndoe)<br>
   <small>
-     Department of CEE, University of Illiois
+     Department of Something, University of Whatever
      · Funded by Grant XXXXXXXX
   </small>
 
-+ **Jane Roe**<br>
++ **Minjiang Zhu**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [Minjiang-Zhu](https://github.com/Minjiang-Zhu)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [johndoe](https://twitter.com/johndoe)<br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Department of Something, University of Whatever
+     · Funded by Grant XXXXXXXX
+  </small>
+
++ **Chengyou Yue**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [TensorYue](https://github.com/TensorYue)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [None](https://twitter.com/None)<br>
+  <small>
+     Department of Something, University of Whatever
+     · Funded by Grant XXXXXXXX
   </small>
 
 
