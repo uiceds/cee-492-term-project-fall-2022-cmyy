@@ -6,8 +6,18 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: Yueh-Ti
-    name: Yueh-Ti Lee
+  - github: yslin0114
+    name: Yu-Sian Lin
+    initials: JD
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: none
+    email: yusianl2@illinois.edu
+    affiliations:
+      - Department of CEE, University of Illinois
+    funders:
+      - Grant XXXXXXXX
+  - github: johndoe
+    name: Yueh-Ti
     initials: JD
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: johndoe
