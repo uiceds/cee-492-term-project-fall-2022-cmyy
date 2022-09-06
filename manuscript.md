@@ -30,7 +30,7 @@ header-includes: |-
   <meta name="citation_author" content="Yu-Sian Lin" />
   <meta name="citation_author_institution" content="Department of CEE, University of Illiois" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
+  <meta name="twitter:creator" content="@none" />
   <meta name="citation_author" content="Jane Roe" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/80552b0fd5d43a18aef4256f51eaaa2db6cadd3f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/80552b0fd5d43a18aef4256f51eaaa2db6cadd3f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/80552b0fd5d43a18aef4256f51eaaa2db6cadd3f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fe78c4d74df72fc3ac7d309e26fba05b4d28fdde/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fe78c4d74df72fc3ac7d309e26fba05b4d28fdde/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fe78c4d74df72fc3ac7d309e26fba05b4d28fdde/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/80552b0fd5d43a18aef4256f51eaaa2db6cadd3f/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fe78c4d74df72fc3ac7d309e26fba05b4d28fdde/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-cmyy@80552b0](https://github.com/uiceds/cee-492-term-project-fall-2022-cmyy/tree/80552b0fd5d43a18aef4256f51eaaa2db6cadd3f)
+from [uiceds/cee-492-term-project-fall-2022-cmyy@fe78c4d](https://github.com/uiceds/cee-492-term-project-fall-2022-cmyy/tree/fe78c4d74df72fc3ac7d309e26fba05b4d28fdde)
 on September 6, 2022.
 </em></small>
 
@@ -81,7 +81,7 @@ on September 6, 2022.
     · ![GitHub icon](images/github.svg){.inline_icon}
     [yslin0114](https://github.com/yslin0114)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [johndoe](https://twitter.com/johndoe)<br>
+    [none](https://twitter.com/none)<br>
   <small>
      Department of CEE, University of Illiois
      · Funded by Grant XXXXXXXX
