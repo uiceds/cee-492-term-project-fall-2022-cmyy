@@ -1,11 +1,22 @@
 ---
-title: "Manuscript Title"
+title: "CMYY Project"
 keywords:
   - markdown
   - publishing
   - manubot
 lang: en-US
 authors:
+  - github: yslin0114
+    name: Yu-Sian Lin
+    initials: YS
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: none
+    email: yusianl2@illinois.edu
+    affiliations:
+      - Department of Something, University of Whatever
+    funders:
+      - Grant XXXXXXXX
+  - 
   - github: Minjiang-Zhu
     name: Minjiang Zhu
     initials: JD
@@ -16,11 +27,3 @@ authors:
       - Department of Something, University of Whatever
     funders:
       - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
