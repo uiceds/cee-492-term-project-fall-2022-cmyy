@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/23e6d6e7028e1c57a11b90b54917077c17377085/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/23e6d6e7028e1c57a11b90b54917077c17377085/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/23e6d6e7028e1c57a11b90b54917077c17377085/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7942865b798396d7445f4a6cdc208059a392a59d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7942865b798396d7445f4a6cdc208059a392a59d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7942865b798396d7445f4a6cdc208059a392a59d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -388,47 +388,63 @@ useful for *warnings* - [manubot.org](https://manubot.org/)
 ]{.banner .lightred}
 
 
----
+
 Source: Kaggle / NYC Mayor's Office of Climate & Environmental Justice
 Data Format: CSV File
 Content: The dataset contains information on properties regarding its basic information, indices used for evaluating energy efficiency, types of energy used in the property, and greenhouse gas (GHG) emissions.
 
-Attributes:
+## Attributes:
 
 Property name: name of the property.
+
 Borough: borough for the property.
+
 Primary property use type: main property usage (ex: office, housing, hotel).
+
 Gross floor area (GFA) for primary use type: property area for main use in square ft.
+
 Secondary property use type: secondary property usage (ex: office, housing, hotel).
+
 Gross floor area (GFA) for secondary use type: property area for secondary use in square ft.
+
 Year built: the year the property is built. If it has gone through a complete renovation, the renovation year can be the built year.
+
 Occupancy: percentage of the property GFA that is occupied and operational.
 
 Energy metered areas: areas within the property that is covered by energy meters.
+
 Water metered areas: areas within the property that is covered by water meters.
+
 ENERGY STAR Score: a score based on energy usage.
+
 Source energy use intensity(EUI): EUI calculated from the energy source, in kBtu/ft^2, where kBtu is thousand British thermal units.
+
 Weather normalized source EUI:  EUI normalized for weather.
+
 Weather normalized site electricity intensity: weather normalized site electricity intensity per GFA.
+
 Weather normalized site natural gas intensity: weather normalized site natural gas intensity per GFA.
 
 Fuel oil: annual fuel oil used, in kBtu.
+
 Diesel: annual diesel used, in kBtu.
+
 Natural gas: annual natural gas used, in kBtu.
+
 Electricity: annual electricity used, in kBtu.
+
 Water: annual water use, in kGal.
 
 Direct GHG emission: annual direct GHG emission emitted from the property, in tons of carbon dioxide equivalent.
+
 Indirect GHG emission: annual indirect GHG emission emitted from the property, in tons of carbon dioxide equivalent.
+
 Total GHG emission: sum of direct and indirect GHG emissions in tons of carbon dioxide equivalent.
 
----
 
-Proposal:
+## Proposal:
 
-We plan to develop a model that can predict a property's environmental friendliness based on its GHG emission and energy efficiency. 
-Types of energy used can affect the GHG emission of a property. Weather, property age, floor area, and so on can affect energy efficiency.
-We will start by finding the correlation between energy sources and GHG emissions. We will then evaluate both GHG emission and energy efficiency indices to obtain the extent of the environmental friendliness of a property.
+We plan to develop a model that can predict a property's environmental friendliness based on its GHG emission and energy efficiency. Types of energy used can affect the GHG emission of a property. Weather, property age, floor area, and so on can affect energy efficiency. We will start by finding the correlation between energy sources and GHG emissions. We will then evaluate both GHG emission and energy efficiency indices to obtain the extent of the environmental friendliness of a property.
 
 
 
