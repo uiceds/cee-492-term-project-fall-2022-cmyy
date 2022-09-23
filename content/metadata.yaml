@@ -8,42 +8,38 @@ lang: en-US
 authors:
   - github: yslin0114
     name: Yu-Sian Lin
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
+    initials: none
+    orcid: none
     twitter: none
     email: yusianl2@illinois.edu
     affiliations:
-      - Department of CEE, University of Illinois
-    funders:
-      - Grant XXXXXXXX
+      - Department of Civil Engineering, University of Illinois
+    funders: none
   - github: johndoe
     name: Yueh-Ti
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
+    initials: none
+    orcid: none
     twitter: johndoe
     email: yuehtil2@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
+      - Department of Civil Engineering, University of Illinois
+    funders: none
   - github: Minjiang-Zhu
     name: Minjiang Zhu
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
+    initials: none
+    orcid: none
     twitter: johndoe
     email: mz51@uiuc.edu
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
+      - Department of Something, University of Illinois
+    funders: none
       
   - github: TensorYue
     name: Chengyou Yue
     initials: CY
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: none
     twitter: None
     email: yue21@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
+      - Department of Civil Engineering, University of Illinois
+    funders: none
