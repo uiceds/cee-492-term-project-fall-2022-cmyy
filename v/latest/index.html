@@ -135,9 +135,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6d4246873aed29bfb7f719788aca825d285481e4/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6d4246873aed29bfb7f719788aca825d285481e4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6d4246873aed29bfb7f719788aca825d285481e4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7942865b798396d7445f4a6cdc208059a392a59d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7942865b798396d7445f4a6cdc208059a392a59d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7942865b798396d7445f4a6cdc208059a392a59d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -390,7 +390,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:2c3f36be-fe19-419d-a792-3a109feeccaf" class="tablenos">
+<div id="tbl:147a5b6c-5827-4306-ab36-bb6b31a10a46" class="tablenos">
 <table id="tbl:">
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
@@ -471,40 +471,35 @@ useful for <em>general information</em> - <a href="https://manubot.org/">manubot
 useful for <em>important information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
 <p><span class="banner lightred"><i class="fas fa-ban fa-lg"></i> <strong>Light Red Banner</strong><br>
 useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<hr />
 <p>Source: Kaggle / NYC Mayor’s Office of Climate &amp; Environmental Justice
 Data Format: CSV File
 Content: The dataset contains information on properties regarding its basic information, indices used for evaluating energy efficiency, types of energy used in the property, and greenhouse gas (GHG) emissions.</p>
-<hr />
-<p>Attributes:</p>
-<p>Property name: name of the property.
-Borough: borough for the property.
-Primary property use type: main property usage (ex: office, housing, hotel).
-Gross floor area (GFA) for primary use type: property area for main use in square ft.
-Secondary property use type: secondary property usage (ex: office, housing, hotel).
-Gross floor area (GFA) for secondary use type: property area for secondary use in square ft.
-Year built: the year the property is built. If it has gone through a complete renovation, the renovation year can be the built year.
-Occupancy: percentage of the property GFA that is occupied and operational.</p>
-<p>Energy metered areas: areas within the property that is covered by energy meters.
-Water metered areas: areas within the property that is covered by water meters.
-ENERGY STAR Score: a score based on energy usage.
-Source energy use intensity(EUI): EUI calculated from the energy source, in kBtu/ft^2, where kBtu is thousand British thermal units.
-Weather normalized source EUI: EUI normalized for weather.
-Weather normalized site electricity intensity: weather normalized site electricity intensity per GFA.
-Weather normalized site natural gas intensity: weather normalized site natural gas intensity per GFA.</p>
-<p>Fuel oil: annual fuel oil used, in kBtu.
-Diesel: annual diesel used, in kBtu.
-Natural gas: annual natural gas used, in kBtu.
-Electricity: annual electricity used, in kBtu.
-Water: annual water use, in kGal.</p>
-<p>Direct GHG emission: annual direct GHG emission emitted from the property, in tons of carbon dioxide equivalent.
-Indirect GHG emission: annual indirect GHG emission emitted from the property, in tons of carbon dioxide equivalent.
-Total GHG emission: sum of direct and indirect GHG emissions in tons of carbon dioxide equivalent.</p>
-<hr />
-<p>Proposal:</p>
-<p>We plan to develop a model that can predict a property’s environmental friendliness based on its GHG emission and energy efficiency.
-Types of energy used can affect the GHG emission of a property. Weather, property age, floor area, and so on can affect energy efficiency.
-We will start by finding the correlation between energy sources and GHG emissions. We will then evaluate both GHG emission and energy efficiency indices to obtain the extent of the environmental friendliness of a property.</p>
+<h2 id="attributes">Attributes:</h2>
+<p>Property name: name of the property.</p>
+<p>Borough: borough for the property.</p>
+<p>Primary property use type: main property usage (ex: office, housing, hotel).</p>
+<p>Gross floor area (GFA) for primary use type: property area for main use in square ft.</p>
+<p>Secondary property use type: secondary property usage (ex: office, housing, hotel).</p>
+<p>Gross floor area (GFA) for secondary use type: property area for secondary use in square ft.</p>
+<p>Year built: the year the property is built. If it has gone through a complete renovation, the renovation year can be the built year.</p>
+<p>Occupancy: percentage of the property GFA that is occupied and operational.</p>
+<p>Energy metered areas: areas within the property that is covered by energy meters.</p>
+<p>Water metered areas: areas within the property that is covered by water meters.</p>
+<p>ENERGY STAR Score: a score based on energy usage.</p>
+<p>Source energy use intensity(EUI): EUI calculated from the energy source, in kBtu/ft^2, where kBtu is thousand British thermal units.</p>
+<p>Weather normalized source EUI: EUI normalized for weather.</p>
+<p>Weather normalized site electricity intensity: weather normalized site electricity intensity per GFA.</p>
+<p>Weather normalized site natural gas intensity: weather normalized site natural gas intensity per GFA.</p>
+<p>Fuel oil: annual fuel oil used, in kBtu.</p>
+<p>Diesel: annual diesel used, in kBtu.</p>
+<p>Natural gas: annual natural gas used, in kBtu.</p>
+<p>Electricity: annual electricity used, in kBtu.</p>
+<p>Water: annual water use, in kGal.</p>
+<p>Direct GHG emission: annual direct GHG emission emitted from the property, in tons of carbon dioxide equivalent.</p>
+<p>Indirect GHG emission: annual indirect GHG emission emitted from the property, in tons of carbon dioxide equivalent.</p>
+<p>Total GHG emission: sum of direct and indirect GHG emissions in tons of carbon dioxide equivalent.</p>
+<h2 id="proposal">Proposal:</h2>
+<p>We plan to develop a model that can predict a property’s environmental friendliness based on its GHG emission and energy efficiency. Types of energy used can affect the GHG emission of a property. Weather, property age, floor area, and so on can affect energy efficiency. We will start by finding the correlation between energy sources and GHG emissions. We will then evaluate both GHG emission and energy efficiency indices to obtain the extent of the environmental friendliness of a property.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
