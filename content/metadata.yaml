@@ -1,45 +1,29 @@
 ---
-title: "CMYY Project"
+title: "Environmental-Friendliness of Buildings in New York"
 keywords:
   - markdown
   - publishing
   - manubot
 lang: en-US
 authors:
-  - github: yslin0114
+#  - github: yslin0114
     name: Yu-Sian Lin
-    initials: none
-    orcid: none
-    twitter: none
     email: yusianl2@illinois.edu
     affiliations:
       - Department of Civil Engineering, University of Illinois
-    funders: none
-  - github: johndoe
     name: Yueh-Ti
-    initials: none
-    orcid: none
-    twitter: johndoe
     email: yuehtil2@illinois.edu
     affiliations:
       - Department of Civil Engineering, University of Illinois
-    funders: none
-  - github: Minjiang-Zhu
+#  - github: Minjiang-Zhu
     name: Minjiang Zhu
-    initials: none
-    orcid: none
-    twitter: johndoe
     email: mz51@uiuc.edu
     affiliations:
       - Department of Something, University of Illinois
-    funders: none
       
-  - github: TensorYue
+#  - github: TensorYue
     name: Chengyou Yue
-    initials: CY
-    orcid: none
-    twitter: None
+#    initials: CY
     email: yue21@illinois.edu
     affiliations:
       - Department of Civil Engineering, University of Illinois
-    funders: none
