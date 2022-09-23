@@ -7,14 +7,14 @@
       "manubot"
     ],
     "lang": "en-US",
-    "date-meta": "2022-09-06",
+    "date-meta": "2022-09-23",
     "author-meta": [
       "Yu-Sian Lin",
       "Yueh-Ti",
       "Minjiang Zhu",
       "Chengyou Yue"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"CMYY Project\" />\n<meta name=\"citation_title\" content=\"CMYY Project\" />\n<meta property=\"og:title\" content=\"CMYY Project\" />\n<meta property=\"twitter:title\" content=\"CMYY Project\" />\n<meta name=\"dc.date\" content=\"2022-09-06\" />\n<meta name=\"citation_publication_date\" content=\"2022-09-06\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Yu-Sian Lin\" />\n<meta name=\"citation_author_institution\" content=\"Department of CEE, University of Illinois\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@none\" />\n<meta name=\"citation_author\" content=\"Yueh-Ti\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Minjiang Zhu\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Chengyou Yue\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@None\" />\n<link rel=\"canonical\" href=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/\" />\n<meta property=\"og:url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/\" />\n<meta property=\"twitter:url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/\" />\n<meta name=\"citation_pdf_url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/218d1fccba68fa07d012e3725455cf71f172fb97/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/218d1fccba68fa07d012e3725455cf71f172fb97/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/218d1fccba68fa07d012e3725455cf71f172fb97/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"CMYY Project\" />\n<meta name=\"citation_title\" content=\"CMYY Project\" />\n<meta property=\"og:title\" content=\"CMYY Project\" />\n<meta property=\"twitter:title\" content=\"CMYY Project\" />\n<meta name=\"dc.date\" content=\"2022-09-23\" />\n<meta name=\"citation_publication_date\" content=\"2022-09-23\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Yu-Sian Lin\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil Engineering, University of Illinois\" />\n<meta name=\"citation_author_orcid\" content=\"none\" />\n<meta name=\"twitter:creator\" content=\"@none\" />\n<meta name=\"citation_author\" content=\"Yueh-Ti\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil Engineering, University of Illinois\" />\n<meta name=\"citation_author_orcid\" content=\"none\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Minjiang Zhu\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Illinois\" />\n<meta name=\"citation_author_orcid\" content=\"none\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Chengyou Yue\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil Engineering, University of Illinois\" />\n<meta name=\"citation_author_orcid\" content=\"none\" />\n<meta name=\"twitter:creator\" content=\"@None\" />\n<link rel=\"canonical\" href=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/\" />\n<meta property=\"og:url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/\" />\n<meta property=\"twitter:url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/\" />\n<meta name=\"citation_pdf_url\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1f0d05bdeeb82c222c135aee47d597f889f31a65/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1f0d05bdeeb82c222c135aee47d597f889f31a65/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1f0d05bdeeb82c222c135aee47d597f889f31a65/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -24,20 +24,20 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "September 6, 2022",
+    "date": "September 23, 2022",
     "authors": [
       {
         "github": "yslin0114",
         "name": "Yu-Sian Lin",
-        "initials": "JD",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "initials": "none",
+        "orcid": "none",
         "twitter": "none",
         "email": "yusianl2@illinois.edu",
         "affiliations": [
-          "Department of CEE, University of Illinois"
+          "Department of Civil Engineering, University of Illinois"
         ],
         "funders": [
-          "Grant XXXXXXXX"
+          "none"
         ],
         "affiliation_numbers": [
           1
@@ -46,32 +46,32 @@
       {
         "github": "johndoe",
         "name": "Yueh-Ti",
-        "initials": "JD",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "initials": "none",
+        "orcid": "none",
         "twitter": "johndoe",
         "email": "yuehtil2@illinois.edu",
         "affiliations": [
-          "Department of Something, University of Whatever"
+          "Department of Civil Engineering, University of Illinois"
         ],
         "funders": [
-          "Grant XXXXXXXX"
+          "none"
         ],
         "affiliation_numbers": [
-          2
+          1
         ]
       },
       {
         "github": "Minjiang-Zhu",
         "name": "Minjiang Zhu",
-        "initials": "JD",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "initials": "none",
+        "orcid": "none",
         "twitter": "johndoe",
         "email": "mz51@uiuc.edu",
         "affiliations": [
-          "Department of Something, University of Whatever"
+          "Department of Something, University of Illinois"
         ],
         "funders": [
-          "Grant XXXXXXXX"
+          "none"
         ],
         "affiliation_numbers": [
           2
@@ -81,27 +81,27 @@
         "github": "TensorYue",
         "name": "Chengyou Yue",
         "initials": "CY",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "orcid": "none",
         "twitter": "None",
         "email": "yue21@illinois.edu",
         "affiliations": [
-          "Department of Something, University of Whatever"
+          "Department of Civil Engineering, University of Illinois"
         ],
         "funders": [
-          "Grant XXXXXXXX"
+          "none"
         ],
         "affiliation_numbers": [
-          2
+          1
         ]
       }
     ],
     "affiliations": [
       {
-        "affiliation": "Department of CEE, University of Illinois",
+        "affiliation": "Department of Civil Engineering, University of Illinois",
         "affiliation_number": 1
       },
       {
-        "affiliation": "Department of Something, University of Whatever",
+        "affiliation": "Department of Something, University of Illinois",
         "affiliation_number": 2
       }
     ],
@@ -110,15 +110,15 @@
       "repo_slug": "uiceds/cee-492-term-project-fall-2022-cmyy",
       "repo_owner": "uiceds",
       "repo_name": "cee-492-term-project-fall-2022-cmyy",
-      "commit": "218d1fccba68fa07d012e3725455cf71f172fb97",
-      "triggering_commit": "218d1fccba68fa07d012e3725455cf71f172fb97",
-      "build_url": "https://github.com/uiceds/cee-492-term-project-fall-2022-cmyy/commit/218d1fccba68fa07d012e3725455cf71f172fb97/checks",
+      "commit": "1f0d05bdeeb82c222c135aee47d597f889f31a65",
+      "triggering_commit": "1f0d05bdeeb82c222c135aee47d597f889f31a65",
+      "build_url": "https://github.com/uiceds/cee-492-term-project-fall-2022-cmyy/commit/1f0d05bdeeb82c222c135aee47d597f889f31a65/checks",
       "job_url": "https://github.com/uiceds/cee-492-term-project-fall-2022-cmyy/runs/__run_3"
     },
     "html_url": "https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/",
     "pdf_url": "https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf",
-    "html_url_versioned": "https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/218d1fccba68fa07d012e3725455cf71f172fb97/",
-    "pdf_url_versioned": "https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/218d1fccba68fa07d012e3725455cf71f172fb97/manuscript.pdf",
+    "html_url_versioned": "https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1f0d05bdeeb82c222c135aee47d597f889f31a65/",
+    "pdf_url_versioned": "https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1f0d05bdeeb82c222c135aee47d597f889f31a65/manuscript.pdf",
     "manubot_version": "0.5.1",
     "rootstock_commit": null,
     "manuscript_stats": {

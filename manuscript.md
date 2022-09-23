@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-09-06'
+date-meta: '2022-09-23'
 author-meta:
 - Yu-Sian Lin
 - Yueh-Ti
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="CMYY Project" />
   <meta property="og:title" content="CMYY Project" />
   <meta property="twitter:title" content="CMYY Project" />
-  <meta name="dc.date" content="2022-09-06" />
-  <meta name="citation_publication_date" content="2022-09-06" />
+  <meta name="dc.date" content="2022-09-23" />
+  <meta name="citation_publication_date" content="2022-09-23" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -30,20 +30,20 @@ header-includes: |-
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Yu-Sian Lin" />
-  <meta name="citation_author_institution" content="Department of CEE, University of Illinois" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois" />
+  <meta name="citation_author_orcid" content="none" />
   <meta name="twitter:creator" content="@none" />
   <meta name="citation_author" content="Yueh-Ti" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois" />
+  <meta name="citation_author_orcid" content="none" />
   <meta name="twitter:creator" content="@johndoe" />
   <meta name="citation_author" content="Minjiang Zhu" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_institution" content="Department of Something, University of Illinois" />
+  <meta name="citation_author_orcid" content="none" />
   <meta name="twitter:creator" content="@johndoe" />
   <meta name="citation_author" content="Chengyou Yue" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois" />
+  <meta name="citation_author_orcid" content="none" />
   <meta name="twitter:creator" content="@None" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/218d1fccba68fa07d012e3725455cf71f172fb97/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/218d1fccba68fa07d012e3725455cf71f172fb97/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/218d1fccba68fa07d012e3725455cf71f172fb97/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1f0d05bdeeb82c222c135aee47d597f889f31a65/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1f0d05bdeeb82c222c135aee47d597f889f31a65/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1f0d05bdeeb82c222c135aee47d597f889f31a65/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/218d1fccba68fa07d012e3725455cf71f172fb97/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1f0d05bdeeb82c222c135aee47d597f889f31a65/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-cmyy@218d1fc](https://github.com/uiceds/cee-492-term-project-fall-2022-cmyy/tree/218d1fccba68fa07d012e3725455cf71f172fb97)
-on September 6, 2022.
+from [uiceds/cee-492-term-project-fall-2022-cmyy@1f0d05b](https://github.com/uiceds/cee-492-term-project-fall-2022-cmyy/tree/1f0d05bdeeb82c222c135aee47d597f889f31a65)
+on September 23, 2022.
 </em></small>
 
 ## Authors
@@ -87,50 +87,50 @@ on September 6, 2022.
 
 + **Yu-Sian Lin**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [none](https://orcid.org/none)
     · ![GitHub icon](images/github.svg){.inline_icon}
     [yslin0114](https://github.com/yslin0114)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [none](https://twitter.com/none)<br>
   <small>
-     Department of CEE, University of Illinois
-     · Funded by Grant XXXXXXXX
+     Department of Civil Engineering, University of Illinois
+     · Funded by none
   </small>
 
 + **Yueh-Ti**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [none](https://orcid.org/none)
     · ![GitHub icon](images/github.svg){.inline_icon}
     [johndoe](https://github.com/johndoe)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [johndoe](https://twitter.com/johndoe)<br>
   <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
+     Department of Civil Engineering, University of Illinois
+     · Funded by none
   </small>
 
 + **Minjiang Zhu**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [none](https://orcid.org/none)
     · ![GitHub icon](images/github.svg){.inline_icon}
     [Minjiang-Zhu](https://github.com/Minjiang-Zhu)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [johndoe](https://twitter.com/johndoe)<br>
   <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
+     Department of Something, University of Illinois
+     · Funded by none
   </small>
 
 + **Chengyou Yue**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [none](https://orcid.org/none)
     · ![GitHub icon](images/github.svg){.inline_icon}
     [TensorYue](https://github.com/TensorYue)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [None](https://twitter.com/None)<br>
   <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
+     Department of Civil Engineering, University of Illinois
+     · Funded by none
   </small>
 
 
