@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1f0d05bdeeb82c222c135aee47d597f889f31a65/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1f0d05bdeeb82c222c135aee47d597f889f31a65/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1f0d05bdeeb82c222c135aee47d597f889f31a65/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5d992c40a2860f5eac41a1003046c5fb515eccbb/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5d992c40a2860f5eac41a1003046c5fb515eccbb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5d992c40a2860f5eac41a1003046c5fb515eccbb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1f0d05bdeeb82c222c135aee47d597f889f31a65/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5d992c40a2860f5eac41a1003046c5fb515eccbb/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-cmyy@1f0d05b](https://github.com/uiceds/cee-492-term-project-fall-2022-cmyy/tree/1f0d05bdeeb82c222c135aee47d597f889f31a65)
+from [uiceds/cee-492-term-project-fall-2022-cmyy@5d992c4](https://github.com/uiceds/cee-492-term-project-fall-2022-cmyy/tree/5d992c40a2860f5eac41a1003046c5fb515eccbb)
 on September 23, 2022.
 </em></small>
 
@@ -138,12 +138,6 @@ on September 23, 2022.
 ## Abstract {.page_break_before}
 Abstract is here!
 
-
-This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
-Use this template as a starting point for your manuscript.
-
-The rest of this document is a full list of formatting elements/features supported by Manubot.
-Compare the input (`.md` files in the `/content` directory) to the output you see below.
 
 ## Basic formatting
 
