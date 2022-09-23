@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7942865b798396d7445f4a6cdc208059a392a59d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7942865b798396d7445f4a6cdc208059a392a59d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7942865b798396d7445f4a6cdc208059a392a59d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/68c0ee09e385245d69bb2e2c7842071aef2585d8/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/68c0ee09e385245d69bb2e2c7842071aef2585d8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/68c0ee09e385245d69bb2e2c7842071aef2585d8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -388,9 +388,11 @@ useful for *warnings* - [manubot.org](https://manubot.org/)
 ]{.banner .lightred}
 
 
-
+## Description:
 Source: Kaggle / NYC Mayor's Office of Climate & Environmental Justice
+
 Data Format: CSV File
+
 Content: The dataset contains information on properties regarding its basic information, indices used for evaluating energy efficiency, types of energy used in the property, and greenhouse gas (GHG) emissions.
 
 ## Attributes:
