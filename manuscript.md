@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b695ef3a73a285f3bd71759594071ce0b6960bd8/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b695ef3a73a285f3bd71759594071ce0b6960bd8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b695ef3a73a285f3bd71759594071ce0b6960bd8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6d4246873aed29bfb7f719788aca825d285481e4/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6d4246873aed29bfb7f719788aca825d285481e4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6d4246873aed29bfb7f719788aca825d285481e4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -388,15 +388,13 @@ useful for *warnings* - [manubot.org](https://manubot.org/)
 ]{.banner .lightred}
 
 
-[ Environmental-Friendliness of Buildings in New York]
-
------------------------------------------------------------------------
+---
 
 Source: Kaggle / NYC Mayor's Office of Climate & Environmental Justice
 Data Format: CSV File
 Content: The dataset contains information on properties regarding its basic information, indices used for evaluating energy efficiency, types of energy used in the property, and greenhouse gas (GHG) emissions.
 
------------------------------------------------------------------------
+---
 
 Attributes:
 
@@ -427,7 +425,7 @@ Direct GHG emission: annual direct GHG emission emitted from the property, in to
 Indirect GHG emission: annual indirect GHG emission emitted from the property, in tons of carbon dioxide equivalent.
 Total GHG emission: sum of direct and indirect GHG emissions in tons of carbon dioxide equivalent.
 
------------------------------------------------------------------------
+---
 
 Proposal:
 
