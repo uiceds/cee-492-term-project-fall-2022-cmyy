@@ -5,10 +5,10 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-09-23'
+date-meta: '2022-09-26'
 author-meta:
 - Yu-Sian Lin
-- Yueh-Ti
+- Yueh-Ti Lee
 - Minjiang Zhu
 - Chengyou Yue
 header-includes: |-
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Environmental-Friendliness of Buildings in New York" />
   <meta property="og:title" content="Environmental-Friendliness of Buildings in New York" />
   <meta property="twitter:title" content="Environmental-Friendliness of Buildings in New York" />
-  <meta name="dc.date" content="2022-09-23" />
-  <meta name="citation_publication_date" content="2022-09-23" />
+  <meta name="dc.date" content="2022-09-26" />
+  <meta name="citation_publication_date" content="2022-09-26" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -31,7 +31,7 @@ header-includes: |-
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Yu-Sian Lin" />
   <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois" />
-  <meta name="citation_author" content="Yueh-Ti" />
+  <meta name="citation_author" content="Yueh-Ti Lee" />
   <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois" />
   <meta name="citation_author" content="Minjiang Zhu" />
   <meta name="citation_author_institution" content="Department of Something, University of Illinois" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ec1d93dae065833106c7a4f9f07922cda418345c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ec1d93dae065833106c7a4f9f07922cda418345c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ec1d93dae065833106c7a4f9f07922cda418345c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3babd3bb485cb4fa572b1b61634ca281fcc84004/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3babd3bb485cb4fa572b1b61634ca281fcc84004/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3babd3bb485cb4fa572b1b61634ca281fcc84004/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
      Department of Civil Engineering, University of Illinois
   </small>
 
-+ **Yueh-Ti**<br>
++ **Yueh-Ti Lee**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [none](https://github.com/none)<br>
+    [Yueh-Ti](https://github.com/Yueh-Ti)<br>
   <small>
      Department of Civil Engineering, University of Illinois
   </small>
