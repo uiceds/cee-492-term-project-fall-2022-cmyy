@@ -19,8 +19,8 @@ There are 203 primary breeds, however, most of them do not have enough data to s
 |          Hound          |    1112    |
 |          Boxer          |    1080    |
 |     German shepherd     |    1029    |
-
 Table 1. Amount of each Primary Breed (Only shows those amount that are larger than 1000)
+
 
 After sorting the amount, we want to have a brief knowledge of each breed with their children friendliness tend. Here, we made a group bar plot that shows the fraction of children friendliness with respect to their primary breed. 
 
