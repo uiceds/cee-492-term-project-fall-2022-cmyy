@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-09-26'
+date-meta: '2022-10-31'
 author-meta:
 - Yu-Sian Lin
 - Yueh-Ti Lee
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Environmental-Friendliness of Buildings in New York" />
   <meta property="og:title" content="Environmental-Friendliness of Buildings in New York" />
   <meta property="twitter:title" content="Environmental-Friendliness of Buildings in New York" />
-  <meta name="dc.date" content="2022-09-26" />
-  <meta name="citation_publication_date" content="2022-09-26" />
+  <meta name="dc.date" content="2022-10-31" />
+  <meta name="citation_publication_date" content="2022-10-31" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3babd3bb485cb4fa572b1b61634ca281fcc84004/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3babd3bb485cb4fa572b1b61634ca281fcc84004/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3babd3bb485cb4fa572b1b61634ca281fcc84004/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/995e0bca751813bf7d08769820737c3e54a7d0bc/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/995e0bca751813bf7d08769820737c3e54a7d0bc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/995e0bca751813bf7d08769820737c3e54a7d0bc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,64 +101,65 @@ manubot-clear-requests-cache: false
 
 
 ## Description:
-Source: Kaggle / NYC Mayor's Office of Climate & Environmental Justice
+Source: Kaggle/ Adoptable Dogs in the US
 
 Data Format: CSV File
 
-Content: The dataset contains information on properties regarding its basic information, indices used for evaluating energy efficiency, types of energy used in the property, and greenhouse gas (GHG) emissions.
+Content: The dataset contains information on over 3,000 adoptable dogs listed on PetFinder.com regarding to their origins, as well as the state they are currently listed for adoption in.
+
 
 ## Attributes:
 
-Property name: name of the property.
+contact_city: The city where the animal is located. (String)
 
-Borough: borough for the property.
+contact_state: The state where the animal is located. (String)
 
-Primary property use type: main property usage (ex: office, housing, hotel).
+description: A description of the animal. (String)
 
-Gross floor area (GFA) for primary use type: property area for main use in square ft.
+url: The URL of the animal's profile on PetFinder. (String)
 
-Secondary property use type: secondary property usage (ex: office, housing, hotel).
+type.x: The type of animal. (String)
 
-Gross floor area (GFA) for secondary use type: property area for secondary use in square ft.
+species: The species of the animal. (String)
 
-Year built: the year the property is built. If it has gone through a complete renovation, the renovation year can be the built year.
+breed_primary: The primary breed of the animal. (String)
 
-Occupancy: percentage of the property GFA that is occupied and operational.
+breed_secondary: The secondary breed of the animal. (String)
 
-Energy metered areas: areas within the property that is covered by energy meters.
+breed_mixed: Whether the animal is a mixed breed. (String)
 
-Water metered areas: areas within the property that is covered by water meters.
+breed_unknown: Whether the animal's breed is unknown. (String)
 
-ENERGY STAR Score: a score based on energy usage.
+color_primary: The primary color of the animal. (String)
 
-Source energy use intensity(EUI): EUI calculated from the energy source, in kBtu/ft^2, where kBtu is thousand British thermal units.
+color_secondary: The secondary color of the animal. (String)
 
-Weather normalized source EUI:  EUI normalized for weather.
+color_tertiary: The tertiary color of the animal. (String)
 
-Weather normalized site electricity intensity: weather normalized site electricity intensity per GFA.
+age: The age of the animal. (String)
 
-Weather normalized site natural gas intensity: weather normalized site natural gas intensity per GFA.
+sex: The animal's sex. (String)
 
-Fuel oil: annual fuel oil used, in kBtu.
+size: The size of the animal. (String)
 
-Diesel: annual diesel used, in kBtu.
+coat: The type of coat the animal has. (String)
 
-Natural gas: annual natural gas used, in kBtu.
+fixed: Whether the animal is spayed or neutered. (String)
 
-Electricity: annual electricity used, in kBtu.
+house_trained: Whether the animal is house trained. (String)
 
-Water: annual water use, in kGal.
+declawed: Whether the animal is declawed. (String)
 
-Direct GHG emission: annual direct GHG emission emitted from the property, in tons of carbon dioxide equivalent.
+special_needs: Whether the animal has any special needs. (String)
 
-Indirect GHG emission: annual indirect GHG emission emitted from the property, in tons of carbon dioxide equivalent.
+shots_current: Whether the animal is up to date on shots. (String)
 
-Total GHG emission: sum of direct and indirect GHG emissions in tons of carbon dioxide equivalent.
+env_children: Whether the animal is good with children. (String)
 
 
 ## Proposal:
 
-We plan to develop a model that can predict a property's environmental friendliness based on its GHG emission and energy efficiency. Types of energy used can affect the GHG emission of a property. Weather, property age, floor area, and so on can affect energy efficiency. We will start by finding the correlation between energy sources and GHG emissions. We will then evaluate both GHG emission and energy efficiency indices to obtain the extent of the environmental friendliness of a property.
+We plan to develop a model that can predict the extent of children-friendliness of adoptable dogs based on the dog’s origin information, such as the dog’s breed, color, age and so on, so that families with children can take this model for reference when planning to adopt a dog. We will start by finding the correlation between the dog’s features and env_children in the dataset. We will then evaluate the indices to obtain the extent of the children-friendliness of a dog.
 
 
 
