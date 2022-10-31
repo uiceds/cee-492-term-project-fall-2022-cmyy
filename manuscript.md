@@ -1,5 +1,5 @@
 ---
-title: Environmental-Friendliness of Buildings in New York
+title: Children-Friendliness of Adoptable Dogs
 keywords:
 - markdown
 - publishing
@@ -17,10 +17,10 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Environmental-Friendliness of Buildings in New York" />
-  <meta name="citation_title" content="Environmental-Friendliness of Buildings in New York" />
-  <meta property="og:title" content="Environmental-Friendliness of Buildings in New York" />
-  <meta property="twitter:title" content="Environmental-Friendliness of Buildings in New York" />
+  <meta name="dc.title" content="Children-Friendliness of Adoptable Dogs" />
+  <meta name="citation_title" content="Children-Friendliness of Adoptable Dogs" />
+  <meta property="og:title" content="Children-Friendliness of Adoptable Dogs" />
+  <meta property="twitter:title" content="Children-Friendliness of Adoptable Dogs" />
   <meta name="dc.date" content="2022-10-31" />
   <meta name="citation_publication_date" content="2022-10-31" />
   <meta name="dc.language" content="en-US" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d078418d8a5c5ef41c7c940b997814179aeb5c52/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d078418d8a5c5ef41c7c940b997814179aeb5c52/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d078418d8a5c5ef41c7c940b997814179aeb5c52/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6468f51510be3ffbc7050e41515605c22fe8ec58/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6468f51510be3ffbc7050e41515605c22fe8ec58/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6468f51510be3ffbc7050e41515605c22fe8ec58/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
