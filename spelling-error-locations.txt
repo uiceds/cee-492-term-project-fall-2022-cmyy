@@ -4,6 +4,23 @@ content/03.intro.md:6:dataset
 content/03.intro.md:6:PetFinder
 content/03.intro.md:17:PetFinder
 content/03.intro.md:60:dataset
+content/03.intro.md:69:cee
+content/03.intro.md:90:cee
+content/03.intro.md:95:cee
+content/03.intro.md:100:cee
 content/03.intro.md:105:dataset
+content/03.intro.md:113:Xw
+content/03.intro.md:123:Xw
+content/03.intro.md:125:nonlinearity
+content/03.intro.md:128:nonlinearity
+content/03.intro.md:129:discretized
+content/03.intro.md:145:Py
+content/03.intro.md:150:Kaggle
+content/03.intro.md:152:Alireza
 content/90.back-matter.md:5:kaggle
+content/Exploratory Data Analysis.md:6:CEE
+content/Exploratory Data Analysis.md:27:CEE
+content/Exploratory Data Analysis.md:32:CEE
+content/Exploratory Data Analysis.md:37:CEE
 content/Exploratory Data Analysis.md:42:dataset
+content/Predictive Modeling.md:5:CEE
