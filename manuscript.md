@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d88304c2f5e98a29f258ccb26441683881dc0e8d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d88304c2f5e98a29f258ccb26441683881dc0e8d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d88304c2f5e98a29f258ccb26441683881dc0e8d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/e28a3e9b51f87f06001ad41f4ec1d79ca1bd6dd4/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/e28a3e9b51f87f06001ad41f4ec1d79ca1bd6dd4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/e28a3e9b51f87f06001ad41f4ec1d79ca1bd6dd4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -213,15 +213,15 @@ Here we do some basic analysis on linear model, to discuss the accuracy of the l
 
 [ Linear Model ] 
 First, we think about the linear regression model: Xw + b = P
-We have 5 categories in this problem, every observation is the combination of each category, and each category would have 2 branches. Thus, the total number of the combinations would be 2^5. For a generalized type of problem with m categories, the total number would be ![Figure 10](), where n_i is the number of branches in each category. 
+We have 5 categories in this problem, every observation is the combination of each category, and each category would have 2 branches. Thus, the total number of the combinations would be 2^5. For a generalized type of problem with m categories, the total number would be ![Figure 10](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/Figure%2010.png), where n_i is the number of branches in each category. 
 	- Here X is a m×m matrix and w is a vector with n component.
 It is naturally to ask the following question: is this model perform a proper approximation of the real problem?
-To answer this question, we extend our independent variables to ![Figure 11](). In this case, each branch would be independent. We would have a generalized model for the linear regression.
+To answer this question, we extend our independent variables to ![Figure 11](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/Figure%2011.png). In this case, each branch would be independent. We would have a generalized model for the linear regression.
  X ̃ w ̃ = P ̃.
 	- Here X ̃ is a N×N matrix and w ̃ is a vector with N components.
 For the linear regression process, we are forcing P ̃ to be the expectation of our supervised result P ̃=E(y).  Thus, we can evaluate our  X ̃ in the following procedure.
 ![Figure 6](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/Figure%206.png)
-We can say that ![Figure 12]().
+We can say that ![Figure 12](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/Figure%2012.png).
 Thus, for linear regression with Xw+b=P, we should have X is a R×R matrix and w is a vector with R components.
 However, this is not a proper model for such a problem. In this model, we have N expectations and rank(A)<N. 
 We need to establish a better model to capture the nonlinearity of the problem.
@@ -232,18 +232,18 @@ In Reinforcement Learning, for discretized system, we have the definition of sta
 Imagine that we are in a grid world, state S_i is where we stand. We have the list of actions in each state, here we can go [up, down, left, right]. When we take an action in each state, we would get a reward R_i from our chosen action and move to the new state S_1. We do this repeatedly until we reach the terminal of this world, end would occur then. After each end, we would generate an episode which stores the states that we have been visited.
 ![Figure 7](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/Figure%207.png)
 The value of state:
-![Figure 13]()
+![Figure 13](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/FIgure%2013.png)
 	Here T(S,a,S') is the transition probability, the probability of reaching S' while we start from S and take action a. γ is the discounting rate.
 In this generalized problem, we have N parallel states, and directly related to their own terminal without any actions. 
 ![Figure 8](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/Figure%208.png)
 S_i is the fixed state, R_(i,j) is the reward of S_i at observation j, T_(i,j) is the terminal of S_i at observation j.
 We can set R_(i,j)=0 and  V(T_(i,j))=1  when it is a target result. Then we would update it incrementally:
-![Figure 14]()
+![Figure 14](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/Figure%2014.png)
 We can also add discounting rate γ (more like learning rate here) into our update function:
-![Figure 15]()
+![Figure 15](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/Figure%2015.png)
 
 [ Machine Learning – Neural Network ]
-We can set the input number of the first layer as ![Figure 16]() as our previous analysis and add any number of layers and nonlinear functions between each layer as we want. The final output number should be 1 based on our problem type.
+We can set the input number of the first layer as ![Figure 16](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/FIgure%2016.png) as our previous analysis and add any number of layers and nonlinear functions between each layer as we want. The final output number should be 1 based on our problem type.
 Py-Torch is a useful tool for machine learning, here we give a sample structure of neural network.
 ![Figure 9](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/Figure%209.png)
 
