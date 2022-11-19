@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/00db2b7af5138e2cd8c50d840b57ad4eedfc438d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/00db2b7af5138e2cd8c50d840b57ad4eedfc438d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/00db2b7af5138e2cd8c50d840b57ad4eedfc438d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/97e02ffc360db68e7939d36fa18666d73f80ce6a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/97e02ffc360db68e7939d36fa18666d73f80ce6a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/97e02ffc360db68e7939d36fa18666d73f80ce6a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -135,24 +135,9 @@ Content: The dataset contains over 10,995 crack images. Each image data has its 
 Figure 2. Example of an Original Image and an Mask Image
 
 
-
 ## Proposal:
 
 In our project, we plan to train two models to detect concrete crack. First, by using the classification dataset, we plan to detect concrete crack based on convolutional neural network (CNN) to find out whether the concrete is defective. Second, by using the segmentation dataset, we plan to conduct concrete crack segmentation based on U Net to illustrate the position of the crack on concrete crack images.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Exploratory Data Analysis
@@ -227,6 +212,8 @@ Figure 9. Example of U Net Applied in Biomedical Image
 U net applied in crack detection Computer vision-based concrete crack detection using U-net fully convolutional networks - ScienceDirect (It has almost the same structure with original U-net, but we would use a different channel number, we would also use a different architecture with pretrained convolutional neural network as backbone (VGG, ResNet, Inception))
 
 ![Figure 13](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig13_code_seg.png)
+
+Figure 10. Code of U Net
 
 Input: images with 120x120x3 [height, width, channel (RGB)] (resized from 227x227)
 
