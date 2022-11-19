@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3035dfc9a064bafd348cd1a1dbbc9aafa9bd386f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3035dfc9a064bafd348cd1a1dbbc9aafa9bd386f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3035dfc9a064bafd348cd1a1dbbc9aafa9bd386f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/00db2b7af5138e2cd8c50d840b57ad4eedfc438d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/00db2b7af5138e2cd8c50d840b57ad4eedfc438d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/00db2b7af5138e2cd8c50d840b57ad4eedfc438d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -105,6 +105,7 @@ manubot-clear-requests-cache: false
 In this project, we plan to use two main datasets to detect concrete crack. First, we use a dataset from Kaggle, titled “Surface Crack Detection” to make the classification of the concrete crack. Second, we use a dataset from Virginia Tech, titled “Concrete Crack Conglomerate Dataset” to make the segmentation of the concrete crack.
 
 
+
 [Classification]
 
 Source: Kaggle/ Surface Crack Detection.
@@ -117,6 +118,7 @@ Content: The dataset contains images of various concrete surfaces with and witho
 ![Figure 2](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig2_pos_1.png)
 
 Figure 1. Example of Images with and without Cracks
+
 
 
 [Segmentation]
@@ -133,9 +135,24 @@ Content: The dataset contains over 10,995 crack images. Each image data has its 
 Figure 2. Example of an Original Image and an Mask Image
 
 
+
 ## Proposal:
 
 In our project, we plan to train two models to detect concrete crack. First, by using the classification dataset, we plan to detect concrete crack based on convolutional neural network (CNN) to find out whether the concrete is defective. Second, by using the segmentation dataset, we plan to conduct concrete crack segmentation based on U Net to illustrate the position of the crack on concrete crack images.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Exploratory Data Analysis
@@ -183,7 +200,7 @@ Testing result: True Positive, False Positive, True Negative, False Negative.
 
 Positive or negative was predicted by the network, and true or false is the result of prediction (right or wrong)
 
-![Figure 14]()
+![Figure 14](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig14_confusion_matrix.png)
 
 Figure 7. Confusion Matrix of the Test Result
 
