@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bf1970f19f0ce2bab374c04b475a1fd4b4d37b70/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bf1970f19f0ce2bab374c04b475a1fd4b4d37b70/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bf1970f19f0ce2bab374c04b475a1fd4b4d37b70/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/859ee4b5ad094e3e2f8b734e7a14fb1cea24f1b7/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/859ee4b5ad094e3e2f8b734e7a14fb1cea24f1b7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/859ee4b5ad094e3e2f8b734e7a14fb1cea24f1b7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -240,3 +240,8 @@ GitHub - agoor97/Cracks_Detection: This Repository provides a Cracks Detection I
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
 [Energy Efficiency of buildings in New York](https://www.kaggle.com/datasets/mikhailma/energy-efficiency-of-buildings-in-new-york)
+[Surface Crack Detection | Kaggle](https://www.kaggle.com/datasets/arunrk7/surface-crack-detection)
+[Concrete Crack Conglomerate Dataset | Virginia Tech](https://data.lib.vt.edu/articles/dataset/Concrete_Crack_Conglomerate_Dataset/16625056)
+[Computer Vision-based Concrete Crack Detection using U-net Fully Convolutional Networks](https://doi.org/10.1016/j.autcon.2019.04.005)
+[Network: U-Net](https://arxiv.org/abs/1505.04597v1)
+[Performance Evaluation of Deep CNN-Based Crack Detection and Localization Techniques for Concrete Structures](https://doi.org/10.3390/s21051688)

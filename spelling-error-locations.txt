@@ -41,4 +41,12 @@ content/03.intro.md:132:Dataset
 content/03.intro.md:132:Kaggle
 content/90.back-matter.md:5:datasets
 content/90.back-matter.md:5:kaggle
+content/90.back-matter.md:6:datasets
+content/90.back-matter.md:6:kaggle
+content/90.back-matter.md:6:Kaggle
+content/90.back-matter.md:7:dataset
+content/90.back-matter.md:7:Dataset
+content/90.back-matter.md:7:edu
+content/90.back-matter.md:8:Convolutional
+content/90.back-matter.md:9:arxiv
 content/Exploratory Data Analysis.md:42:dataset
