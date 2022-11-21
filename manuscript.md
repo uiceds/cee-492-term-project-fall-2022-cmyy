@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-11-19'
+date-meta: '2022-11-21'
 author-meta:
 - Yu-Sian Lin
 - Yueh-Ti Lee
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Concrete Crack Detection" />
   <meta property="og:title" content="Concrete Crack Detection" />
   <meta property="twitter:title" content="Concrete Crack Detection" />
-  <meta name="dc.date" content="2022-11-19" />
-  <meta name="citation_publication_date" content="2022-11-19" />
+  <meta name="dc.date" content="2022-11-21" />
+  <meta name="citation_publication_date" content="2022-11-21" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/97e02ffc360db68e7939d36fa18666d73f80ce6a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/97e02ffc360db68e7939d36fa18666d73f80ce6a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/97e02ffc360db68e7939d36fa18666d73f80ce6a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bf1970f19f0ce2bab374c04b475a1fd4b4d37b70/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bf1970f19f0ce2bab374c04b475a1fd4b4d37b70/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bf1970f19f0ce2bab374c04b475a1fd4b4d37b70/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -239,4 +239,4 @@ GitHub - agoor97/Cracks_Detection: This Repository provides a Cracks Detection I
 
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
-[Energy Efficiency of buildings in New York]([https://manubot.org](https://www.kaggle.com/datasets/mikhailma/energy-efficiency-of-buildings-in-new-york))
+[Energy Efficiency of buildings in New York](https://www.kaggle.com/datasets/mikhailma/energy-efficiency-of-buildings-in-new-york)
