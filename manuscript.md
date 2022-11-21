@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/e83d21c65ecaf64f86da29abd78490ac87d858a5/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/e83d21c65ecaf64f86da29abd78490ac87d858a5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/e83d21c65ecaf64f86da29abd78490ac87d858a5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/182317fa022fafadf1eae7d72a527d269bff7d11/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/182317fa022fafadf1eae7d72a527d269bff7d11/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/182317fa022fafadf1eae7d72a527d269bff7d11/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -114,7 +114,7 @@ Data Format: Images with 227*227 pixels with RGB channels.
 
 Content: The dataset contains images of various concrete surfaces with and without crack. The image data are divided into two as negative (without crack) and positive (with crack) for image classification. Each class has 20000 images with a total of 40000 images.
 
-![Figure 1](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig1_neg_1.png)
+![Figure 1](./fig1_neg_1.png)
 ![Figure 2](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig2_pos_1.png)
 
 Figure 1. Example of Images with and without Cracks
