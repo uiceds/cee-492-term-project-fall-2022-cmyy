@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/182317fa022fafadf1eae7d72a527d269bff7d11/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/182317fa022fafadf1eae7d72a527d269bff7d11/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/182317fa022fafadf1eae7d72a527d269bff7d11/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/e37da67a1147a126d72e394ea08ccd09278aa3c1/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/e37da67a1147a126d72e394ea08ccd09278aa3c1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/e37da67a1147a126d72e394ea08ccd09278aa3c1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -114,8 +114,8 @@ Data Format: Images with 227*227 pixels with RGB channels.
 
 Content: The dataset contains images of various concrete surfaces with and without crack. The image data are divided into two as negative (without crack) and positive (with crack) for image classification. Each class has 20000 images with a total of 40000 images.
 
-![Figure 1](./fig1_neg_1.png)
-![Figure 2](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig2_pos_1.png)
+![Figure 1](../fig1_neg_1.png)
+![Figure 2](../fig2_pos_1.png)
 
 Figure 1. Example of Images with and without Cracks
 
@@ -129,8 +129,8 @@ Data Format: Images with 448*448 pixels with RGB channels
 
 Content: The dataset contains over 10,995 crack images. Each image data has its origin image and mask image for image segmentation.
 
-![Figure 3](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig3_ori_1.png)
-![Figure 4](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig4_segged_1.png)
+![Figure 3](../fig3_ori_1.png)
+![Figure 4](../fig4_segged_1.png)
 
 Figure 2. Example of an Original Image and an Mask Image
 
@@ -143,12 +143,12 @@ In our project, we plan to train two models to detect concrete crack. First, by 
 ## Exploratory Data Analysis
 
 In classification, the dataset consists of 20,000 images with cracks and 20,000 images without cracks. We are planning to use convolutional neural network to train a classification model.
-![Figure 5](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig5_plot_cla.png)
+![Figure 5](../fig5_plot_cla.png)
 
 Figure 3. Number of Images with and without Cracks
 
 In segmentation, we use the dataset consists of 21,996 images, splitting it into train data with 19,801 images and train data with 2,195 images. Here, we’ll be applying U Net to train a model that is capable of pointing out the cracks in a concrete image.
-![Figure 6](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig6_plot_seg.png)
+![Figure 6](../fig6_plot_seg.png)
 
 Figure 4. Number of Train Images and Test Images
 
@@ -165,11 +165,11 @@ Dataset: Surface Crack Detection | Kaggle Positive: 20000 Negative: 20000
 Training, validating, testing: 3360, 840, 1800
 Network: CNN
 
-![Figure 7](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig7_sch_cla.png)
+![Figure 7](../fig7_sch_cla.png)
 
 Figure 5. Schematic of CNN
 
-![Figure 8](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig8_code_cla.png)
+![Figure 8](../fig8_code_cla.png)
 
 Figure 6. Code of CNN
 
@@ -185,7 +185,7 @@ Testing result: True Positive, False Positive, True Negative, False Negative.
 
 Positive or negative was predicted by the network, and true or false is the result of prediction (right or wrong)
 
-![Figure 14](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig14_confusion_matrix.png)
+![Figure 14](../fig14_confusion_matrix.png)
 
 Figure 7. Confusion Matrix of the Test Result
 
@@ -197,21 +197,21 @@ Would only use a part of it (107 for training and validating, 11 for testing) as
 
 Network: U-Net [1505.04597v1] U-Net: Convolutional Networks for Biomedical Image Segmentation (arxiv.org)
 
-![Figure 9](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig9_sch_seg.png)
+![Figure 9](../fig9_sch_seg.png)
 
 Figure 8. Schematic of a U Net
 
 Here we would have input with 3 channel, and would become 16 channel after the first convolution.
 
-![Figure 10](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig10_biowulf.png)
+![Figure 10](../fig10_biowulf.png)
 
-![Figure 11](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig11_result1.png) ![Figure 12](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig12_result2.png)
+![Figure 11](../fig11_result1.png) ![Figure 12](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig12_result2.png)
 
 Figure 9. Example of U Net Applied in Biomedical Image
 
 U net applied in crack detection Computer vision-based concrete crack detection using U-net fully convolutional networks - ScienceDirect (It has almost the same structure with original U-net, but we would use a different channel number, we would also use a different architecture with pretrained convolutional neural network as backbone (VGG, ResNet, Inception))
 
-![Figure 13](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig13_code_seg.png)
+![Figure 13](../fig13_code_seg.png)
 
 Figure 10. Code of U Net
 
