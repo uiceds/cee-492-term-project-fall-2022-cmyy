@@ -33,12 +33,6 @@ content/03.intro.md:110:ScienceDirect
 content/03.intro.md:110:VGG
 content/03.intro.md:116:RGB
 content/03.intro.md:118:sigmoid
-content/03.intro.md:127:Kaggle
-content/03.intro.md:128:Dataset
-content/03.intro.md:129:Convolutional
-content/03.intro.md:130:Convolutional
-content/03.intro.md:132:Dataset
-content/03.intro.md:132:Kaggle
 content/90.back-matter.md:6:datasets
 content/90.back-matter.md:6:kaggle
 content/90.back-matter.md:6:Kaggle

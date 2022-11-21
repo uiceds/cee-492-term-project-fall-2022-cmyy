@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bdca8593a462f5b80153c465594fb918d6c8ee91/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bdca8593a462f5b80153c465594fb918d6c8ee91/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bdca8593a462f5b80153c465594fb918d6c8ee91/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/e83d21c65ecaf64f86da29abd78490ac87d858a5/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/e83d21c65ecaf64f86da29abd78490ac87d858a5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/e83d21c65ecaf64f86da29abd78490ac87d858a5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -222,17 +222,6 @@ Output: some kind of probability (was proceed by sigmoid)
 Solver: Adam
 
 Loss: Binary Cross Entropy
-
-
-
-## References
-Surface Crack Detection | Kaggle
-Concrete Crack Conglomerate Dataset | Virginia Tech
-Computer Vision-based Concrete Crack Detection using U-net Fully Convolutional Networks
-Data for: Computer Vision-based Concrete Crack Detection using U-net Fully Convolutional Networks
-Performance Evaluation of Deep CNN-Based Crack Detection and Localization Techniques for Concrete Structures
-GitHub - agoor97/Cracks_Detection: This Repository provides a Cracks Detection Implementation using Deep Learning for a Kaggle Dataset.
-
 
 
 ## References

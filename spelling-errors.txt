@@ -1,8 +1,7 @@
-agoor
 arxiv
 Chengyou
-convolutional
-dataset
+Convolutional
+Dataset
 datasets
 edu
 Kaggle
