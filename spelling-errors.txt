@@ -1,6 +1,6 @@
 arxiv
 Chengyou
-Convolutional
+convolutional
 dataset
 datasets
 edu
