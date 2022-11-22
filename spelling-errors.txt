@@ -4,7 +4,9 @@ convolutional
 Dataset
 datasets
 edu
+hyperparameters
 Kaggle
+MaxPooling
 Minjiang
 pretrained
 ResNet
