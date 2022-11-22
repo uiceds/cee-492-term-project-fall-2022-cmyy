@@ -2,10 +2,10 @@ BatchNormalization
 Chengyou
 Classificationwill
 CNNHyperparameters
-conv
+Conv
 convolutional
 Crossentropy
-Dataset
+dataset
 GlobalAveragePooling
 Hyperparameters
 Keras
