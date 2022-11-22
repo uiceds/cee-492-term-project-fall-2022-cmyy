@@ -3,7 +3,7 @@ CNNHyperparameters
 Conv
 Convolutional
 Crossentropy
-Dataset
+dataset
 datasets
 GlobalAveragePooling
 hyperparameters
@@ -13,6 +13,7 @@ MaxPool
 MaxPooling
 Minjiang
 multiclass
+NetHyperparameters
 nonlinearity
 overfitting
 preprocess

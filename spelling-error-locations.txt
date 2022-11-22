@@ -38,6 +38,9 @@ content/03.intro.md:162:convolutional
 content/03.intro.md:162:overfitting
 content/03.intro.md:172:dataset
 content/03.intro.md:172:dataset
+content/03.intro.md:178:Crossentropy
+content/03.intro.md:180:Hyperparameters
+content/03.intro.md:181:NetHyperparameters
 content/90.back-matter.md:6:datasets
 content/90.back-matter.md:6:kaggle
 content/90.back-matter.md:6:Kaggle

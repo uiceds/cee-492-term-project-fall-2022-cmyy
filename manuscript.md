@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ca8cb995b23080deefe76b18f48bbf5f4d8516a4/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ca8cb995b23080deefe76b18f48bbf5f4d8516a4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ca8cb995b23080deefe76b18f48bbf5f4d8516a4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7cd11fee292b9bfff935cc8edd4a7b161396bb39/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7cd11fee292b9bfff935cc8edd4a7b161396bb39/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7cd11fee292b9bfff935cc8edd4a7b161396bb39/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -273,8 +273,18 @@ Notice that the original images have size of (448,448,3), we would keep this siz
 
 U-Net could learn from very few numbers of dataset, so we only need to have a small dataset.
 
-![**U-net Loss Evaluation.**](https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png){#fig:U-net_Loss}
+![**U-Net Loss Evaluation.**](https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png){#fig:U-Net_Loss}
 
+| training   | validation | testing    | Optimizer | Loss Function | Metrics | Epochs |
+|:-----------|:------|:------|:------|:------|:------|:------|
+| 105 | 2 | 17 | Adam | Binary Crossentropy | Accuracy | 50 |
+
+Table: U-Net Hyperparameters.
+{#tbl:U-NetHyperparameters}
+
+We can see that this trained model has good performance on the testing data, it only takes 30 epochs because of our early stop condition.
+
+## Prediction and Analysis 
 
 
 
