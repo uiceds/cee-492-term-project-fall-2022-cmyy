@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/913ae0e0ff15e6604ca699483b9dfe1144e64461/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/913ae0e0ff15e6604ca699483b9dfe1144e64461/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/913ae0e0ff15e6604ca699483b9dfe1144e64461/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d43a6f8cf98917d198e49ff57f7d332d156aec08/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d43a6f8cf98917d198e49ff57f7d332d156aec08/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d43a6f8cf98917d198e49ff57f7d332d156aec08/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -247,7 +247,7 @@ Notice that the original images have size of (448,448,3), we would keep this siz
 
 U-Net could learn from very few numbers of dataset, so we only need to have a small dataset.
 
-![**U-Net Loss Evaluation.**](https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png){#fig:U-Net_Loss}
+![**U-Net Loss Evaluation.**](https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png "Tall image"){#fig:U-Net_Loss height=1.5inch}
 
 | training   | validation | testing    | Optimizer | Loss Function | Metrics | Epochs |
 |:-----------|:------|:------|:------|:------|:------|:------|
