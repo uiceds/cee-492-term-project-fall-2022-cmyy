@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7f915c0131fff4722f2073896f58cd445b077eee/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7f915c0131fff4722f2073896f58cd445b077eee/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7f915c0131fff4722f2073896f58cd445b077eee/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a472ec2c30072e981a278d80c9958c170da1968c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a472ec2c30072e981a278d80c9958c170da1968c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a472ec2c30072e981a278d80c9958c170da1968c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -217,11 +217,11 @@ We can check our trained model by inputting the testing data, below is the confu
 
 ![
 **Confusion Matrix.**
-](./images/square.png "Confusion_Matrix"){#fig:Confusion_Matrix}
+](./images/Confusion_Matrix.png "Square image"){#fig:Confusion_Matrix}
 
 ![
 **Loss Evolution.**
-](./images/Loss_Evolution.png "Square image"){#Loss_Evolution}
+](./images/Loss_Evolution.png "Tall image"){#fig:Loss_Evolution height=3in}
 
 [Crack detection]
 Dataset: Surface Crack Detection | Kaggle Positive: 20000 Negative: 20000

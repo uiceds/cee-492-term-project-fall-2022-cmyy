@@ -2,9 +2,9 @@ arxiv
 Chengyou
 CNNHyperparameters
 Conv
-Convolutional
+convolutional
 Crossentropy
-dataset
+Dataset
 datasets
 edu
 GlobalAveragePooling
