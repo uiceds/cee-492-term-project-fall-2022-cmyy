@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d43a6f8cf98917d198e49ff57f7d332d156aec08/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d43a6f8cf98917d198e49ff57f7d332d156aec08/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d43a6f8cf98917d198e49ff57f7d332d156aec08/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/23b8647b528edf827a4118b080ef53914dc8bf1b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/23b8647b528edf827a4118b080ef53914dc8bf1b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/23b8647b528edf827a4118b080ef53914dc8bf1b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -122,41 +122,20 @@ Department of Civil and Environmental Engineering, University of Illinois
 </ul>
 <h2 id="introduction">Introduction</h2>
 <p>The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information of the exact locations of cracks is smeared in the network. We aim to firstly rebuild a CNN-based model for crack detection, and then find and apply another model to locate the exact positions of cracks.</p>
+<p>(please add potential applications or why this model is better)</p>
 <p>We first train a CNN with the Surface Crack Detection dataset <span class="citation" data-cites="ZtBdubRd">[<a href="#ref-ZtBdubRd" role="doc-biblioref">1</a>]</span> to judge if any concrete crack exists. The dataset contains images (each has <span class="math inline">\(227 \times 227\)</span> pixels and RGB channels) of concrete surfaces with or without crack. Each class contains <span class="math inline">\(20000\)</span> images. Examples are shown in Figure <a href="#fig:Negative_and_Positive">1</a>:</p>
 <div id="fig:Negative_and_Positive" class="fignos">
 <figure>
 <img src="https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png" style="height:2in" alt="Figure 1: Negative and Positive Examples from the Surface Crack Detection Dataset" /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Negative and Positive Examples from the Surface Crack Detection Dataset</strong></figcaption>
 </figure>
 </div>
-<p>We then train a CNN-based network call U-Net <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span> with the Concrete Crack Conglomerate Dataset <span class="citation" data-cites="ovjFCGWg">[<a href="#ref-ovjFCGWg" role="doc-biblioref">3</a>]</span> to segment the concrete from its cracks. The dataset contains over <span class="math inline">\(10995\)</span> crack images (each has <span class="math inline">\(448 \times 448\)</span> pixels and RGB channels). Each image data has an origin image and a mask image. Examples are shown in Figure <a href="#fig:Origin_and_Mask">2</a>:</p>
+<p>We then train a CNN-based network call U-Net <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span> with the Concrete Crack Conglomerate Dataset <span class="citation" data-cites="ovjFCGWg">[<a href="#ref-ovjFCGWg" role="doc-biblioref">3</a>]</span> to segment the concrete from its cracks. The dataset contains over <span class="math inline">\(20000\)</span> crack images (each has <span class="math inline">\(448 \times 448\)</span> pixels and RGB channels). Each image data has an origin image and a mask image. Examples are shown in Figure <a href="#fig:Origin_and_Mask">2</a>:</p>
 <div id="fig:Origin_and_Mask" class="fignos">
 <figure>
 <img src="https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png" style="height:2in" alt="Figure 2: Origin and Mask Images from the Concrete Crack Conglomerate Dataset" /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Origin and Mask Images from the Concrete Crack Conglomerate Dataset</strong></figcaption>
 </figure>
 </div>
-<h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
-<p>In classification, the dataset consists of 20,000 images with cracks and 20,000 images without cracks. We are planning to use convolutional neural network to train a classification model.
-<img src="../fig5_plot_cla.png" alt="Figure 5" /></p>
-<p>Figure 3. Number of Images with and without Cracks</p>
-<p>In segmentation, we use the dataset consists of 21,996 images, splitting it into train data with 19,801 images and train data with 2,195 images. Here, we’ll be applying U Net to train a model that is capable of pointing out the cracks in a concrete image.
-<img src="../fig6_plot_seg.png" alt="Figure 6" /></p>
-<p>Figure 4. Number of Train Images and Test Images</p>
-<h2 id="preliminary-predictive-modeling">Preliminary Predictive Modeling</h2>
-<p>Dataset:</p>
-<ul>
-<li>Concrete images with attached label ‘Positive’ or ‘Negative’</li>
-<li>Concrete images and their masks</li>
-</ul>
-<p>Goal:</p>
-<ul>
-<li>Concrete crack detection</li>
-<li>Concrete crack segmentation</li>
-</ul>
-<p>Architecture:</p>
-<ul>
-<li>Concrete crack detection based on convolutional neural network (CNN)</li>
-<li>Concrete crack segmentation based on U-Net and improved U-Net using Inception as backbone</li>
-</ul>
+<p>The dataset is splitted into a training set with 19801 images and a testing set with 2195 images. (details about the first dataset???)</p>
 <h2 id="concrete-crack-detection">Concrete Crack Detection</h2>
 <div id="fig:Basic_Convolutional_Neural_Network_for_Classification" class="fignos">
 <figure>
@@ -189,7 +168,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 <p>Notice that the original images have size of (227,227,3), we would resize it into (120,120,3) in preprocess procedure.</p>
 <div id="fig:Model_Summary_and_Hyperparameters" class="fignos">
 <figure>
-<img src="./images/Model_Summary_and_Hyperparameters.png" style="height:3in" alt="Figure 5: Model Summary and_Hyperparameters." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Model Summary and_Hyperparameters.</strong></figcaption>
+<img src="./images/Model_Summary_and_Hyperparameters.png" style="height:4in" alt="Figure 5: Model Summary and Hyperparameters." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Model Summary and Hyperparameters.</strong></figcaption>
 </figure>
 </div>
 <div id="tbl:CNNHyperparameters" class="tablenos">
@@ -229,7 +208,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 </div>
 <div id="fig:Loss_Evolution" class="fignos">
 <figure>
-<img src="./images/Loss_Evolution.png" style="height:2in" alt="Figure 7: Loss Evolution." /><figcaption aria-hidden="true"><span>Figure 7:</span> <strong>Loss Evolution.</strong></figcaption>
+<img src="./images/Loss_Evolution.png" style="height:3in" alt="Figure 7: Loss Evolution." /><figcaption aria-hidden="true"><span>Figure 7:</span> <strong>Loss Evolution.</strong></figcaption>
 </figure>
 </div>
 <p>We can see that this trained model has good performance on the testing data, it only takes 25 epochs because of our early stop condition.
@@ -321,7 +300,7 @@ We perform a normalization before plug in the U-Net architecture based on the ra
 <p>U-Net could learn from very few numbers of dataset, so we only need to have a small dataset.</p>
 <div id="fig:U-Net_Loss" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png" style="height:1.5in" alt="Figure 12: U-Net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 12:</span> <strong>U-Net Loss Evaluation.</strong></figcaption>
+<img src="https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png" style="height:3in" alt="Figure 12: U-Net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 12:</span> <strong>U-Net Loss Evaluation.</strong></figcaption>
 </figure>
 </div>
 <div id="tbl:U-NetHyperparameters" class="tablenos">
