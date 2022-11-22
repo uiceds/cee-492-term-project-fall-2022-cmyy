@@ -4,11 +4,11 @@ CNNHyperparameters
 Conv
 convolutional
 Crossentropy
-Dataset
+dataset
 datasets
 edu
 GlobalAveragePooling
-hyperparameters
+Hyperparameters
 Kaggle
 Keras
 MaxPool
@@ -23,7 +23,7 @@ ResNet
 RGB
 ScienceDirect
 Sian
-sigmoid
+Sigmoid
 SoftMax
 TensorYue
 VGG
