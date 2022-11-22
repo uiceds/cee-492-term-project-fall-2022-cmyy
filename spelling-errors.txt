@@ -1,10 +1,10 @@
 BatchNormalization
 Chengyou
 CNNHyperparameters
-Conv
+conv
 convolutional
 Crossentropy
-Dataset
+dataset
 GlobalAveragePooling
 Hyperparameters
 Keras
@@ -16,7 +16,7 @@ nonlinearity
 overfitting
 preprocessing
 pretrained
-ReLU
+ReLu
 RGB
 Sian
 sigmoid
