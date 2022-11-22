@@ -2,11 +2,11 @@ BatchNormalization
 Chengyou
 CNNHyperparameters
 Conv
-convolutional
+Convolutional
 Crossentropy
-dataset
+Dataset
 GlobalAveragePooling
-Hyperparameters
+hyperparameters
 Kaggle
 Keras
 MaxPool
@@ -23,6 +23,7 @@ RGB
 Sian
 Sigmoid
 SoftMax
+splitted
 TensorYue
 yslin
 Yu
