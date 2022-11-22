@@ -3,9 +3,9 @@ Chengyou
 Classificationwill
 CNNHyperparameters
 Conv
-Convolutional
+convolutional
 Crossentropy
-dataset
+Dataset
 GlobalAveragePooling
 Hyperparameters
 Kaggle
@@ -16,9 +16,9 @@ Minjiang
 NetHyperparameters
 nonlinearity
 overfitting
-preprocess
+preprocessing
 pretrained
-ReLU
+ReLu
 RGB
 Sian
 sigmoid
