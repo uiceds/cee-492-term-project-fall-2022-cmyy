@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a3bfc6b0e3fdde8d49d6a18c06a858c783037b8f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a3bfc6b0e3fdde8d49d6a18c06a858c783037b8f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a3bfc6b0e3fdde8d49d6a18c06a858c783037b8f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b813452ac8380973663440f56e72c97fed13c986/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b813452ac8380973663440f56e72c97fed13c986/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b813452ac8380973663440f56e72c97fed13c986/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -100,6 +100,8 @@ manubot-clear-requests-cache: false
 
 
 
+\renewcommand{\familydefault}{\rmdefault}
+
 ## Introduction
 
 The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information of the exact locations of cracks is smeared in the network. We aim to firstly build a CNN-based model for crack detection, and then find and apply another model to locate the exact positions of cracks. 
@@ -108,7 +110,7 @@ The existence of cracks in concrete materials is of vital importance in Civil En
 
 We first train a CNN with the Surface Crack Detection dataset [@{https://www.kaggle.com/datasets/arunrk7/surface-crack-detection}] to judge if any concrete crack exists. The dataset contains images (each has $227 \times 227$ pixels and RGB channels) of concrete surfaces with or without crack. Each class contains $20000$ images. Examples are shown in Figure @fig:Negative_and_Positive:
 
-![**Negative and Positive Examples from the Surface Crack Detection Dataset**](https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png "Tall image"){#fig:Negative_and_Positive height=2in .center}
+![**Negative and Positive Examples from the Surface Crack Detection Dataset**](https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png "Tall image"){#fig:Negative_and_Positive height=2in}
 
 ### The dataset is splitted into a training set with ??? images and a testing set with ??? images. 
 
@@ -116,7 +118,7 @@ We then train a CNN-based network call U-Net [@doi:10.1007/978-3-319-24574-4_28]
 
 The dataset contains over $20000$ crack images (each has $448 \times 448$ pixels and RGB channels). Each image data has an origin image and a mask image. Examples are shown in Figure @fig:Origin_and_Mask:
 
-![**Origin and Mask Images from the Concrete Crack Conglomerate Dataset**](https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png "Tall image"){.center #fig:Origin_and_Mask height=2in}
+![**Origin and Mask Images from the Concrete Crack Conglomerate Dataset**](https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png "Tall image"){#fig:Origin_and_Mask height=2in}
 
 The dataset is splitted into a training set with 19801 images and a testing set with 2195 images. 
 
@@ -127,7 +129,7 @@ The dataset is splitted into a training set with 19801 images and a testing set 
 ![**Basic Convolutional Neural Network for Classification.**
 ](./images/Basic_Convolutional_Neural_Network_for_Classification.png "Wide image"){#fig:Basic_Convolutional_Neural_Network_for_Classification}
 
-CNN network is briefly introduced in this section. As shown in Figure @fig:Basic_Convolutional_Neural_Network_for_Classification, a typical CNN network involves several convolutional and pooling layers, and then several fully connected layers. Convolution is an operation that uses filter to extract information that we want to detect. The filter size determines how many filters will be applied to the input data. The kernel size determines the size of the area that the filters would apply to. Activation function is added to import nonlinearity into the model, considering the operation of filter is linear. MaxPooling is a down-sampling operation that allows our network to capture deeper information from its original dimensions. The pool size and strides determine the dimensions of the down-sample procedure. Notice that the sigmoid function rather than the softmax function shown in  Figure @fig:Basic_Convolutional_Neural_Network_for_Classificationwill be applied in our model, as as we only have two classes of results. 
+CNN network is briefly introduced in this section. As shown in Figure @fig:Basic_Convolutional_Neural_Network_for_Classification, a typical CNN network involves several convolutional and pooling layers, and then several fully connected layers. Convolution is an operation that uses filter to extract information that we want to detect. The filter size determines how many filters will be applied to the input data. The kernel size determines the size of the area that the filters would apply to. Activation function is added to import nonlinearity into the model, considering the operation of filter is linear. MaxPooling is a down-sampling operation that allows our network to capture deeper information from its original dimensions. The pool size and strides determine the dimensions of the down-sample procedure. Notice that the sigmoid function (rather than the softmax function shown in Figure @fig:Basic_Convolutional_Neural_Network_for_Classification) will be applied in our model, as as we only have two classes of results. 
 
 ### Network Design
 In the first convolutional block, we would specify 16 filters (consider 8 straight lines and 8 curves) with 3 by 3 kernels (consider the size of crack is relatively small), assign ReLu as the activation function in the Conv2D layer, and go deeper with a pool size of 2 by 2 in the MaxPool2D layer. In the second convolutional block, we double the channels number to 32 with Conv2D and apply the same MaxPool2D. Finally, we apply an GlobalAveragePooling2D layer, as we are focusing on the whole image rather than a part of it in segmentation. The coding form of this model is shown in Figure @fig:Model_for_Concrete_Crack_Classification_using_Keras:

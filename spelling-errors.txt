@@ -1,9 +1,8 @@
 BatchNormalization
 Chengyou
-Classificationwill
 CNNHyperparameters
-Conv
-convolutional
+conv
+Convolutional
 Crossentropy
 dataset
 GlobalAveragePooling
