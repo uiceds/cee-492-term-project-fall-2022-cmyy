@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a3bfc6b0e3fdde8d49d6a18c06a858c783037b8f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a3bfc6b0e3fdde8d49d6a18c06a858c783037b8f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a3bfc6b0e3fdde8d49d6a18c06a858c783037b8f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b813452ac8380973663440f56e72c97fed13c986/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b813452ac8380973663440f56e72c97fed13c986/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b813452ac8380973663440f56e72c97fed13c986/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -126,7 +126,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 <p>We first train a CNN with the Surface Crack Detection dataset <span class="citation" data-cites="ZtBdubRd">[<a href="#ref-ZtBdubRd" role="doc-biblioref">1</a>]</span> to judge if any concrete crack exists. The dataset contains images (each has <span class="math inline">\(227 \times 227\)</span> pixels and RGB channels) of concrete surfaces with or without crack. Each class contains <span class="math inline">\(20000\)</span> images. Examples are shown in Figure <a href="#fig:Negative_and_Positive">1</a>:</p>
 <div id="fig:Negative_and_Positive" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png" class="center" style="height:2in" alt="Figure 1: Negative and Positive Examples from the Surface Crack Detection Dataset" /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Negative and Positive Examples from the Surface Crack Detection Dataset</strong></figcaption>
+<img src="https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png" style="height:2in" alt="Figure 1: Negative and Positive Examples from the Surface Crack Detection Dataset" /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Negative and Positive Examples from the Surface Crack Detection Dataset</strong></figcaption>
 </figure>
 </div>
 <h3 id="the-dataset-is-splitted-into-a-training-set-with-images-and-a-testing-set-with-images.">The dataset is splitted into a training set with ??? images and a testing set with ??? images.</h3>
@@ -134,7 +134,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 <p>The dataset contains over <span class="math inline">\(20000\)</span> crack images (each has <span class="math inline">\(448 \times 448\)</span> pixels and RGB channels). Each image data has an origin image and a mask image. Examples are shown in Figure <a href="#fig:Origin_and_Mask">2</a>:</p>
 <div id="fig:Origin_and_Mask" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png" class="center" style="height:2in" alt="Figure 2: Origin and Mask Images from the Concrete Crack Conglomerate Dataset" /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Origin and Mask Images from the Concrete Crack Conglomerate Dataset</strong></figcaption>
+<img src="https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png" style="height:2in" alt="Figure 2: Origin and Mask Images from the Concrete Crack Conglomerate Dataset" /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Origin and Mask Images from the Concrete Crack Conglomerate Dataset</strong></figcaption>
 </figure>
 </div>
 <p>The dataset is splitted into a training set with 19801 images and a testing set with 2195 images.</p>
@@ -145,7 +145,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 <img src="./images/Basic_Convolutional_Neural_Network_for_Classification.png" alt="Figure 3: Basic Convolutional Neural Network for Classification." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Basic Convolutional Neural Network for Classification.</strong></figcaption>
 </figure>
 </div>
-<p>CNN network is briefly introduced in this section. As shown in Figure <a href="#fig:Basic_Convolutional_Neural_Network_for_Classification">3</a>, a typical CNN network involves several convolutional and pooling layers, and then several fully connected layers. Convolution is an operation that uses filter to extract information that we want to detect. The filter size determines how many filters will be applied to the input data. The kernel size determines the size of the area that the filters would apply to. Activation function is added to import nonlinearity into the model, considering the operation of filter is linear. MaxPooling is a down-sampling operation that allows our network to capture deeper information from its original dimensions. The pool size and strides determine the dimensions of the down-sample procedure. Notice that the sigmoid function rather than the softmax function shown in Figure ?? be applied in our model, as as we only have two classes of results.</p>
+<p>CNN network is briefly introduced in this section. As shown in Figure <a href="#fig:Basic_Convolutional_Neural_Network_for_Classification">3</a>, a typical CNN network involves several convolutional and pooling layers, and then several fully connected layers. Convolution is an operation that uses filter to extract information that we want to detect. The filter size determines how many filters will be applied to the input data. The kernel size determines the size of the area that the filters would apply to. Activation function is added to import nonlinearity into the model, considering the operation of filter is linear. MaxPooling is a down-sampling operation that allows our network to capture deeper information from its original dimensions. The pool size and strides determine the dimensions of the down-sample procedure. Notice that the sigmoid function (rather than the softmax function shown in Figure <a href="#fig:Basic_Convolutional_Neural_Network_for_Classification">3</a>) will be applied in our model, as as we only have two classes of results.</p>
 <h3 id="network-design">Network Design</h3>
 <p>In the first convolutional block, we would specify 16 filters (consider 8 straight lines and 8 curves) with 3 by 3 kernels (consider the size of crack is relatively small), assign ReLu as the activation function in the Conv2D layer, and go deeper with a pool size of 2 by 2 in the MaxPool2D layer. In the second convolutional block, we double the channels number to 32 with Conv2D and apply the same MaxPool2D. Finally, we apply an GlobalAveragePooling2D layer, as we are focusing on the whole image rather than a part of it in segmentation. The coding form of this model is shown in Figure <a href="#fig:Model_for_Concrete_Crack_Classification_using_Keras">4</a>:</p>
 <div id="fig:Model_for_Concrete_Crack_Classification_using_Keras" class="fignos">
