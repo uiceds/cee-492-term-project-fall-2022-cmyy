@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/89d8336198dd9b3a40a696165e16502ac1a10cd0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/89d8336198dd9b3a40a696165e16502ac1a10cd0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/89d8336198dd9b3a40a696165e16502ac1a10cd0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3bdd1f2f3b0bf9b3d5734d4a86113bd5d63ec54f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3bdd1f2f3b0bf9b3d5734d4a86113bd5d63ec54f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3bdd1f2f3b0bf9b3d5734d4a86113bd5d63ec54f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -295,7 +295,21 @@ We could also notice that in the testing image 7, the network predict zone with 
 We are still working on the next U-Net model with Conv2D=>BatchNormalization=>ReLU  as conv_block!
 We also trained a U-Net model with pretrained Inception as backbone, but we haven’t upload it yet!
 
-[@doi:10.7554/eLife.32822].
+
+Computer vision-based concrete crack detection using U-net fully convolutional networks
+[@doi:10.1016/j.autcon.2019.04.005]
+
+U-Net: Convolutional Networks for Biomedical Image Segmentation
+[@doi:10.1007/978-3-319-24574-4_28]
+
+Surface Crack Detection | Kaggle
+[@{https://www.kaggle.com/datasets/arunrk7/surface-crack-detection}].
+
+Concrete Crack Conglomerate Dataset | Virginia Tech
+[@doi:10.7294/16625056.v1]
+
+Performance Evaluation of Deep CNN-Based Crack Detection and Localization Techniques for Concrete Structures
+[@doi:10.3390/s21051688]
 
 
 

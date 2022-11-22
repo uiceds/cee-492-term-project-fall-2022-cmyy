@@ -4,10 +4,10 @@ CNNHyperparameters
 conv
 Convolutional
 Crossentropy
-Dataset
+dataset
 datasets
 GlobalAveragePooling
-hyperparameters
+Hyperparameters
 Kaggle
 Keras
 MaxPool
@@ -19,7 +19,7 @@ nonlinearity
 overfitting
 preprocess
 pretrained
-ReLu
+ReLU
 RGB
 Sian
 Sigmoid
