@@ -1,12 +1,12 @@
 BatchNormalization
 Chengyou
 CNNHyperparameters
-Conv
-convolutional
+conv
+Convolutional
 Crossentropy
 dataset
 GlobalAveragePooling
-hyperparameters
+Hyperparameters
 Kaggle
 Keras
 MaxPool

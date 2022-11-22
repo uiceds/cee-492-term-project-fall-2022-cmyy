@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/265e2b04ec73f977160a0c5e87ebf6ad3d8272b0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/265e2b04ec73f977160a0c5e87ebf6ad3d8272b0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/265e2b04ec73f977160a0c5e87ebf6ad3d8272b0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/913ae0e0ff15e6604ca699483b9dfe1144e64461/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/913ae0e0ff15e6604ca699483b9dfe1144e64461/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/913ae0e0ff15e6604ca699483b9dfe1144e64461/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -102,20 +102,15 @@ manubot-clear-requests-cache: false
 
 ## Introduction
 
-We first train a convolutional neural network (CNN) with the Surface Crack Detection dataset [@{https://www.kaggle.com/datasets/arunrk7/surface-crack-detection}] to judge if any concrete crack exists. The dataset contains images (each has $227 \times 227$ pixels and RGB channels) of concrete surfaces with or without crack. Each class contains $20000$ images. Examples are shown in Figure @fig:Negative_and_Positive:
+The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information of the exact locations of cracks is smeared in the network. We aim to firstly rebuild a CNN-based model for crack detection, and then find and apply another model to locate the exact positions of cracks. 
 
-![**Negative and Positive Examples from the Surface Crack Detection Dataset**](https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png){#fig:Negative_and_Positive}
+We first train a CNN with the Surface Crack Detection dataset [@{https://www.kaggle.com/datasets/arunrk7/surface-crack-detection}] to judge if any concrete crack exists. The dataset contains images (each has $227 \times 227$ pixels and RGB channels) of concrete surfaces with or without crack. Each class contains $20000$ images. Examples are shown in Figure @fig:Negative_and_Positive:
+
+![**Negative and Positive Examples from the Surface Crack Detection Dataset**](https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png "Tall image"){#fig:Negative_and_Positive height=2in}
 
 We then train a CNN-based network call U-Net [@doi:10.1007/978-3-319-24574-4_28] with the Concrete Crack Conglomerate Dataset [@doi:10.7294/16625056.v1] to segment the concrete from its cracks. The dataset contains over $10995$ crack images (each has $448 \times 448$ pixels and RGB channels). Each image data has an origin image and a mask image. Examples are shown in Figure @fig:Origin_and_Mask:
 
-![**Origin and Mask Images from the Concrete Crack Conglomerate Dataset**](https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png){#fig:Origin_and_Mask}
-
-
-
-## Proposal:
-
-In our project, we plan to train two models to detect concrete crack. First, by using the classification dataset, we plan to detect concrete crack based on convolutional neural network (CNN) to find out whether the concrete is defective. Second, by using the segmentation dataset, we plan to conduct concrete crack segmentation based on U Net to illustrate the position of the crack on concrete crack images.
-
+![**Origin and Mask Images from the Concrete Crack Conglomerate Dataset**](https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png "Tall image"){#fig:Origin_and_Mask height=2in}
 
 ## Exploratory Data Analysis
 
