@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fe050ff810a64c468ff41ab462096559eb4ff178/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fe050ff810a64c468ff41ab462096559eb4ff178/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fe050ff810a64c468ff41ab462096559eb4ff178/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fd5c0cf94f93f7c9ddc61a1ee6a60b5ce05fa7ff/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fd5c0cf94f93f7c9ddc61a1ee6a60b5ce05fa7ff/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fd5c0cf94f93f7c9ddc61a1ee6a60b5ce05fa7ff/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -151,9 +151,6 @@ Department of Civil Engineering, University of Illinois
 <p>Goal:
 1. Concrete crack detection
 2. Concrete crack segmentation</p>
-<p>Architecture:
-1. Concrete crack detection based on convolutional neural network (CNN)
-2. Concrete crack segmentation based on U-Net and improved U-Net using Inception as backbone</p>
 <h2 id="concrete-crack-detection">Concrete crack detection</h2>
 <div id="fig:Basic_Convolutional_Neural_Network_for_Classification" class="fignos">
 <figure>
@@ -161,9 +158,11 @@ Department of Civil Engineering, University of Illinois
 Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
 </figure>
 </div>
-<p>In our group project, we trained two models:
-1. Concrete crack detection based on convolutional neural network (CNN)
-2. Concrete crack segmentation based on U Net.</p>
+<h2 id="model-and-training">Model and training</h2>
+<p>Here we need to specify the hyperparameters of our layers:
+1. Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect. Specially,
+- 1.1 Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size.
+3. MaxPooling layer.</p>
 <p>[Crack detection]
 Dataset: Surface Crack Detection | Kaggle Positive: 20000 Negative: 20000
 Training, validating, testing: 3360, 840, 1800
