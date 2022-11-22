@@ -3,7 +3,7 @@ CNNHyperparameters
 Conv
 convolutional
 Crossentropy
-Dataset
+dataset
 datasets
 GlobalAveragePooling
 Hyperparameters
