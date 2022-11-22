@@ -45,10 +45,4 @@ content/03.intro.md:191:RGB
 content/03.intro.md:193:BatchNormalization
 content/03.intro.md:193:ReLU
 content/03.intro.md:194:pretrained
-content/90.back-matter.md:6:datasets
-content/90.back-matter.md:6:kaggle
-content/90.back-matter.md:6:Kaggle
-content/90.back-matter.md:8:dataset
-content/90.back-matter.md:8:Dataset
-content/90.back-matter.md:10:Convolutional
 content/Exploratory Data Analysis.md:42:dataset
