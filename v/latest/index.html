@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b07c8606b80d8057e19afa932c3cd4a5c3657da/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b07c8606b80d8057e19afa932c3cd4a5c3657da/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b07c8606b80d8057e19afa932c3cd4a5c3657da/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/2ab99ef28fa28e343edf5adbc42e4fd26bf08b17/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/2ab99ef28fa28e343edf5adbc42e4fd26bf08b17/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/2ab99ef28fa28e343edf5adbc42e4fd26bf08b17/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -183,7 +183,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 </tr>
 </tbody>
 </table>
-<p><span class="center"><strong>Table: Hyperparameters</strong></span>
+<p><strong>Table: Hyperparameters</strong>
 {#tbl:CNNHyperparameters}</p>
 <h3 id="results-and-analysis">Results and Analysis</h3>
 <p>Below is the confusion matrix our model generated:</p>
@@ -210,11 +210,8 @@ Department of Civil and Environmental Engineering, University of Illinois
 \\
 \mathrm{Weighted} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Support}_i\times \mathrm{Score}_i}
 \]</span><span class="eqnos-number">(1)</span></span></p>
-<p>Their specific values are shown in Table <a href="#tbl:Result_Analysis">1</a>:</p>
-<div id="tbl:Result_Analysis" class="tablenos">
-<table id="tbl:Result_Analysis">
-<caption><span>Table 1:</span> Result Analysis
-</caption>
+<p>Their specific values are shown in Table ??:</p>
+<table>
 <thead>
 <tr class="header">
 <th style="text-align: left;"></th>
@@ -255,7 +252,8 @@ Department of Civil and Environmental Engineering, University of Illinois
 </tr>
 </tbody>
 </table>
-</div>
+<p><strong>Table: Result Analysis</strong>
+{#tbl:Result_Analysis}</p>
 <p>In short, the network has overall good performance.</p>
 <h2 id="concrete-segmentation">Concrete Segmentation</h2>
 <p>U-Net is also CNN-based. The original U-Net architecture is shown below:</p>
@@ -285,10 +283,10 @@ We perform a normalization before plugging in the U-Net architecture based on th
 <img src="./images/Model_Summary.png" alt="Figure 11: Model Summary" /><figcaption aria-hidden="true"><span>Figure 11:</span> <strong>Model Summary</strong></figcaption>
 </figure>
 </div>
-<p>Other properties of this network is listed in Table <a href="#tbl:U-NetHyperparameters">2</a>:</p>
+<p>Other properties of this network is listed in Table <a href="#tbl:U-NetHyperparameters">1</a>:</p>
 <div id="tbl:U-NetHyperparameters" class="tablenos">
 <table id="tbl:U-NetHyperparameters">
-<caption><span>Table 2:</span> U-Net Hyperparameters.
+<caption><span>Table 1:</span> U-Net Hyperparameters.
 </caption>
 <thead>
 <tr class="header">
