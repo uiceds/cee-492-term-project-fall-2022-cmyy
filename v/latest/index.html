@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ca8cb995b23080deefe76b18f48bbf5f4d8516a4/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ca8cb995b23080deefe76b18f48bbf5f4d8516a4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ca8cb995b23080deefe76b18f48bbf5f4d8516a4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7cd11fee292b9bfff935cc8edd4a7b161396bb39/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7cd11fee292b9bfff935cc8edd4a7b161396bb39/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7cd11fee292b9bfff935cc8edd4a7b161396bb39/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -317,11 +317,41 @@ We perform a normalization before plug in the U-Net architecture based on the ra
 </figure>
 </div>
 <p>U-Net could learn from very few numbers of dataset, so we only need to have a small dataset.</p>
-<div id="fig:U-net_Loss" class="fignos">
+<div id="fig:U-Net_Loss" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png" alt="Figure 10: U-net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 10:</span> <strong>U-net Loss Evaluation.</strong></figcaption>
+<img src="https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png" alt="Figure 10: U-Net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 10:</span> <strong>U-Net Loss Evaluation.</strong></figcaption>
 </figure>
 </div>
+<div id="tbl:U-NetHyperparameters" class="tablenos">
+<table id="tbl:U-NetHyperparameters">
+<caption><span>Table 3:</span> U-Net Hyperparameters.
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">training</th>
+<th style="text-align: left;">validation</th>
+<th style="text-align: left;">testing</th>
+<th style="text-align: left;">Optimizer</th>
+<th style="text-align: left;">Loss Function</th>
+<th style="text-align: left;">Metrics</th>
+<th style="text-align: left;">Epochs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">105</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">17</td>
+<td style="text-align: left;">Adam</td>
+<td style="text-align: left;">Binary Crossentropy</td>
+<td style="text-align: left;">Accuracy</td>
+<td style="text-align: left;">50</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We can see that this trained model has good performance on the testing data, it only takes 30 epochs because of our early stop condition.</p>
+<h2 id="prediction-and-analysis-1">Prediction and Analysis</h2>
 <h2 id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
