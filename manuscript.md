@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fd5c0cf94f93f7c9ddc61a1ee6a60b5ce05fa7ff/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fd5c0cf94f93f7c9ddc61a1ee6a60b5ce05fa7ff/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fd5c0cf94f93f7c9ddc61a1ee6a60b5ce05fa7ff/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5387f8ea85157bbb13e3fc289be525de070ba6bb/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5387f8ea85157bbb13e3fc289be525de070ba6bb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5387f8ea85157bbb13e3fc289be525de070ba6bb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -165,22 +165,35 @@ Architecture:
 - Concrete crack detection based on convolutional neural network (CNN)
 - Concrete crack segmentation based on U-Net and improved U-Net using Inception as backbone
 
-Goal:
-  1. Concrete crack detection
-  2. Concrete crack segmentation
-
 ## Concrete crack detection 
 
 ![
 **Basic Convolutional Neural Network for Classification.**
-Loaded from a specific (hashed) version of the image on GitHub.
 ](./images/Basic_Convolutional_Neural_Network_for_Classification.png "Wide image"){#fig:Basic_Convolutional_Neural_Network_for_Classification}
 
 ## Model and training 
 Here we need to specify the hyperparameters of our layers:
-  1. Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect. Specially, 
-    - 1.1	Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size. 
-  3. MaxPooling layer. 
+  1. Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect. 
+      a. Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size. 
+      b. Kernel size determines the size of the area the filters would apply. 
+      c. Activation function is added to achieve nonlinearity of the model, as the operation of filter is linear.
+  3. MaxPooling layer. MaxPooling is a down-sampling operation that allows our network to capture deeper information from original dimensions. 
+      a. Pool size and strides determine the dimensions of down-sample procedure. 
+     
+In the first convolutional block, we would specify 16 filters (consider 8 straight lines and 8 curves) with 3 by 3 kernel (consider the size of crack is relatively small) and ReLu as activation function in the Conv2D layer and go deeper with pool size of 2 by 2 in the MaxPool2D layer.
+
+And in the second convolutional block, we double the channels number to 32 with Conv2D, apply the same MaxPool2D.
+
+Finally, we process our data input an GlobalAveragePooling2D layer (because we are focusing on the whole image, not a part of it in segmentation) and dense the tensor to 1 with Sigmoid function (As we only have 1 class of result, for multiclass classification, use SoftMax).
+
+The result of our network would be a number in (0,1), we could treat this as a probability of crack in the image.
+
+Model for Concrete Crack Classification using Keras
+Model_for_Concrete_Crack_Classification_using_Keras
+
+![
+**Model_for_Concrete_Crack_Classification_using_Keras.**
+](./images/Model_for_Concrete_Crack_Classification_using_Keras.png "Wide image"){#fig:Model_for_Concrete_Crack_Classification_using_Keras}
 
 
 [Crack detection]

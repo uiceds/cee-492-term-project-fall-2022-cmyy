@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fd5c0cf94f93f7c9ddc61a1ee6a60b5ce05fa7ff/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fd5c0cf94f93f7c9ddc61a1ee6a60b5ce05fa7ff/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/fd5c0cf94f93f7c9ddc61a1ee6a60b5ce05fa7ff/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5387f8ea85157bbb13e3fc289be525de070ba6bb/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5387f8ea85157bbb13e3fc289be525de070ba6bb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5387f8ea85157bbb13e3fc289be525de070ba6bb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -148,21 +148,31 @@ Department of Civil Engineering, University of Illinois
 <p>Architecture:
 - Concrete crack detection based on convolutional neural network (CNN)
 - Concrete crack segmentation based on U-Net and improved U-Net using Inception as backbone</p>
-<p>Goal:
-1. Concrete crack detection
-2. Concrete crack segmentation</p>
 <h2 id="concrete-crack-detection">Concrete crack detection</h2>
 <div id="fig:Basic_Convolutional_Neural_Network_for_Classification" class="fignos">
 <figure>
-<img src="./images/Basic_Convolutional_Neural_Network_for_Classification.png" alt="Figure 1: Basic Convolutional Neural Network for Classification. Loaded from a specific (hashed) version of the image on GitHub." /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Basic Convolutional Neural Network for Classification.</strong>
-Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
+<img src="./images/Basic_Convolutional_Neural_Network_for_Classification.png" alt="Figure 1: Basic Convolutional Neural Network for Classification." /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Basic Convolutional Neural Network for Classification.</strong></figcaption>
 </figure>
 </div>
 <h2 id="model-and-training">Model and training</h2>
 <p>Here we need to specify the hyperparameters of our layers:
-1. Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect. Specially,
-- 1.1 Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size.
-3. MaxPooling layer.</p>
+1. Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect.
+a. Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size.
+b. Kernel size determines the size of the area the filters would apply.
+c. Activation function is added to achieve nonlinearity of the model, as the operation of filter is linear.
+3. MaxPooling layer. MaxPooling is a down-sampling operation that allows our network to capture deeper information from original dimensions.
+a. Pool size and strides determine the dimensions of down-sample procedure.</p>
+<p>In the first convolutional block, we would specify 16 filters (consider 8 straight lines and 8 curves) with 3 by 3 kernel (consider the size of crack is relatively small) and ReLu as activation function in the Conv2D layer and go deeper with pool size of 2 by 2 in the MaxPool2D layer.</p>
+<p>And in the second convolutional block, we double the channels number to 32 with Conv2D, apply the same MaxPool2D.</p>
+<p>Finally, we process our data input an GlobalAveragePooling2D layer (because we are focusing on the whole image, not a part of it in segmentation) and dense the tensor to 1 with Sigmoid function (As we only have 1 class of result, for multiclass classification, use SoftMax).</p>
+<p>The result of our network would be a number in (0,1), we could treat this as a probability of crack in the image.</p>
+<p>Model for Concrete Crack Classification using Keras
+Model_for_Concrete_Crack_Classification_using_Keras</p>
+<div id="fig:Model_for_Concrete_Crack_Classification_using_Keras" class="fignos">
+<figure>
+<img src="./images/Model_for_Concrete_Crack_Classification_using_Keras.png" alt="Figure 2: Model_for_Concrete_Crack_Classification_using_Keras." /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Model_for_Concrete_Crack_Classification_using_Keras.</strong></figcaption>
+</figure>
+</div>
 <p>[Crack detection]
 Dataset: Surface Crack Detection | Kaggle Positive: 20000 Negative: 20000
 Training, validating, testing: 3360, 840, 1800
