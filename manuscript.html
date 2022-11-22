@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d327f629837acb574c73ecaa357d5e4134944f63/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d327f629837acb574c73ecaa357d5e4134944f63/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d327f629837acb574c73ecaa357d5e4134944f63/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7f915c0131fff4722f2073896f58cd445b077eee/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7f915c0131fff4722f2073896f58cd445b077eee/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7f915c0131fff4722f2073896f58cd445b077eee/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -148,13 +148,13 @@ Department of Civil Engineering, University of Illinois
 <p>Architecture:
 - Concrete crack detection based on convolutional neural network (CNN)
 - Concrete crack segmentation based on U-Net and improved U-Net using Inception as backbone</p>
-<h2 id="concrete-crack-detection">Concrete crack detection</h2>
+<h2 id="concrete-crack-detection">Concrete Crack Detection</h2>
 <div id="fig:Basic_Convolutional_Neural_Network_for_Classification" class="fignos">
 <figure>
 <img src="./images/Basic_Convolutional_Neural_Network_for_Classification.png" alt="Figure 1: Basic Convolutional Neural Network for Classification." /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Basic Convolutional Neural Network for Classification.</strong></figcaption>
 </figure>
 </div>
-<h2 id="model-and-training">Model and training</h2>
+<h3 id="model-and-training">Model and training</h3>
 <p>Here we need to specify the hyperparameters of our layers:
 1. Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect.
 a. Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size.
@@ -184,41 +184,51 @@ a. Pool size and strides determine the dimensions of down-sample procedure.</p>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Properties</th>
-<th style="text-align: center;">Value</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">training</td>
-<td style="text-align: center;">3360</td>
+<td style="text-align: left;">3360</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">validation</td>
-<td style="text-align: center;">840</td>
+<td style="text-align: left;">840</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">testing</td>
-<td style="text-align: center;">1800</td>
+<td style="text-align: left;">1800</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Optimizer</td>
-<td style="text-align: center;">Adam</td>
+<td style="text-align: left;">Adam</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Loss Function</td>
-<td style="text-align: center;">Binary Crossentropy</td>
+<td style="text-align: left;">Binary Crossentropy</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Metrics</td>
-<td style="text-align: center;">Accuracy</td>
+<td style="text-align: left;">Accuracy</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Epochs</td>
-<td style="text-align: center;">100</td>
+<td style="text-align: left;">100</td>
 </tr>
 </tbody>
 </table>
 </div>
+<h3 id="prediction-and-analysis">Prediction and Analysis</h3>
+<p>We can check our trained model by inputting the testing data, below is the confusion matrix our model generated:</p>
+<div id="fig:Confusion_Matrix" class="fignos">
+<figure>
+<img src="./images/square.png" alt="Figure 4: Confusion Matrix." /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Confusion Matrix.</strong></figcaption>
+</figure>
+</div>
+<figure>
+<img src="./images/Loss_Evolution.png" id="Loss_Evolution" alt="Loss Evolution." /><figcaption aria-hidden="true"><strong>Loss Evolution.</strong></figcaption>
+</figure>
 <p>[Crack detection]
 Dataset: Surface Crack Detection | Kaggle Positive: 20000 Negative: 20000
 Training, validating, testing: 3360, 840, 1800

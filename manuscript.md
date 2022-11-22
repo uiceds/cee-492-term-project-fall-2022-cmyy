@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d327f629837acb574c73ecaa357d5e4134944f63/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d327f629837acb574c73ecaa357d5e4134944f63/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d327f629837acb574c73ecaa357d5e4134944f63/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7f915c0131fff4722f2073896f58cd445b077eee/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7f915c0131fff4722f2073896f58cd445b077eee/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7f915c0131fff4722f2073896f58cd445b077eee/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -165,13 +165,13 @@ Architecture:
 - Concrete crack detection based on convolutional neural network (CNN)
 - Concrete crack segmentation based on U-Net and improved U-Net using Inception as backbone
 
-## Concrete crack detection 
+## Concrete Crack Detection 
 
 ![
 **Basic Convolutional Neural Network for Classification.**
 ](./images/Basic_Convolutional_Neural_Network_for_Classification.png "Wide image"){#fig:Basic_Convolutional_Neural_Network_for_Classification}
 
-## Model and training 
+### Model and training 
 Here we need to specify the hyperparameters of our layers:
   1. Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect. 
       a. Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size. 
@@ -199,7 +199,7 @@ Notice that the original images have size of (227,227,3), we would resize it int
 ](./images/Model_Summary_and_Hyperparameters.png "Wide image"){#fig:Model_Summary_and_Hyperparameters}
 
 | Properties | Value |
-|:-----------|:-----:|
+|:-----------|:------|
 | training   | 3360 |
 | validation | 840  |
 | testing    | 1800 |
@@ -211,8 +211,17 @@ Notice that the original images have size of (227,227,3), we would resize it int
 Table: Hyperparameters.
 {#tbl:CNNHyperparameters}
 
+### Prediction and Analysis 
 
+We can check our trained model by inputting the testing data, below is the confusion matrix our model generated:
 
+![
+**Confusion Matrix.**
+](./images/square.png "Confusion_Matrix"){#fig:Confusion_Matrix}
+
+![
+**Loss Evolution.**
+](./images/Loss_Evolution.png "Square image"){#Loss_Evolution}
 
 [Crack detection]
 Dataset: Surface Crack Detection | Kaggle Positive: 20000 Negative: 20000

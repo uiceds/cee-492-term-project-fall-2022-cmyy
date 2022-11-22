@@ -2,7 +2,7 @@ arxiv
 Chengyou
 CNNHyperparameters
 Conv
-convolutional
+Convolutional
 Crossentropy
 dataset
 datasets
