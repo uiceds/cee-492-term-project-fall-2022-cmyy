@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3bdd1f2f3b0bf9b3d5734d4a86113bd5d63ec54f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3bdd1f2f3b0bf9b3d5734d4a86113bd5d63ec54f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3bdd1f2f3b0bf9b3d5734d4a86113bd5d63ec54f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1e18255dc885cebae2b303fbe82e71f552158844/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1e18255dc885cebae2b303fbe82e71f552158844/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1e18255dc885cebae2b303fbe82e71f552158844/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -121,21 +121,18 @@ Department of Civil and Environmental Engineering, University of Illinois
 </small></p></li>
 </ul>
 <h2 id="description">Description</h2>
-<p>In this project, we plan to use two main datasets to detect concrete crack. First, we use a dataset from Kaggle, titled “Surface Crack Detection” to make the classification of the concrete crack. Second, we use a dataset from Virginia Tech, titled “Concrete Crack Conglomerate Dataset” to make the segmentation of the concrete crack.</p>
-<p>[Classification]</p>
-<p>Source: Kaggle/ Surface Crack Detection.</p>
-<p>Data Format: Images with 227*227 pixels with RGB channels.</p>
-<p>Content: The dataset contains images of various concrete surfaces with and without crack. The image data are divided into two as negative (without crack) and positive (with crack) for image classification. Each class has 20000 images with a total of 40000 images.</p>
-<p><img src="../fig1_neg_1.png" alt="Figure 1" />
-<img src="../fig2_pos_1.png" alt="Figure 2" /></p>
-<p>Figure 1. Example of Images with and without Cracks</p>
-<p>[Segmentation]</p>
-<p>Source: Virginia Tech/ Concrete Crack Conglomerate Dataset</p>
-<p>Data Format: Images with 448*448 pixels with RGB channels</p>
-<p>Content: The dataset contains over 10,995 crack images. Each image data has its origin image and mask image for image segmentation.</p>
-<p><img src="../fig3_ori_1.png" alt="Figure 3" />
-<img src="../fig4_segged_1.png" alt="Figure 4" /></p>
-<p>Figure 2. Example of an Original Image and an Mask Image</p>
+<p>Examples are shown in Figure <a href="#fig:Negative_and_Positive">1</a>.</p>
+<div id="fig:Negative_and_Positive" class="fignos">
+<figure>
+<img src="https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png" alt="Figure 1: Negative and Positive Examples from the Surface Crack Detection Dataset" /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Negative and Positive Examples from the Surface Crack Detection Dataset</strong></figcaption>
+</figure>
+</div>
+<p>Examples are shown in Figure <a href="#fig:Origin_and_Mask">2</a>.</p>
+<div id="fig:Origin_and_Mask" class="fignos">
+<figure>
+<img src="https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png" alt="Figure 2: Origin and Mask Images from the Concrete Crack Conglomerate Dataset" /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Origin and Mask Images from the Concrete Crack Conglomerate Dataset</strong></figcaption>
+</figure>
+</div>
 <h2 id="proposal">Proposal:</h2>
 <p>In our project, we plan to train two models to detect concrete crack. First, by using the classification dataset, we plan to detect concrete crack based on convolutional neural network (CNN) to find out whether the concrete is defective. Second, by using the segmentation dataset, we plan to conduct concrete crack segmentation based on U Net to illustrate the position of the crack on concrete crack images.</p>
 <h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
@@ -164,7 +161,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 <h2 id="concrete-crack-detection">Concrete Crack Detection</h2>
 <div id="fig:Basic_Convolutional_Neural_Network_for_Classification" class="fignos">
 <figure>
-<img src="./images/Basic_Convolutional_Neural_Network_for_Classification.png" alt="Figure 1: Basic Convolutional Neural Network for Classification." /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Basic Convolutional Neural Network for Classification.</strong></figcaption>
+<img src="./images/Basic_Convolutional_Neural_Network_for_Classification.png" alt="Figure 3: Basic Convolutional Neural Network for Classification." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Basic Convolutional Neural Network for Classification.</strong></figcaption>
 </figure>
 </div>
 <h3 id="modeling-and-training">Modeling and training</h3>
@@ -187,13 +184,13 @@ Department of Civil and Environmental Engineering, University of Illinois
 <p>The result of our network would be a number in (0,1), we could treat this as a probability of crack in the image.</p>
 <div id="fig:Model_for_Concrete_Crack_Classification_using_Keras" class="fignos">
 <figure>
-<img src="./images/Model_for_Concrete_Crack_Classification_using_Keras.png" alt="Figure 2: Model for Concrete Crack Classification using_Keras." /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Model for Concrete Crack Classification using_Keras.</strong></figcaption>
+<img src="./images/Model_for_Concrete_Crack_Classification_using_Keras.png" alt="Figure 4: Model for Concrete Crack Classification using_Keras." /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Model for Concrete Crack Classification using_Keras.</strong></figcaption>
 </figure>
 </div>
 <p>Notice that the original images have size of (227,227,3), we would resize it into (120,120,3) in preprocess procedure.</p>
 <div id="fig:Model_Summary_and_Hyperparameters" class="fignos">
 <figure>
-<img src="./images/Model_Summary_and_Hyperparameters.png" style="height:5in" alt="Figure 3: Model_Summary_and_Hyperparameters." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Model_Summary_and_Hyperparameters.</strong></figcaption>
+<img src="./images/Model_Summary_and_Hyperparameters.png" style="height:5in" alt="Figure 5: Model_Summary_and_Hyperparameters." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Model_Summary_and_Hyperparameters.</strong></figcaption>
 </figure>
 </div>
 <div id="tbl:CNNHyperparameters" class="tablenos">
@@ -228,12 +225,12 @@ Department of Civil and Environmental Engineering, University of Illinois
 <p>We can check our trained model by inputting the testing data, below is the confusion matrix our model generated:</p>
 <div id="fig:Confusion_Matrix" class="fignos">
 <figure>
-<img src="./images/Confusion_Matrix.png" style="height:3in" alt="Figure 4: Confusion Matrix." /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Confusion Matrix.</strong></figcaption>
+<img src="./images/Confusion_Matrix.png" style="height:3in" alt="Figure 6: Confusion Matrix." /><figcaption aria-hidden="true"><span>Figure 6:</span> <strong>Confusion Matrix.</strong></figcaption>
 </figure>
 </div>
 <div id="fig:Loss_Evolution" class="fignos">
 <figure>
-<img src="./images/Loss_Evolution.png" style="height:3in" alt="Figure 5: Loss Evolution." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Loss Evolution.</strong></figcaption>
+<img src="./images/Loss_Evolution.png" style="height:3in" alt="Figure 7: Loss Evolution." /><figcaption aria-hidden="true"><span>Figure 7:</span> <strong>Loss Evolution.</strong></figcaption>
 </figure>
 </div>
 <p>We can see that this trained model has good performance on the testing data, it only takes 25 epochs because of our early stop condition.
@@ -299,7 +296,7 @@ We can further calculate the following parameters:</p>
 <p>The original U-Net architecture is shown below:</p>
 <div id="fig:U-net_Architecture" class="fignos">
 <figure>
-<img src="./images/U-net_Architecture.png" alt="Figure 6: U-net Architecture." /><figcaption aria-hidden="true"><span>Figure 6:</span> <strong>U-net Architecture.</strong></figcaption>
+<img src="./images/U-net_Architecture.png" alt="Figure 8: U-net Architecture." /><figcaption aria-hidden="true"><span>Figure 8:</span> <strong>U-net Architecture.</strong></figcaption>
 </figure>
 </div>
 <h3 id="modeling-and-training-1">Modeling and Training</h3>
@@ -307,25 +304,25 @@ We can further calculate the following parameters:</p>
 We perform a normalization before plug in the U-Net architecture based on the range of RGB number:</p>
 <div id="fig:Input_Normalization" class="fignos">
 <figure>
-<img src="./images/Input_Normalization.png" alt="Figure 7: Input Normalization." /><figcaption aria-hidden="true"><span>Figure 7:</span> <strong>Input Normalization.</strong></figcaption>
+<img src="./images/Input_Normalization.png" alt="Figure 9: Input Normalization." /><figcaption aria-hidden="true"><span>Figure 9:</span> <strong>Input Normalization.</strong></figcaption>
 </figure>
 </div>
 <p>In the previous classification model, we have shown that the first convolutional block would only need 16 filters to perform well. We also add the random dropout in each convolution blocks to prevent the overfitting problem. Based on this experiment, we modified U-Net architecture as figure shown below.</p>
 <div id="fig:Modified_U-Net_Architecture" class="fignos">
 <figure>
-<img src="./images/Modified_U-Net_Architecture.png" alt="Figure 8: Modified U-Net Architecture." /><figcaption aria-hidden="true"><span>Figure 8:</span> <strong>Modified U-Net Architecture.</strong></figcaption>
+<img src="./images/Modified_U-Net_Architecture.png" alt="Figure 10: Modified U-Net Architecture." /><figcaption aria-hidden="true"><span>Figure 10:</span> <strong>Modified U-Net Architecture.</strong></figcaption>
 </figure>
 </div>
 <p>Notice that the original images have size of (448,448,3), we would keep this size for this network, but there is still a resize procedure that allow this network to predict images with different size.</p>
 <div id="fig:Model_Summary" class="fignos">
 <figure>
-<img src="./images/Model_Summary.png" alt="Figure 9: Model Summary" /><figcaption aria-hidden="true"><span>Figure 9:</span> <strong>Model Summary</strong></figcaption>
+<img src="./images/Model_Summary.png" alt="Figure 11: Model Summary" /><figcaption aria-hidden="true"><span>Figure 11:</span> <strong>Model Summary</strong></figcaption>
 </figure>
 </div>
 <p>U-Net could learn from very few numbers of dataset, so we only need to have a small dataset.</p>
 <div id="fig:U-Net_Loss" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png" alt="Figure 10: U-Net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 10:</span> <strong>U-Net Loss Evaluation.</strong></figcaption>
+<img src="https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png" alt="Figure 12: U-Net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 12:</span> <strong>U-Net Loss Evaluation.</strong></figcaption>
 </figure>
 </div>
 <div id="tbl:U-NetHyperparameters" class="tablenos">
@@ -360,7 +357,7 @@ We perform a normalization before plug in the U-Net architecture based on the ra
 <h2 id="prediction-and-analysis-1">Prediction and Analysis</h2>
 <div id="fig:Prediction_Result" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/67733344/203314642-4d22a93d-8601-43ac-8747-9bf9cd1b1e0b.png" alt="Figure 11: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 11:</span> <strong>Prediction Result</strong></figcaption>
+<img src="https://user-images.githubusercontent.com/67733344/203314642-4d22a93d-8601-43ac-8747-9bf9cd1b1e0b.png" alt="Figure 13: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 13:</span> <strong>Prediction Result</strong></figcaption>
 </figure>
 </div>
 <p>Here are the prediction results of our testing images, it performs extremely well.</p>
