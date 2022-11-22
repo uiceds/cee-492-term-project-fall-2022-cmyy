@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/41bb19e151d857e8bec76db7719616b41486d9e6/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/41bb19e151d857e8bec76db7719616b41486d9e6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/41bb19e151d857e8bec76db7719616b41486d9e6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/846b89fbe443d3c5343d90d4bba0f2643bb9edb6/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/846b89fbe443d3c5343d90d4bba0f2643bb9edb6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/846b89fbe443d3c5343d90d4bba0f2643bb9edb6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -161,9 +161,9 @@ Figure 4. Number of Train Images and Test Images
     b. Sub-item
         i. Sub-sub-item
 
-Dataset:
-    1.  Concrete images with attached label 'Positive' or 'Negative'
-    2.	Concrete images and their masks
+Dataset: 
+- Concrete images with attached label 'Positive' or 'Negative'
+- Concrete images and their masks
     
 Goal:
     1.	Concrete crack detection
