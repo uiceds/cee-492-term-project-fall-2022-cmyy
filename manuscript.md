@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5387f8ea85157bbb13e3fc289be525de070ba6bb/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5387f8ea85157bbb13e3fc289be525de070ba6bb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5387f8ea85157bbb13e3fc289be525de070ba6bb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7636853ae81bd19da212de8df71f8edb9d6b1d7f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7636853ae81bd19da212de8df71f8edb9d6b1d7f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7636853ae81bd19da212de8df71f8edb9d6b1d7f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -195,6 +195,13 @@ Model_for_Concrete_Crack_Classification_using_Keras
 **Model_for_Concrete_Crack_Classification_using_Keras.**
 ](./images/Model_for_Concrete_Crack_Classification_using_Keras.png "Wide image"){#fig:Model_for_Concrete_Crack_Classification_using_Keras}
 
+Notice that the original images have size of (227,227,3), we would resize it into (120,120,3) in preprocess procedure.
+
+Model Summary and Hyperparameters
+Model_Summary_and_Hyperparameters
+![
+**Model_Summary_and_Hyperparameters.**
+](./images/Model_Summary_and_Hyperparameters.png "Wide image"){#fig:Model_Summary_and_Hyperparameters}
 
 [Crack detection]
 Dataset: Surface Crack Detection | Kaggle Positive: 20000 Negative: 20000
