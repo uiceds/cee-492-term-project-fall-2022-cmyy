@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cc834f230f3dfd8b456057542d72999a2ce35455/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cc834f230f3dfd8b456057542d72999a2ce35455/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cc834f230f3dfd8b456057542d72999a2ce35455/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9d03a1e5c1e71e19bb05d6a697acacdd03c0fc61/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9d03a1e5c1e71e19bb05d6a697acacdd03c0fc61/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9d03a1e5c1e71e19bb05d6a697acacdd03c0fc61/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -184,58 +184,20 @@ a. Pool size and strides determine the dimensions of down-sample procedure.</p>
 <img src="./images/Model_Summary_and_Hyperparameters.png" alt="Figure 3: Model_Summary_and_Hyperparameters." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Model_Summary_and_Hyperparameters.</strong></figcaption>
 </figure>
 </div>
-<div id="tbl:CNNHyperparameters" class="tablenos">
-<table id="tbl:CNNHyperparameters">
-<caption><span>Table 1:</span> Hyperparameters.
-</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Properties</th>
-<th style="text-align: left;">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">training</td>
-<td style="text-align: left;">3360</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">validation</td>
-<td style="text-align: left;">840</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">testing</td>
-<td style="text-align: left;">1800</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Optimizer</td>
-<td style="text-align: left;">Adam</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Loss Function</td>
-<td style="text-align: left;">Binary Crossentropy</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Metrics</td>
-<td style="text-align: left;">Accuracy</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Epochs</td>
-<td style="text-align: left;">100</td>
-</tr>
-</tbody>
-</table>
-</div>
+<div class="line-block">training | validation | testing | Optimizer | Loss Function | Metrics | Epochs |<br />
+3360 | 840 | 1800 | Adam | Binary Crossentropy | Accuracy | 100 |</div>
+<p>Table: Hyperparameters.
+{#tbl:CNNHyperparameters}</p>
 <h3 id="prediction-and-analysis">Prediction and Analysis</h3>
 <p>We can check our trained model by inputting the testing data, below is the confusion matrix our model generated:</p>
 <div id="fig:Confusion_Matrix" class="fignos">
 <figure>
-<img src="./images/Confusion_Matrix.png" alt="Figure 4: Confusion Matrix." /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Confusion Matrix.</strong></figcaption>
+<img src="./images/Confusion_Matrix.png" style="height:3in" alt="Figure 4: Confusion Matrix." /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Confusion Matrix.</strong></figcaption>
 </figure>
 </div>
 <div id="fig:Loss_Evolution" class="fignos">
 <figure>
-<img src="./images/Loss_Evolution.png" style="height:5in" alt="Figure 5: Loss Evolution." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Loss Evolution.</strong></figcaption>
+<img src="./images/Loss_Evolution.png" style="height:3in" alt="Figure 5: Loss Evolution." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Loss Evolution.</strong></figcaption>
 </figure>
 </div>
 <p>We can see that this trained model has good performance on the testing data, it only takes 25 epochs because of our early stop condition.
@@ -251,6 +213,53 @@ We can further calculate the following parameters:</p>
 \\
 \mathrm{Weighted} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Support}_i\times \mathrm{Score}_i}
 \]</span><span class="eqnos-number">(1)</span></span></p>
+<div id="tbl:Result_Analysis" class="tablenos">
+<table id="tbl:Result_Analysis">
+<caption><span>Table 1:</span> Result Analysis
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Precision</th>
+<th style="text-align: left;">Recall</th>
+<th style="text-align: left;">Score</th>
+<th style="text-align: left;">Support</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Negative</td>
+<td style="text-align: left;">0.96</td>
+<td style="text-align: left;">0.99</td>
+<td style="text-align: left;">0.98</td>
+<td style="text-align: left;">917</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Positive</td>
+<td style="text-align: left;">0.99</td>
+<td style="text-align: left;">0.96</td>
+<td style="text-align: left;">0.97</td>
+<td style="text-align: left;">883</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Macro Avg</td>
+<td style="text-align: left;">0.98</td>
+<td style="text-align: left;">0.97</td>
+<td style="text-align: left;">0.97</td>
+<td style="text-align: left;">1800</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Weighted Avg</td>
+<td style="text-align: left;">0.97</td>
+<td style="text-align: left;">0.97</td>
+<td style="text-align: left;">0.97</td>
+<td style="text-align: left;">1000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>It has overall good performance.</p>
+<h2 id="concrete-segmentation">Concrete Segmentation</h2>
 <h2 id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">

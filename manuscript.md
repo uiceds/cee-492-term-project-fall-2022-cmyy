@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cc834f230f3dfd8b456057542d72999a2ce35455/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cc834f230f3dfd8b456057542d72999a2ce35455/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cc834f230f3dfd8b456057542d72999a2ce35455/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9d03a1e5c1e71e19bb05d6a697acacdd03c0fc61/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9d03a1e5c1e71e19bb05d6a697acacdd03c0fc61/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9d03a1e5c1e71e19bb05d6a697acacdd03c0fc61/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -198,15 +198,8 @@ Notice that the original images have size of (227,227,3), we would resize it int
 **Model_Summary_and_Hyperparameters.**
 ](./images/Model_Summary_and_Hyperparameters.png "Wide image"){#fig:Model_Summary_and_Hyperparameters}
 
-| Properties | Value |
-|:-----------|:------|
-| training   | 3360 |
-| validation | 840  |
-| testing    | 1800 |
-| Optimizer | Adam |
-| Loss Function | Binary Crossentropy |
-| Metrics | Accuracy |
-| Epochs | 100 | 
+| training   | validation | testing    | Optimizer | Loss Function | Metrics | Epochs |
+| 3360 | 840  | 1800 | Adam | Binary Crossentropy | Accuracy | 100 | 
 
 Table: Hyperparameters.
 {#tbl:CNNHyperparameters}
@@ -217,11 +210,11 @@ We can check our trained model by inputting the testing data, below is the confu
 
 ![
 **Confusion Matrix.**
-](./images/Confusion_Matrix.png "Square image"){#fig:Confusion_Matrix}
+](./images/Confusion_Matrix.png "Square image"){#fig:Confusion_Matrix height=3in}
 
 ![
 **Loss Evolution.**
-](./images/Loss_Evolution.png "Tall image"){#fig:Loss_Evolution height=5in}
+](./images/Loss_Evolution.png "Tall image"){#fig:Loss_Evolution height=3in}
 
 We can see that this trained model has good performance on the testing data, it only takes 25 epochs because of our early stop condition.
 We can further calculate the following parameters:
@@ -238,9 +231,20 @@ $$
 \mathrm{Weighted} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Support}_i\times \mathrm{Score}_i}
 $${#eq:regular-equation}
 
+| | Precision | Recall | Score | Support |
+|:-----------|:------|:------|:------|:------|
+| Negative	| 0.96|	0.99 | 0.98 | 917 | 
+| Positive | 0.99 | 0.96 | 0.97 | 883 |	
+| Macro Avg | 0.98 | 0.97 | 0.97 | 1800 |	
+| Weighted Avg | 0.97 | 0.97 | 0.97 | 1000 |	
 
 
+Table: Result Analysis
+{#tbl:Result_Analysis}
 
+It has overall good performance.
+
+## Concrete Segmentation 
 
 
 
