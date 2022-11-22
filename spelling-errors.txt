@@ -1,12 +1,12 @@
 Chengyou
 CNNHyperparameters
 Conv
-convolutional
+Convolutional
 Crossentropy
-dataset
+Dataset
 datasets
 GlobalAveragePooling
-Hyperparameters
+hyperparameters
 Kaggle
 Keras
 MaxPool
@@ -14,6 +14,7 @@ MaxPooling
 Minjiang
 multiclass
 nonlinearity
+overfitting
 preprocess
 ReLu
 RGB

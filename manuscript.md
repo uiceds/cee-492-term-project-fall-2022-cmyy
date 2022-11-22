@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7add1d548ef5136d3736bbf3ae1cb22bf9209508/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7add1d548ef5136d3736bbf3ae1cb22bf9209508/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7add1d548ef5136d3736bbf3ae1cb22bf9209508/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ca8cb995b23080deefe76b18f48bbf5f4d8516a4/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ca8cb995b23080deefe76b18f48bbf5f4d8516a4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ca8cb995b23080deefe76b18f48bbf5f4d8516a4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -250,8 +250,7 @@ It has overall good performance.
 
 The original U-Net architecture is shown below:
 
-![
-**U-net Architecture.**
+![**U-net Architecture.**
 ](./images/U-net_Architecture.png "Wide image"){#fig:U-net_Architecture}
 
 ### Modeling and Training 
@@ -259,9 +258,23 @@ The original U-Net architecture is shown below:
 For achieving segmentation, we have built and trained two models, one based on our own architecture, and the other based on the paper. 
 We perform a normalization before plug in the U-Net architecture based on the range of RGB number:
 
-![
-**U-net Architecture.**
-](./images/Input_Normalization.png "Tall image"){#fig:Input Normalization height=1in}
+![**Input Normalization.**
+](./images/Input_Normalization.png "Wide image"){#fig:Input_Normalization}
+
+In the previous classification model, we have shown that the first convolutional block would only need 16 filters to perform well. We also add the random dropout in each convolution blocks to prevent the overfitting problem. Based on this experiment, we modified U-Net architecture as figure shown below. 
+
+![**Modified U-Net Architecture.**
+](./images/Modified_U-Net_Architecture.png "Wide image"){#fig:Modified_U-Net_Architecture}
+
+Notice that the original images have size of (448,448,3), we would keep this size for this network, but there is still a resize procedure that allow this network to predict images with different size.
+
+![**Model Summary.**
+](./images/Model_Summary.png "Wide image"){#fig:Model_Summary}
+
+U-Net could learn from very few numbers of dataset, so we only need to have a small dataset.
+
+![**U-net Loss Evaluation.**](https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png){#fig:U-net_Loss}
+
 
 
 
