@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3bdd1f2f3b0bf9b3d5734d4a86113bd5d63ec54f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3bdd1f2f3b0bf9b3d5734d4a86113bd5d63ec54f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/3bdd1f2f3b0bf9b3d5734d4a86113bd5d63ec54f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1e18255dc885cebae2b303fbe82e71f552158844/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1e18255dc885cebae2b303fbe82e71f552158844/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1e18255dc885cebae2b303fbe82e71f552158844/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,36 +101,15 @@ manubot-clear-requests-cache: false
 
 
 ## Description
+Examples are shown in Figure @fig:Negative_and_Positive. 
 
-In this project, we plan to use two main datasets to detect concrete crack. First, we use a dataset from Kaggle, titled “Surface Crack Detection” to make the classification of the concrete crack. Second, we use a dataset from Virginia Tech, titled “Concrete Crack Conglomerate Dataset” to make the segmentation of the concrete crack.
-
-[Classification]
-
-Source: Kaggle/ Surface Crack Detection.
-
-Data Format: Images with 227*227 pixels with RGB channels.
-
-Content: The dataset contains images of various concrete surfaces with and without crack. The image data are divided into two as negative (without crack) and positive (with crack) for image classification. Each class has 20000 images with a total of 40000 images.
-
-![Figure 1](../fig1_neg_1.png)
-![Figure 2](../fig2_pos_1.png)
-
-Figure 1. Example of Images with and without Cracks
+![**Negative and Positive Examples from the Surface Crack Detection Dataset**](https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png){#fig:Negative_and_Positive}
 
 
+Examples are shown in Figure @fig:Origin_and_Mask. 
 
-[Segmentation]
+![**Origin and Mask Images from the Concrete Crack Conglomerate Dataset**](https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png){#fig:Origin_and_Mask}
 
-Source: Virginia Tech/ Concrete Crack Conglomerate Dataset
-
-Data Format: Images with 448*448 pixels with RGB channels
-
-Content: The dataset contains over 10,995 crack images. Each image data has its origin image and mask image for image segmentation.
-
-![Figure 3](../fig3_ori_1.png)
-![Figure 4](../fig4_segged_1.png)
-
-Figure 2. Example of an Original Image and an Mask Image
 
 
 ## Proposal:
