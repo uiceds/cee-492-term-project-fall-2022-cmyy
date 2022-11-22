@@ -3,12 +3,11 @@ Chengyou
 Classificationwill
 CNNHyperparameters
 Conv
-convolutional
+Convolutional
 Crossentropy
-Dataset
+dataset
 GlobalAveragePooling
 Hyperparameters
-Kaggle
 Keras
 MaxPool
 MaxPooling
@@ -18,7 +17,7 @@ nonlinearity
 overfitting
 preprocessing
 pretrained
-ReLu
+ReLU
 RGB
 Sian
 sigmoid

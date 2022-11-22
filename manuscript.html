@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/381d96c74646ee2f2f701a13cf960342aa86bea0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/381d96c74646ee2f2f701a13cf960342aa86bea0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/381d96c74646ee2f2f701a13cf960342aa86bea0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ffb0d69bdddf4323f79b7216f830b58f83edcc3d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ffb0d69bdddf4323f79b7216f830b58f83edcc3d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/ffb0d69bdddf4323f79b7216f830b58f83edcc3d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -121,8 +121,8 @@ Department of Civil and Environmental Engineering, University of Illinois
 </small></p></li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information of the exact locations of cracks is smeared in the network. We aim to firstly rebuild a CNN-based model for crack detection, and then find and apply another model to locate the exact positions of cracks.</p>
-<h3 id="please-add-more-details-about-the-potential-applications-of-the-second-model-or-why-this-model-is-better">please add more details about the potential applications of the second model or why this model is better</h3>
+<p>The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information of the exact locations of cracks is smeared in the network. We aim to firstly build a CNN-based model for crack detection, and then find and apply another model to locate the exact positions of cracks.</p>
+<h3 id="please-add-brief-introduction-to-u-net.">Please add brief introduction to U-Net.</h3>
 <p>We first train a CNN with the Surface Crack Detection dataset <span class="citation" data-cites="ZtBdubRd">[<a href="#ref-ZtBdubRd" role="doc-biblioref">1</a>]</span> to judge if any concrete crack exists. The dataset contains images (each has <span class="math inline">\(227 \times 227\)</span> pixels and RGB channels) of concrete surfaces with or without crack. Each class contains <span class="math inline">\(20000\)</span> images. Examples are shown in Figure <a href="#fig:Negative_and_Positive">1</a>:</p>
 <div id="fig:Negative_and_Positive" class="fignos">
 <figure>
@@ -131,7 +131,6 @@ Department of Civil and Environmental Engineering, University of Illinois
 </div>
 <h3 id="the-dataset-is-splitted-into-a-training-set-with-images-and-a-testing-set-with-images.">The dataset is splitted into a training set with ??? images and a testing set with ??? images.</h3>
 <p>We then train a CNN-based network call U-Net <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span> with the Concrete Crack Conglomerate Dataset <span class="citation" data-cites="ovjFCGWg">[<a href="#ref-ovjFCGWg" role="doc-biblioref">3</a>]</span> to segment the concrete from its cracks.</p>
-<h3 id="please-add-brief-introduction-to-u-net-in-one-sentence.">Please add brief introduction to U-Net in one sentence.</h3>
 <p>The dataset contains over <span class="math inline">\(20000\)</span> crack images (each has <span class="math inline">\(448 \times 448\)</span> pixels and RGB channels). Each image data has an origin image and a mask image. Examples are shown in Figure <a href="#fig:Origin_and_Mask">2</a>:</p>
 <div id="fig:Origin_and_Mask" class="fignos">
 <figure>
@@ -146,11 +145,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 <img src="./images/Basic_Convolutional_Neural_Network_for_Classification.png" alt="Figure 3: Basic Convolutional Neural Network for Classification." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Basic Convolutional Neural Network for Classification.</strong></figcaption>
 </figure>
 </div>
-<p>CNN network is briefly introduced in this section. As shown in Figure <a href="#fig:Basic_Convolutional_Neural_Network_for_Classification">3</a>, a typical CNN network involves several convolutional and pooling layers, and then several fully connected layers. Convolution is an operation that uses filter to extract information that we want to detect.</p>
-<h3 id="hard-to-understand.-check-your-grammar-below">Hard to understand. Check your grammar below</h3>
-<p>The filter size determines how many filters will be applied to the input tensor to produce the same number of channels. Each filter can detect their specified geometries with colors in the given kernel size.</p>
-<h3 id="hard-to-understand.-check-your-grammar-above">Hard to understand. Check your grammar above</h3>
-<p>The kernel size determines the size of the area that the filters would apply to. Activation function is added to import nonlinearity into the model, considering the operation of filter is linear. MaxPooling is a down-sampling operation that allows our network to capture deeper information from its original dimensions. The pool size and strides determine the dimensions of the down-sample procedure. Notice that the sigmoid function rather than the softmax function shown in Figure ?? be applied in our model, as as we only have two classes of results.</p>
+<p>CNN network is briefly introduced in this section. As shown in Figure <a href="#fig:Basic_Convolutional_Neural_Network_for_Classification">3</a>, a typical CNN network involves several convolutional and pooling layers, and then several fully connected layers. Convolution is an operation that uses filter to extract information that we want to detect. The filter size determines how many filters will be applied to the input data. The kernel size determines the size of the area that the filters would apply to. Activation function is added to import nonlinearity into the model, considering the operation of filter is linear. MaxPooling is a down-sampling operation that allows our network to capture deeper information from its original dimensions. The pool size and strides determine the dimensions of the down-sample procedure. Notice that the sigmoid function rather than the softmax function shown in Figure ?? be applied in our model, as as we only have two classes of results.</p>
 <h3 id="network-design">Network Design</h3>
 <p>In the first convolutional block, we would specify 16 filters (consider 8 straight lines and 8 curves) with 3 by 3 kernels (consider the size of crack is relatively small), assign ReLu as the activation function in the Conv2D layer, and go deeper with a pool size of 2 by 2 in the MaxPool2D layer. In the second convolutional block, we double the channels number to 32 with Conv2D and apply the same MaxPool2D. Finally, we apply an GlobalAveragePooling2D layer, as we are focusing on the whole image rather than a part of it in segmentation. The coding form of this model is shown in Figure <a href="#fig:Model_for_Concrete_Crack_Classification_using_Keras">4</a>:</p>
 <div id="fig:Model_for_Concrete_Crack_Classification_using_Keras" class="fignos">
@@ -292,12 +287,7 @@ We perform a normalization before plugging in the U-Net architecture based on th
 <img src="./images/Model_Summary.png" alt="Figure 11: Model Summary" /><figcaption aria-hidden="true"><span>Figure 11:</span> <strong>Model Summary</strong></figcaption>
 </figure>
 </div>
-<p>U-Net could learn from very few numbers of dataset, so we only need to have a small dataset.</p>
-<div id="fig:U-Net_Loss" class="fignos">
-<figure>
-<img src="https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png" style="height:3in" alt="Figure 12: U-Net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 12:</span> <strong>U-Net Loss Evaluation.</strong></figcaption>
-</figure>
-</div>
+<p>Other properties of this network is listed in Table <a href="#tbl:U-NetHyperparameters">3</a>:</p>
 <div id="tbl:U-NetHyperparameters" class="tablenos">
 <table id="tbl:U-NetHyperparameters">
 <caption><span>Table 3:</span> U-Net Hyperparameters.
@@ -326,25 +316,26 @@ We perform a normalization before plugging in the U-Net architecture based on th
 </tbody>
 </table>
 </div>
-<p>We can see that this trained model has good performance on the testing data, it only takes 30 epochs because of our early stop condition.</p>
-<h2 id="prediction-and-analysis">Prediction and Analysis</h2>
+<p>U-Net still learns well even the training dataset is small.</p>
+<h2 id="so-how-small-it-is-describe-your-training-dataset.">So how small it is? Describe your training dataset.</h2>
+<p>The training and testing losses are plotted in Figure <a href="#fig:U-Net_Loss">12</a>:</p>
+<div id="fig:U-Net_Loss" class="fignos">
+<figure>
+<img src="https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png" style="height:3in" alt="Figure 12: U-Net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 12:</span> <strong>U-Net Loss Evaluation.</strong></figcaption>
+</figure>
+</div>
+<p>We can see that this trained model has good performance on the testing data. It only takes 30 epochs because of the early-stop procedure.</p>
+<h2 id="results-and-analysis-1">Results and Analysis</h2>
 <div id="fig:Prediction_Result" class="fignos">
 <figure>
 <img src="https://user-images.githubusercontent.com/67733344/203314642-4d22a93d-8601-43ac-8747-9bf9cd1b1e0b.png" alt="Figure 13: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 13:</span> <strong>Prediction Result</strong></figcaption>
 </figure>
 </div>
-<p>Here are the prediction results of our testing images, it performs extremely well.</p>
-<p>We could also notice that in the testing image 7, the network predict zone with dark color as crack. It is because the filter would not only capture geometries of the image in the kernel, but also the color of it (recall we have RGB channels as the input).</p>
-<p>We are still working on the next U-Net model with Conv2D=&gt;BatchNormalization=&gt;ReLU as conv_block!
-We also trained a U-Net model with pretrained Inception as backbone, but we haven’t upload it yet!</p>
+<p>The prediction results of our testing images is shown in <a href="#fig:Prediction_Result">13</a>. It performs well. However, we can also notice that in the testing image 7, the network recognizes the dark-colored zone as a crack.</p>
+<p>We are still working on the next U-Net model with Conv2D=&gt;BatchNormalization=&gt;ReLU as conv_block.
+We also trained a U-Net model with pretrained Inception as backbone, but we haven’t upload it yet.</p>
 <p>Computer vision-based concrete crack detection using U-net fully convolutional networks
 <span class="citation" data-cites="vavSAlDl">[<a href="#ref-vavSAlDl" role="doc-biblioref">4</a>]</span></p>
-<p>U-Net: Convolutional Networks for Biomedical Image Segmentation
-<span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span></p>
-<p>Surface Crack Detection | Kaggle
-<span class="citation" data-cites="ZtBdubRd">[<a href="#ref-ZtBdubRd" role="doc-biblioref">1</a>]</span>.</p>
-<p>Concrete Crack Conglomerate Dataset | Virginia Tech
-<span class="citation" data-cites="ovjFCGWg">[<a href="#ref-ovjFCGWg" role="doc-biblioref">3</a>]</span></p>
 <p>Performance Evaluation of Deep CNN-Based Crack Detection and Localization Techniques for Concrete Structures
 <span class="citation" data-cites="Oi2R75wo">[<a href="#ref-Oi2R75wo" role="doc-biblioref">5</a>]</span></p>
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
