@@ -59,22 +59,22 @@
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Yu-Sian Lin" />
-  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois" />
   <meta name="citation_author" content="Yueh-Ti Lee" />
-  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois" />
   <meta name="citation_author" content="Minjiang Zhu" />
-  <meta name="citation_author_institution" content="Department of Something, University of Illinois" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois" />
   <meta name="citation_author" content="Chengyou Yue" />
-  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta property="twitter:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b55c6ba69ea3e8f8ff799d26da7ab80a56e8c4fc/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b55c6ba69ea3e8f8ff799d26da7ab80a56e8c4fc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b55c6ba69ea3e8f8ff799d26da7ab80a56e8c4fc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b85dcb4aa3ac2d612c8f3def7db13925ee14e3f2/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b85dcb4aa3ac2d612c8f3def7db13925ee14e3f2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b85dcb4aa3ac2d612c8f3def7db13925ee14e3f2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -99,25 +99,25 @@
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
 <a href="https://github.com/yslin0114">yslin0114</a><br>
 <small>
-Department of Civil Engineering, University of Illinois
+Department of Civil and Environmental Engineering, University of Illinois
 </small></p></li>
 <li><p><strong>Yueh-Ti Lee</strong><br>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
 <a href="https://github.com/Yueh-Ti">Yueh-Ti</a><br>
 <small>
-Department of Civil Engineering, University of Illinois
+Department of Civil and Environmental Engineering, University of Illinois
 </small></p></li>
 <li><p><strong>Minjiang Zhu</strong><br>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
 <a href="https://github.com/Minjiang-Zhu">Minjiang-Zhu</a><br>
 <small>
-Department of Something, University of Illinois
+Department of Civil and Environmental Engineering, University of Illinois
 </small></p></li>
 <li><p><strong>Chengyou Yue</strong><br>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
 <a href="https://github.com/TensorYue">TensorYue</a><br>
 <small>
-Department of Civil Engineering, University of Illinois
+Department of Civil and Environmental Engineering, University of Illinois
 </small></p></li>
 </ul>
 <h2 id="description">Description</h2>
@@ -168,13 +168,19 @@ Department of Civil Engineering, University of Illinois
 </figure>
 </div>
 <h3 id="modeling-and-training">Modeling and training</h3>
-<p>Here we need to specify the hyperparameters of our layers:
-1. Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect.
-a. Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size.
-b. Kernel size determines the size of the area the filters would apply.
-c. Activation function is added to achieve nonlinearity of the model, as the operation of filter is linear.
-2. MaxPooling layer. MaxPooling is a down-sampling operation that allows our network to capture deeper information from original dimensions.
-a. Pool size and strides determine the dimensions of down-sample procedure.</p>
+<p>Here we need to specify the hyperparameters of our layers:</p>
+<ol type="1">
+<li>Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect.
+<ol type="a">
+<li>Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size.</li>
+<li>Kernel size determines the size of the area the filters would apply.</li>
+<li>Activation function is added to achieve nonlinearity of the model, as the operation of filter is linear.</li>
+</ol></li>
+<li>MaxPooling layer. MaxPooling is a down-sampling operation that allows our network to capture deeper information from original dimensions.
+<ol type="a">
+<li>Pool size and strides determine the dimensions of down-sample procedure.</li>
+</ol></li>
+</ol>
 <p>In the first convolutional block, we would specify 16 filters (consider 8 straight lines and 8 curves) with 3 by 3 kernel (consider the size of crack is relatively small) and ReLu as activation function in the Conv2D layer and go deeper with pool size of 2 by 2 in the MaxPool2D layer.</p>
 <p>And in the second convolutional block, we double the channels number to 32 with Conv2D, apply the same MaxPool2D.</p>
 <p>Finally, we process our data input an GlobalAveragePooling2D layer (because we are focusing on the whole image, not a part of it in segmentation) and dense the tensor to 1 with Sigmoid function (As we only have 1 class of result, for multiclass classification, use SoftMax).</p>
@@ -361,10 +367,13 @@ We perform a normalization before plug in the U-Net architecture based on the ra
 <p>We could also notice that in the testing image 7, the network predict zone with dark color as crack. It is because the filter would not only capture geometries of the image in the kernel, but also the color of it (recall we have RGB channels as the input).</p>
 <p>We are still working on the next U-Net model with Conv2D=&gt;BatchNormalization=&gt;ReLU as conv_block!
 We also trained a U-Net model with pretrained Inception as backbone, but we haven’t upload it yet!</p>
+<p><span class="citation" data-cites="IhliSZDo">[<a href="#ref-IhliSZDo" role="doc-biblioref">1</a>]</span>.</p>
 <h2 id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
-<div id="refs" role="doc-bibliography">
-
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-IhliSZDo" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Sci-Hub provides access to nearly all scholarly literature</strong> <div class="csl-block">Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene</div> <em>eLife</em> (2018-03-01) <a href="https://doi.org/ckcj">https://doi.org/ckcj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.32822">10.7554/elife.32822</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29424689">29424689</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5832410">PMC5832410</a></div></div>
+</div>
 </div>
 <p><a href="https://www.kaggle.com/datasets/arunrk7/surface-crack-detection">Surface Crack Detection | Kaggle</a></p>
 <p><a href="https://data.lib.vt.edu/articles/dataset/Concrete_Crack_Conglomerate_Dataset/16625056">Concrete Crack Conglomerate Dataset | Virginia Tech</a></p>

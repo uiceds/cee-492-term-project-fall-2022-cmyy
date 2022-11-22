@@ -30,22 +30,22 @@ header-includes: |-
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Yu-Sian Lin" />
-  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois" />
   <meta name="citation_author" content="Yueh-Ti Lee" />
-  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois" />
   <meta name="citation_author" content="Minjiang Zhu" />
-  <meta name="citation_author_institution" content="Department of Something, University of Illinois" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois" />
   <meta name="citation_author" content="Chengyou Yue" />
-  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta property="twitter:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b55c6ba69ea3e8f8ff799d26da7ab80a56e8c4fc/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b55c6ba69ea3e8f8ff799d26da7ab80a56e8c4fc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b55c6ba69ea3e8f8ff799d26da7ab80a56e8c4fc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b85dcb4aa3ac2d612c8f3def7db13925ee14e3f2/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b85dcb4aa3ac2d612c8f3def7db13925ee14e3f2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b85dcb4aa3ac2d612c8f3def7db13925ee14e3f2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -68,28 +68,28 @@ manubot-clear-requests-cache: false
     · ![GitHub icon](images/github.svg){.inline_icon}
     [yslin0114](https://github.com/yslin0114)<br>
   <small>
-     Department of Civil Engineering, University of Illinois
+     Department of Civil and Environmental Engineering, University of Illinois
   </small>
 
 + **Yueh-Ti Lee**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
     [Yueh-Ti](https://github.com/Yueh-Ti)<br>
   <small>
-     Department of Civil Engineering, University of Illinois
+     Department of Civil and Environmental Engineering, University of Illinois
   </small>
 
 + **Minjiang Zhu**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
     [Minjiang-Zhu](https://github.com/Minjiang-Zhu)<br>
   <small>
-     Department of Something, University of Illinois
+     Department of Civil and Environmental Engineering, University of Illinois
   </small>
 
 + **Chengyou Yue**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
     [TensorYue](https://github.com/TensorYue)<br>
   <small>
-     Department of Civil Engineering, University of Illinois
+     Department of Civil and Environmental Engineering, University of Illinois
   </small>
 
 
@@ -175,6 +175,7 @@ Architecture:
 
 ### Modeling and training 
 Here we need to specify the hyperparameters of our layers:
+
 1. Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect. 
     a. Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size. 
     b. Kernel size determines the size of the area the filters would apply. 
@@ -293,6 +294,8 @@ We could also notice that in the testing image 7, the network predict zone with 
 
 We are still working on the next U-Net model with Conv2D=>BatchNormalization=>ReLU  as conv_block!
 We also trained a U-Net model with pretrained Inception as backbone, but we haven’t upload it yet!
+
+[@doi:10.7554/eLife.32822].
 
 
 ## References
