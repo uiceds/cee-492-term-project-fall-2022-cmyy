@@ -1,12 +1,13 @@
+BatchNormalization
 Chengyou
 CNNHyperparameters
-Conv
-convolutional
+conv
+Convolutional
 Crossentropy
 dataset
 datasets
 GlobalAveragePooling
-Hyperparameters
+hyperparameters
 Kaggle
 Keras
 MaxPool
@@ -17,7 +18,8 @@ NetHyperparameters
 nonlinearity
 overfitting
 preprocess
-ReLu
+pretrained
+ReLU
 RGB
 Sian
 Sigmoid

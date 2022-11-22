@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8073cd5352803b89d327f8b0a82c26d4e7aface1/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8073cd5352803b89d327f8b0a82c26d4e7aface1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8073cd5352803b89d327f8b0a82c26d4e7aface1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b55c6ba69ea3e8f8ff799d26da7ab80a56e8c4fc/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b55c6ba69ea3e8f8ff799d26da7ab80a56e8c4fc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b55c6ba69ea3e8f8ff799d26da7ab80a56e8c4fc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -170,8 +170,7 @@ Architecture:
 
 ## Concrete Crack Detection 
 
-![
-**Basic Convolutional Neural Network for Classification.**
+![**Basic Convolutional Neural Network for Classification.**
 ](./images/Basic_Convolutional_Neural_Network_for_Classification.png "Wide image"){#fig:Basic_Convolutional_Neural_Network_for_Classification}
 
 ### Modeling and training 
@@ -197,7 +196,7 @@ The result of our network would be a number in (0,1), we could treat this as a p
 Notice that the original images have size of (227,227,3), we would resize it into (120,120,3) in preprocess procedure.
 
 ![**Model_Summary_and_Hyperparameters.**
-](./images/Model_Summary_and_Hyperparameters.png "Wide image"){#fig:Model_Summary_and_Hyperparameters}
+](./images/Model_Summary_and_Hyperparameters.png "Tall image"){#fig:Model_Summary_and_Hyperparameters height=5in}
 
 | training   | validation | testing    | Optimizer | Loss Function | Metrics | Epochs |
 |:-----------|:------|:------|:------|:------|:------|:------|
@@ -222,8 +221,6 @@ We can see that this trained model has good performance on the testing data, it 
 We can further calculate the following parameters:
 
 $$
-\begin{equation}
-\begin{aligned}
 \mathrm{Precision}=\frac{TP}{TP+FP}
 \\
 \mathrm{Recall}=\frac{TP}{TP+FN}
@@ -233,8 +230,6 @@ $$
 \mathrm{Macro} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Score}_i}
 \\
 \mathrm{Weighted} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Support}_i\times \mathrm{Score}_i}
-\end{equation}
-\end{aligned}
 $${#eq:regular-equation}
 
 | | Precision | Recall | Score | Support |
@@ -272,7 +267,7 @@ In the previous classification model, we have shown that the first convolutional
 
 Notice that the original images have size of (448,448,3), we would keep this size for this network, but there is still a resize procedure that allow this network to predict images with different size.
 
-![**Model Summary.**
+![**Model Summary**
 ](./images/Model_Summary.png "Wide image"){#fig:Model_Summary}
 
 U-Net could learn from very few numbers of dataset, so we only need to have a small dataset.
@@ -290,6 +285,14 @@ We can see that this trained model has good performance on the testing data, it 
 
 ## Prediction and Analysis 
 
+![**Prediction Result**](https://user-images.githubusercontent.com/67733344/203314642-4d22a93d-8601-43ac-8747-9bf9cd1b1e0b.png){#fig:Prediction_Result}
+
+Here are the prediction results of our testing images, it performs extremely well.
+
+We could also notice that in the testing image 7, the network predict zone with dark color as crack. It is because the filter would not only capture geometries of the image in the kernel, but also the color of it (recall we have RGB channels as the input).
+
+We are still working on the next U-Net model with Conv2D=>BatchNormalization=>ReLU  as conv_block!
+We also trained a U-Net model with pretrained Inception as backbone, but we haven’t upload it yet!
 
 
 ## References

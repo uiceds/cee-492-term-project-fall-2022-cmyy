@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8073cd5352803b89d327f8b0a82c26d4e7aface1/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8073cd5352803b89d327f8b0a82c26d4e7aface1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8073cd5352803b89d327f8b0a82c26d4e7aface1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b55c6ba69ea3e8f8ff799d26da7ab80a56e8c4fc/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b55c6ba69ea3e8f8ff799d26da7ab80a56e8c4fc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/b55c6ba69ea3e8f8ff799d26da7ab80a56e8c4fc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -187,7 +187,7 @@ a. Pool size and strides determine the dimensions of down-sample procedure.</p>
 <p>Notice that the original images have size of (227,227,3), we would resize it into (120,120,3) in preprocess procedure.</p>
 <div id="fig:Model_Summary_and_Hyperparameters" class="fignos">
 <figure>
-<img src="./images/Model_Summary_and_Hyperparameters.png" alt="Figure 3: Model_Summary_and_Hyperparameters." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Model_Summary_and_Hyperparameters.</strong></figcaption>
+<img src="./images/Model_Summary_and_Hyperparameters.png" style="height:5in" alt="Figure 3: Model_Summary_and_Hyperparameters." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Model_Summary_and_Hyperparameters.</strong></figcaption>
 </figure>
 </div>
 <div id="tbl:CNNHyperparameters" class="tablenos">
@@ -233,8 +233,6 @@ a. Pool size and strides determine the dimensions of down-sample procedure.</p>
 <p>We can see that this trained model has good performance on the testing data, it only takes 25 epochs because of our early stop condition.
 We can further calculate the following parameters:</p>
 <p><span id="eq:regular-equation" class="eqnos"><span class="math display">\[
-\begin{equation}
-\begin{aligned}
 \mathrm{Precision}=\frac{TP}{TP+FP}
 \\
 \mathrm{Recall}=\frac{TP}{TP+FN}
@@ -244,8 +242,6 @@ We can further calculate the following parameters:</p>
 \mathrm{Macro} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Score}_i}
 \\
 \mathrm{Weighted} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Support}_i\times \mathrm{Score}_i}
-\end{equation}
-\end{aligned}
 \]</span><span class="eqnos-number">(1)</span></span></p>
 <div id="tbl:Result_Analysis" class="tablenos">
 <table id="tbl:Result_Analysis">
@@ -317,7 +313,7 @@ We perform a normalization before plug in the U-Net architecture based on the ra
 <p>Notice that the original images have size of (448,448,3), we would keep this size for this network, but there is still a resize procedure that allow this network to predict images with different size.</p>
 <div id="fig:Model_Summary" class="fignos">
 <figure>
-<img src="./images/Model_Summary.png" alt="Figure 9: Model Summary." /><figcaption aria-hidden="true"><span>Figure 9:</span> <strong>Model Summary.</strong></figcaption>
+<img src="./images/Model_Summary.png" alt="Figure 9: Model Summary" /><figcaption aria-hidden="true"><span>Figure 9:</span> <strong>Model Summary</strong></figcaption>
 </figure>
 </div>
 <p>U-Net could learn from very few numbers of dataset, so we only need to have a small dataset.</p>
@@ -356,6 +352,15 @@ We perform a normalization before plug in the U-Net architecture based on the ra
 </div>
 <p>We can see that this trained model has good performance on the testing data, it only takes 30 epochs because of our early stop condition.</p>
 <h2 id="prediction-and-analysis-1">Prediction and Analysis</h2>
+<div id="fig:Prediction_Result" class="fignos">
+<figure>
+<img src="https://user-images.githubusercontent.com/67733344/203314642-4d22a93d-8601-43ac-8747-9bf9cd1b1e0b.png" alt="Figure 11: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 11:</span> <strong>Prediction Result</strong></figcaption>
+</figure>
+</div>
+<p>Here are the prediction results of our testing images, it performs extremely well.</p>
+<p>We could also notice that in the testing image 7, the network predict zone with dark color as crack. It is because the filter would not only capture geometries of the image in the kernel, but also the color of it (recall we have RGB channels as the input).</p>
+<p>We are still working on the next U-Net model with Conv2D=&gt;BatchNormalization=&gt;ReLU as conv_block!
+We also trained a U-Net model with pretrained Inception as backbone, but we haven’t upload it yet!</p>
 <h2 id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
