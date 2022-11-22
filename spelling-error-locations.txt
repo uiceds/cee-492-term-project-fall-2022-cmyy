@@ -18,6 +18,7 @@ content/03.intro.md:46:dataset
 content/03.intro.md:54:Dataset
 content/03.intro.md:63:convolutional
 content/03.intro.md:71:convolutional
+content/03.intro.md:78:Convolutional
 content/03.intro.md:83:convolutional
 content/03.intro.md:88:Dataset
 content/03.intro.md:88:Kaggle
