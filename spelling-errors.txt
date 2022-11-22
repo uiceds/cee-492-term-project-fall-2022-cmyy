@@ -2,7 +2,7 @@ BatchNormalization
 Chengyou
 Classificationwill
 CNNHyperparameters
-conv
+Conv
 Convolutional
 Crossentropy
 dataset
