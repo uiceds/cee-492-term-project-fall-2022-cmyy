@@ -1,12 +1,12 @@
 Chengyou
 CNNHyperparameters
 Conv
-convolutional
+Convolutional
 Crossentropy
-Dataset
+dataset
 datasets
 GlobalAveragePooling
-Hyperparameters
+hyperparameters
 Kaggle
 Keras
 MaxPool
