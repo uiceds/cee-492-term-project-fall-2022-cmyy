@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/869f2b3a282d15963fed3c07babd7e13cb81f28e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/869f2b3a282d15963fed3c07babd7e13cb81f28e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/869f2b3a282d15963fed3c07babd7e13cb81f28e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/381d96c74646ee2f2f701a13cf960342aa86bea0/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/381d96c74646ee2f2f701a13cf960342aa86bea0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/381d96c74646ee2f2f701a13cf960342aa86bea0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -122,51 +122,51 @@ Department of Civil and Environmental Engineering, University of Illinois
 </ul>
 <h2 id="introduction">Introduction</h2>
 <p>The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information of the exact locations of cracks is smeared in the network. We aim to firstly rebuild a CNN-based model for crack detection, and then find and apply another model to locate the exact positions of cracks.</p>
-<h1 id="please-add-more-details-about-the-potential-applications-of-the-second-model-or-why-this-model-is-better">please add more details about the potential applications of the second model or why this model is better</h1>
+<h3 id="please-add-more-details-about-the-potential-applications-of-the-second-model-or-why-this-model-is-better">please add more details about the potential applications of the second model or why this model is better</h3>
 <p>We first train a CNN with the Surface Crack Detection dataset <span class="citation" data-cites="ZtBdubRd">[<a href="#ref-ZtBdubRd" role="doc-biblioref">1</a>]</span> to judge if any concrete crack exists. The dataset contains images (each has <span class="math inline">\(227 \times 227\)</span> pixels and RGB channels) of concrete surfaces with or without crack. Each class contains <span class="math inline">\(20000\)</span> images. Examples are shown in Figure <a href="#fig:Negative_and_Positive">1</a>:</p>
 <div id="fig:Negative_and_Positive" class="fignos">
 <figure>
 <img src="https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png" style="height:2in" alt="Figure 1: Negative and Positive Examples from the Surface Crack Detection Dataset" /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Negative and Positive Examples from the Surface Crack Detection Dataset</strong></figcaption>
 </figure>
 </div>
-<h1 id="the-dataset-is-splitted-into-a-training-set-with-images-and-a-testing-set-with-images.">The dataset is splitted into a training set with ??? images and a testing set with ??? images.</h1>
-<p>We then train a CNN-based network call U-Net <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span> with the Concrete Crack Conglomerate Dataset <span class="citation" data-cites="ovjFCGWg">[<a href="#ref-ovjFCGWg" role="doc-biblioref">3</a>]</span> to segment the concrete from its cracks. The dataset contains over <span class="math inline">\(20000\)</span> crack images (each has <span class="math inline">\(448 \times 448\)</span> pixels and RGB channels). Each image data has an origin image and a mask image. Examples are shown in Figure <a href="#fig:Origin_and_Mask">2</a>:</p>
+<h3 id="the-dataset-is-splitted-into-a-training-set-with-images-and-a-testing-set-with-images.">The dataset is splitted into a training set with ??? images and a testing set with ??? images.</h3>
+<p>We then train a CNN-based network call U-Net <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span> with the Concrete Crack Conglomerate Dataset <span class="citation" data-cites="ovjFCGWg">[<a href="#ref-ovjFCGWg" role="doc-biblioref">3</a>]</span> to segment the concrete from its cracks.</p>
+<h3 id="please-add-brief-introduction-to-u-net-in-one-sentence.">Please add brief introduction to U-Net in one sentence.</h3>
+<p>The dataset contains over <span class="math inline">\(20000\)</span> crack images (each has <span class="math inline">\(448 \times 448\)</span> pixels and RGB channels). Each image data has an origin image and a mask image. Examples are shown in Figure <a href="#fig:Origin_and_Mask">2</a>:</p>
 <div id="fig:Origin_and_Mask" class="fignos">
 <figure>
 <img src="https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png" style="height:2in" alt="Figure 2: Origin and Mask Images from the Concrete Crack Conglomerate Dataset" /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Origin and Mask Images from the Concrete Crack Conglomerate Dataset</strong></figcaption>
 </figure>
 </div>
 <p>The dataset is splitted into a training set with 19801 images and a testing set with 2195 images.</p>
-<h2 id="a-brief-introduction-to-cnn">A Brief Introduction to CNN</h2>
+<h2 id="crack-detection">Crack Detection</h2>
+<h3 id="a-brief-introduction-to-cnn">A Brief Introduction to CNN</h3>
 <div id="fig:Basic_Convolutional_Neural_Network_for_Classification" class="fignos">
 <figure>
 <img src="./images/Basic_Convolutional_Neural_Network_for_Classification.png" alt="Figure 3: Basic Convolutional Neural Network for Classification." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Basic Convolutional Neural Network for Classification.</strong></figcaption>
 </figure>
 </div>
 <p>CNN network is briefly introduced in this section. As shown in Figure <a href="#fig:Basic_Convolutional_Neural_Network_for_Classification">3</a>, a typical CNN network involves several convolutional and pooling layers, and then several fully connected layers. Convolution is an operation that uses filter to extract information that we want to detect.</p>
-<h1 id="hard-to-understand.-check-your-grammar-below">Hard to understand. Check your grammar below</h1>
+<h3 id="hard-to-understand.-check-your-grammar-below">Hard to understand. Check your grammar below</h3>
 <p>The filter size determines how many filters will be applied to the input tensor to produce the same number of channels. Each filter can detect their specified geometries with colors in the given kernel size.</p>
-<h1 id="hard-to-understand.-check-your-grammar-above">Hard to understand. Check your grammar above</h1>
+<h3 id="hard-to-understand.-check-your-grammar-above">Hard to understand. Check your grammar above</h3>
 <p>The kernel size determines the size of the area that the filters would apply to. Activation function is added to import nonlinearity into the model, considering the operation of filter is linear. MaxPooling is a down-sampling operation that allows our network to capture deeper information from its original dimensions. The pool size and strides determine the dimensions of the down-sample procedure. Notice that the sigmoid function rather than the softmax function shown in Figure ?? be applied in our model, as as we only have two classes of results.</p>
-<h2 id="network-design-and-training-results">Network Design and Training Results</h2>
-<p>In the first convolutional block, we would specify 16 filters (consider 8 straight lines and 8 curves) with 3 by 3 kernels (consider the size of crack is relatively small), assign ReLu as the activation function in the Conv2D layer, and go deeper with a pool size of 2 by 2 in the MaxPool2D layer.</p>
-<p>In the second convolutional block, we double the channels number to 32 with Conv2D and apply the same MaxPool2D.</p>
-<p>Finally, we apply an GlobalAveragePooling2D layer, as we are focusing on the whole image rather than a part of it in segmentation.</p>
-<p>The result of our network would be a number in (0,1). We could treat it as the probability of the existence of crack in the image.</p>
+<h3 id="network-design">Network Design</h3>
+<p>In the first convolutional block, we would specify 16 filters (consider 8 straight lines and 8 curves) with 3 by 3 kernels (consider the size of crack is relatively small), assign ReLu as the activation function in the Conv2D layer, and go deeper with a pool size of 2 by 2 in the MaxPool2D layer. In the second convolutional block, we double the channels number to 32 with Conv2D and apply the same MaxPool2D. Finally, we apply an GlobalAveragePooling2D layer, as we are focusing on the whole image rather than a part of it in segmentation. The coding form of this model is shown in Figure <a href="#fig:Model_for_Concrete_Crack_Classification_using_Keras">4</a>:</p>
 <div id="fig:Model_for_Concrete_Crack_Classification_using_Keras" class="fignos">
 <figure>
-<img src="./images/Model_for_Concrete_Crack_Classification_using_Keras.png" alt="Figure 4: Model for Concrete Crack Classification using_Keras." /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Model for Concrete Crack Classification using_Keras.</strong></figcaption>
+<img src="./images/Model_for_Concrete_Crack_Classification_using_Keras.png" alt="Figure 4: Model for Concrete Crack Classification using_Keras" /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Model for Concrete Crack Classification using_Keras</strong></figcaption>
 </figure>
 </div>
-<p>Notice that the original images have size of (227,227,3), we would resize it into (120,120,3) in preprocess procedure.</p>
+<p>The result of our network would be a number in (0,1). We may treat it as the probability of the existence of crack in the image. Noticing that the original images have the size (227,227,3), we would resize it into (120,120,3) in the preprocessing procedure. The detailed properties of the network are listed in Figure <a href="#fig:Model_Summary_and_Hyperparameters">5</a> height=4in and Table ??.</p>
 <div id="fig:Model_Summary_and_Hyperparameters" class="fignos">
 <figure>
-<img src="./images/Model_Summary_and_Hyperparameters.png" style="height:4in" alt="Figure 5: Model Summary and Hyperparameters." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Model Summary and Hyperparameters.</strong></figcaption>
+<img src="./images/Model_Summary_and_Hyperparameters.png" style="height:4in" alt="Figure 5: Model Summary and Hyperparameters" /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Model Summary and Hyperparameters</strong></figcaption>
 </figure>
 </div>
 <div id="tbl:CNNHyperparameters" class="tablenos">
 <table id="tbl:CNNHyperparameters">
-<caption><span>Table 1:</span> Hyperparameters.
+<caption><span>Table 1:</span> Hyperparameters
 </caption>
 <thead>
 <tr class="header">
@@ -176,7 +176,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 <th style="text-align: left;">Optimizer</th>
 <th style="text-align: left;">Loss Function</th>
 <th style="text-align: left;">Metrics</th>
-<th style="text-align: left;">Epochs</th>
+<th style="text-align: left;">Max Epochs</th>
 </tr>
 </thead>
 <tbody>
@@ -192,20 +192,20 @@ Department of Civil and Environmental Engineering, University of Illinois
 </tbody>
 </table>
 </div>
-<h3 id="prediction-and-analysis">Prediction and Analysis</h3>
-<p>We can check our trained model by inputting the testing data, below is the confusion matrix our model generated:</p>
+<h3 id="results-and-analysis">Results and Analysis</h3>
+<p>Below is the confusion matrix our model generated:</p>
 <div id="fig:Confusion_Matrix" class="fignos">
 <figure>
-<img src="./images/Confusion_Matrix.png" style="height:3in" alt="Figure 6: Confusion Matrix." /><figcaption aria-hidden="true"><span>Figure 6:</span> <strong>Confusion Matrix.</strong></figcaption>
+<img src="./images/Confusion_Matrix.png" style="height:3in" alt="Figure 6: Confusion Matrix" /><figcaption aria-hidden="true"><span>Figure 6:</span> <strong>Confusion Matrix</strong></figcaption>
 </figure>
 </div>
+<p>and the loss during the training process:</p>
 <div id="fig:Loss_Evolution" class="fignos">
 <figure>
-<img src="./images/Loss_Evolution.png" style="height:3in" alt="Figure 7: Loss Evolution." /><figcaption aria-hidden="true"><span>Figure 7:</span> <strong>Loss Evolution.</strong></figcaption>
+<img src="./images/Loss_Evolution.png" style="height:3in" alt="Figure 7: Loss Evolution" /><figcaption aria-hidden="true"><span>Figure 7:</span> <strong>Loss Evolution</strong></figcaption>
 </figure>
 </div>
-<p>We can see that this trained model has good performance on the testing data, it only takes 25 epochs because of our early stop condition.
-We can further calculate the following parameters:</p>
+<p>We can see that this trained model has good performance on the testing data. The training process only lasts for 25 epochs because of the early-stop procedure. We can further calculate the following parameters:</p>
 <p><span id="eq:regular-equation" class="eqnos"><span class="math display">\[
 \mathrm{Precision}=\frac{TP}{TP+FP}
 \\
@@ -217,6 +217,7 @@ We can further calculate the following parameters:</p>
 \\
 \mathrm{Weighted} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Support}_i\times \mathrm{Score}_i}
 \]</span><span class="eqnos-number">(1)</span></span></p>
+<p>Their specific values are shown in Table <a href="#tbl:Result_Analysis">2</a>:</p>
 <div id="tbl:Result_Analysis" class="tablenos">
 <table id="tbl:Result_Analysis">
 <caption><span>Table 2:</span> Result Analysis
@@ -262,29 +263,30 @@ We can further calculate the following parameters:</p>
 </tbody>
 </table>
 </div>
-<p>It has overall good performance.</p>
+<p>In short, the network has overall good performance.</p>
 <h2 id="concrete-segmentation">Concrete Segmentation</h2>
-<p>The original U-Net architecture is shown below:</p>
+<p>U-Net is also CNN-based. The original U-Net architecture is shown below:</p>
 <div id="fig:U-net_Architecture" class="fignos">
 <figure>
 <img src="./images/U-net_Architecture.png" alt="Figure 8: U-net Architecture." /><figcaption aria-hidden="true"><span>Figure 8:</span> <strong>U-net Architecture.</strong></figcaption>
 </figure>
 </div>
+<h3 id="please-add-detailed-description-of-u-net-in-several-sentences.">Please add detailed description of U-Net in several sentences.</h3>
 <h3 id="modeling-and-training">Modeling and Training</h3>
-<p>For achieving segmentation, we have built and trained two models, one based on our own architecture, and the other based on the paper.
-We perform a normalization before plug in the U-Net architecture based on the range of RGB number:</p>
+<p>To achieve segmentation, we have built and trained two models, one based on our own architecture, and the other based on the paper.
+We perform a normalization before plugging in the U-Net architecture based on the range of RGB numbers, as shown in <a href="#fig:Input_Normalization">9</a>:</p>
 <div id="fig:Input_Normalization" class="fignos">
 <figure>
-<img src="./images/Input_Normalization.png" alt="Figure 9: Input Normalization." /><figcaption aria-hidden="true"><span>Figure 9:</span> <strong>Input Normalization.</strong></figcaption>
+<img src="./images/Input_Normalization.png" alt="Figure 9: Input Normalization" /><figcaption aria-hidden="true"><span>Figure 9:</span> <strong>Input Normalization</strong></figcaption>
 </figure>
 </div>
-<p>In the previous classification model, we have shown that the first convolutional block would only need 16 filters to perform well. We also add the random dropout in each convolution blocks to prevent the overfitting problem. Based on this experiment, we modified U-Net architecture as figure shown below.</p>
+<p>In the previous classification model, we have shown that the first convolutional block only needs 16 filters to perform well. We also add a random dropout in each convolution block to prevent the overfitting problem. Based on this experiment, we modified U-Net architecture as shown in Figure <a href="#fig:Modified_U-Net_Architecture">10</a>:</p>
 <div id="fig:Modified_U-Net_Architecture" class="fignos">
 <figure>
-<img src="./images/Modified_U-Net_Architecture.png" alt="Figure 10: Modified U-Net Architecture." /><figcaption aria-hidden="true"><span>Figure 10:</span> <strong>Modified U-Net Architecture.</strong></figcaption>
+<img src="./images/Modified_U-Net_Architecture.png" alt="Figure 10: Modified U-Net Architecture" /><figcaption aria-hidden="true"><span>Figure 10:</span> <strong>Modified U-Net Architecture</strong></figcaption>
 </figure>
 </div>
-<p>Notice that the original images have size of (448,448,3), we would keep this size for this network, but there is still a resize procedure that allow this network to predict images with different size.</p>
+<p>The original images have the size (448,448,3). We would keep this size for this network, but there is still a resizing procedure that allows this network to predict images with different sizes. The detailed architecture of this model is summarized in Figure <a href="#fig:Model_Summary">11</a>:</p>
 <div id="fig:Model_Summary" class="fignos">
 <figure>
 <img src="./images/Model_Summary.png" alt="Figure 11: Model Summary" /><figcaption aria-hidden="true"><span>Figure 11:</span> <strong>Model Summary</strong></figcaption>
@@ -325,7 +327,7 @@ We perform a normalization before plug in the U-Net architecture based on the ra
 </table>
 </div>
 <p>We can see that this trained model has good performance on the testing data, it only takes 30 epochs because of our early stop condition.</p>
-<h2 id="prediction-and-analysis-1">Prediction and Analysis</h2>
+<h2 id="prediction-and-analysis">Prediction and Analysis</h2>
 <div id="fig:Prediction_Result" class="fignos">
 <figure>
 <img src="https://user-images.githubusercontent.com/67733344/203314642-4d22a93d-8601-43ac-8747-9bf9cd1b1e0b.png" alt="Figure 13: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 13:</span> <strong>Prediction Result</strong></figcaption>
