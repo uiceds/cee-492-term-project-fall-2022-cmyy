@@ -2,9 +2,9 @@ BatchNormalization
 Chengyou
 CNNHyperparameters
 conv
-Convolutional
+convolutional
 Crossentropy
-Dataset
+dataset
 GlobalAveragePooling
 Hyperparameters
 Keras

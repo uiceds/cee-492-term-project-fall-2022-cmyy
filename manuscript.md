@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d08c0bcc936329ce9f14ab486239c37f6edf2d6/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d08c0bcc936329ce9f14ab486239c37f6edf2d6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d08c0bcc936329ce9f14ab486239c37f6edf2d6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/269cae72ed1cac66eef4d2423fbac4e90ab9bcc2/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/269cae72ed1cac66eef4d2423fbac4e90ab9bcc2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/269cae72ed1cac66eef4d2423fbac4e90ab9bcc2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -116,7 +116,7 @@ We then train a CNN-based network call U-Net [@doi:10.1007/978-3-319-24574-4_28]
 
 The dataset contains over $20000$ crack images (each has $448 \times 448$ pixels and RGB channels). Each image data has an origin image and a mask image. Examples are shown in Figure @fig:Origin_and_Mask:
 
-![[**Origin and Mask Images from the Concrete Crack Conglomerate Dataset**]{.center}](https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png "Tall image"){#fig:Origin_and_Mask height=2in}
+![**Origin and Mask Images from the Concrete Crack Conglomerate Dataset**](https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png "Tall image"){#fig:Origin_and_Mask height=2in}
 
 The dataset is splitted into a training set with 19801 images and a testing set with 2195 images. 
 
