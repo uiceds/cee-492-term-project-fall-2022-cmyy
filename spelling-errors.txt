@@ -1,5 +1,6 @@
 BatchNormalization
 Chengyou
+Classificationwill
 CNNHyperparameters
 Conv
 Convolutional
@@ -12,18 +13,16 @@ Keras
 MaxPool
 MaxPooling
 Minjiang
-multiclass
 NetHyperparameters
 nonlinearity
-otherwiss
 overfitting
 preprocess
 pretrained
 ReLU
 RGB
 Sian
-Sigmoid
-SoftMax
+sigmoid
+softmax
 splitted
 TensorYue
 yslin
