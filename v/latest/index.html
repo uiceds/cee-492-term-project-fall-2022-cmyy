@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d19580f7e6e81287dfc31457eeadd36316347957/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d19580f7e6e81287dfc31457eeadd36316347957/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d19580f7e6e81287dfc31457eeadd36316347957/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7add1d548ef5136d3736bbf3ae1cb22bf9209508/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7add1d548ef5136d3736bbf3ae1cb22bf9209508/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7add1d548ef5136d3736bbf3ae1cb22bf9209508/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -146,15 +146,21 @@ Department of Civil Engineering, University of Illinois
 <img src="../fig6_plot_seg.png" alt="Figure 6" /></p>
 <p>Figure 4. Number of Train Images and Test Images</p>
 <h2 id="preliminary-predictive-modeling">Preliminary Predictive Modeling</h2>
-<p>Dataset:
-- Concrete images with attached label ‘Positive’ or ‘Negative’
-- Concrete images and their masks</p>
-<p>Goal:
-- Concrete crack detection
-- Concrete crack segmentation</p>
-<p>Architecture:
-- Concrete crack detection based on convolutional neural network (CNN)
-- Concrete crack segmentation based on U-Net and improved U-Net using Inception as backbone</p>
+<p>Dataset:</p>
+<ul>
+<li>Concrete images with attached label ‘Positive’ or ‘Negative’</li>
+<li>Concrete images and their masks</li>
+</ul>
+<p>Goal:</p>
+<ul>
+<li>Concrete crack detection</li>
+<li>Concrete crack segmentation</li>
+</ul>
+<p>Architecture:</p>
+<ul>
+<li>Concrete crack detection based on convolutional neural network (CNN)</li>
+<li>Concrete crack segmentation based on U-Net and improved U-Net using Inception as backbone</li>
+</ul>
 <h2 id="concrete-crack-detection">Concrete Crack Detection</h2>
 <div id="fig:Basic_Convolutional_Neural_Network_for_Classification" class="fignos">
 <figure>
@@ -167,7 +173,7 @@ Department of Civil Engineering, University of Illinois
 a. Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size.
 b. Kernel size determines the size of the area the filters would apply.
 c. Activation function is added to achieve nonlinearity of the model, as the operation of filter is linear.
-3. MaxPooling layer. MaxPooling is a down-sampling operation that allows our network to capture deeper information from original dimensions.
+2. MaxPooling layer. MaxPooling is a down-sampling operation that allows our network to capture deeper information from original dimensions.
 a. Pool size and strides determine the dimensions of down-sample procedure.</p>
 <p>In the first convolutional block, we would specify 16 filters (consider 8 straight lines and 8 curves) with 3 by 3 kernel (consider the size of crack is relatively small) and ReLu as activation function in the Conv2D layer and go deeper with pool size of 2 by 2 in the MaxPool2D layer.</p>
 <p>And in the second convolutional block, we double the channels number to 32 with Conv2D, apply the same MaxPool2D.</p>
@@ -175,7 +181,7 @@ a. Pool size and strides determine the dimensions of down-sample procedure.</p>
 <p>The result of our network would be a number in (0,1), we could treat this as a probability of crack in the image.</p>
 <div id="fig:Model_for_Concrete_Crack_Classification_using_Keras" class="fignos">
 <figure>
-<img src="./images/Model_for_Concrete_Crack_Classification_using_Keras.png" alt="Figure 2: Model_for_Concrete_Crack_Classification_using_Keras." /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Model_for_Concrete_Crack_Classification_using_Keras.</strong></figcaption>
+<img src="./images/Model_for_Concrete_Crack_Classification_using_Keras.png" style="height:4in" alt="Figure 2: Model_for_Concrete_Crack_Classification_using_Keras." /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Model_for_Concrete_Crack_Classification_using_Keras.</strong></figcaption>
 </figure>
 </div>
 <p>Notice that the original images have size of (227,227,3), we would resize it into (120,120,3) in preprocess procedure.</p>
