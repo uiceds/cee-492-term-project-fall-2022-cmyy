@@ -1,12 +1,14 @@
 arxiv
 Chengyou
+CNNHyperparameters
 Conv
-convolutional
+Convolutional
+Crossentropy
 Dataset
 datasets
 edu
 GlobalAveragePooling
-Hyperparameters
+hyperparameters
 Kaggle
 Keras
 MaxPool
@@ -21,7 +23,7 @@ ResNet
 RGB
 ScienceDirect
 Sian
-Sigmoid
+sigmoid
 SoftMax
 TensorYue
 VGG

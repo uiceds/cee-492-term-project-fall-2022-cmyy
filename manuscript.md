@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7636853ae81bd19da212de8df71f8edb9d6b1d7f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7636853ae81bd19da212de8df71f8edb9d6b1d7f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7636853ae81bd19da212de8df71f8edb9d6b1d7f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/4eb3125430678c58bd366adb6dea4c7eb7f81e5b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/4eb3125430678c58bd366adb6dea4c7eb7f81e5b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/4eb3125430678c58bd366adb6dea4c7eb7f81e5b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -188,20 +188,30 @@ Finally, we process our data input an GlobalAveragePooling2D layer (because we a
 
 The result of our network would be a number in (0,1), we could treat this as a probability of crack in the image.
 
-Model for Concrete Crack Classification using Keras
-Model_for_Concrete_Crack_Classification_using_Keras
-
 ![
 **Model_for_Concrete_Crack_Classification_using_Keras.**
 ](./images/Model_for_Concrete_Crack_Classification_using_Keras.png "Wide image"){#fig:Model_for_Concrete_Crack_Classification_using_Keras}
 
 Notice that the original images have size of (227,227,3), we would resize it into (120,120,3) in preprocess procedure.
 
-Model Summary and Hyperparameters
-Model_Summary_and_Hyperparameters
 ![
 **Model_Summary_and_Hyperparameters.**
 ](./images/Model_Summary_and_Hyperparameters.png "Wide image"){#fig:Model_Summary_and_Hyperparameters}
+
+| training   | 3360 |
+| validation | 840  |
+| testing    | 1800 |
+|:-----------|:----:|
+| Optimizer | Adam |
+| Loss Function | Binary Crossentropy |
+| Metrics | Accuracy |
+| Epochs | 100 | 
+
+Table: Hyperparameters.
+{#tbl:CNNHyperparameters}
+
+
+
 
 [Crack detection]
 Dataset: Surface Crack Detection | Kaggle Positive: 20000 Negative: 20000
