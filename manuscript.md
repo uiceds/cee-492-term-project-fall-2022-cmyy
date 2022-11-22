@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7cd11fee292b9bfff935cc8edd4a7b161396bb39/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7cd11fee292b9bfff935cc8edd4a7b161396bb39/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7cd11fee292b9bfff935cc8edd4a7b161396bb39/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/87d827f235e9b1e4ac1b8a4aef41ce01b74010e4/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/87d827f235e9b1e4ac1b8a4aef41ce01b74010e4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/87d827f235e9b1e4ac1b8a4aef41ce01b74010e4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -176,12 +176,12 @@ Architecture:
 
 ### Modeling and training 
 Here we need to specify the hyperparameters of our layers:
-    1. Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect. 
-        a. Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size. 
-        b. Kernel size determines the size of the area the filters would apply. 
-        c. Activation function is added to achieve nonlinearity of the model, as the operation of filter is linear.
-    2. MaxPooling layer. MaxPooling is a down-sampling operation that allows our network to capture deeper information from original dimensions. 
-        a. Pool size and strides determine the dimensions of down-sample procedure. 
+1. Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect. 
+    a. Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size. 
+    b. Kernel size determines the size of the area the filters would apply. 
+    c. Activation function is added to achieve nonlinearity of the model, as the operation of filter is linear.
+2. MaxPooling layer. MaxPooling is a down-sampling operation that allows our network to capture deeper information from original dimensions. 
+    a. Pool size and strides determine the dimensions of down-sample procedure. 
      
 In the first convolutional block, we would specify 16 filters (consider 8 straight lines and 8 curves) with 3 by 3 kernel (consider the size of crack is relatively small) and ReLu as activation function in the Conv2D layer and go deeper with pool size of 2 by 2 in the MaxPool2D layer.
 
@@ -191,8 +191,8 @@ Finally, we process our data input an GlobalAveragePooling2D layer (because we a
 
 The result of our network would be a number in (0,1), we could treat this as a probability of crack in the image.
 
-![**Model_for_Concrete_Crack_Classification_using_Keras.**
-](./images/Model_for_Concrete_Crack_Classification_using_Keras.png "Tall image"){#fig:Model_for_Concrete_Crack_Classification_using_Keras height=4in}
+![**Model for Concrete Crack Classification using_Keras.**
+](./images/Model_for_Concrete_Crack_Classification_using_Keras.png "Wide image"){#fig:Model_for_Concrete_Crack_Classification_using_Keras}
 
 Notice that the original images have size of (227,227,3), we would resize it into (120,120,3) in preprocess procedure.
 
