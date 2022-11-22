@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/4eb3125430678c58bd366adb6dea4c7eb7f81e5b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/4eb3125430678c58bd366adb6dea4c7eb7f81e5b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/4eb3125430678c58bd366adb6dea4c7eb7f81e5b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1715fa2d666234815f5dd2474a31a0e095023098/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1715fa2d666234815f5dd2474a31a0e095023098/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1715fa2d666234815f5dd2474a31a0e095023098/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -177,16 +177,44 @@ a. Pool size and strides determine the dimensions of down-sample procedure.</p>
 <img src="./images/Model_Summary_and_Hyperparameters.png" alt="Figure 3: Model_Summary_and_Hyperparameters." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Model_Summary_and_Hyperparameters.</strong></figcaption>
 </figure>
 </div>
-<div class="line-block">training | 3360 |<br />
-validation | 840 |<br />
-testing | 1800 |</div>
-<p>|:———–|:—-:|
-| Optimizer | Adam |
-| Loss Function | Binary Crossentropy |
-| Metrics | Accuracy |
-| Epochs | 100 |</p>
-<p>Table: Hyperparameters.
-{#tbl:CNNHyperparameters}</p>
+<div id="tbl:CNNHyperparameters" class="tablenos">
+<table id="tbl:CNNHyperparameters">
+<caption><span>Table 1:</span> Hyperparameters.
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;">training</th>
+<th style="text-align: center;">3360</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">validation</td>
+<td style="text-align: center;">840</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">testing</td>
+<td style="text-align: center;">1800</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Optimizer</td>
+<td style="text-align: center;">Adam</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Loss Function</td>
+<td style="text-align: center;">Binary Crossentropy</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Metrics</td>
+<td style="text-align: center;">Accuracy</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Epochs</td>
+<td style="text-align: center;">100</td>
+</tr>
+</tbody>
+</table>
+</div>
 <p>[Crack detection]
 Dataset: Surface Crack Detection | Kaggle Positive: 20000 Negative: 20000
 Training, validating, testing: 3360, 840, 1800
