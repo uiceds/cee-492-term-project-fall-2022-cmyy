@@ -1,7 +1,7 @@
 Chengyou
 CNNHyperparameters
 Conv
-Convolutional
+convolutional
 Crossentropy
 Dataset
 datasets

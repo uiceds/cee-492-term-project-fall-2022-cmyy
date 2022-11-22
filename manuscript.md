@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9d03a1e5c1e71e19bb05d6a697acacdd03c0fc61/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9d03a1e5c1e71e19bb05d6a697acacdd03c0fc61/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9d03a1e5c1e71e19bb05d6a697acacdd03c0fc61/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d19580f7e6e81287dfc31457eeadd36316347957/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d19580f7e6e81287dfc31457eeadd36316347957/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d19580f7e6e81287dfc31457eeadd36316347957/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -171,7 +171,7 @@ Architecture:
 **Basic Convolutional Neural Network for Classification.**
 ](./images/Basic_Convolutional_Neural_Network_for_Classification.png "Wide image"){#fig:Basic_Convolutional_Neural_Network_for_Classification}
 
-### Model and training 
+### Modeling and training 
 Here we need to specify the hyperparameters of our layers:
   1. Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect. 
       a. Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size. 
@@ -199,6 +199,7 @@ Notice that the original images have size of (227,227,3), we would resize it int
 ](./images/Model_Summary_and_Hyperparameters.png "Wide image"){#fig:Model_Summary_and_Hyperparameters}
 
 | training   | validation | testing    | Optimizer | Loss Function | Metrics | Epochs |
+|:-----------|:------|:------|:------|:------|:------|:------|
 | 3360 | 840  | 1800 | Adam | Binary Crossentropy | Accuracy | 100 | 
 
 Table: Hyperparameters.
@@ -246,15 +247,20 @@ It has overall good performance.
 
 ## Concrete Segmentation 
 
+The original U-Net architecture is shown below:
 
+![
+**U-net Architecture.**
+](./images/U-net_Architecture.png "Wide image"){#fig:U-net_Architecture}
 
+### Modeling and Training 
 
+For achieving segmentation, we have built and trained two models, one based on our own architecture, and the other based on the paper. 
+We perform a normalization before plug in the U-Net architecture based on the range of RGB number:
 
-
-
-
-
-
+![
+**U-net Architecture.**
+](./images/Input_Normalization.png "Tall image"){#fig:Input Normalization height=1in}
 
 
 

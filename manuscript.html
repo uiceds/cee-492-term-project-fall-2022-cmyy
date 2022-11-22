@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9d03a1e5c1e71e19bb05d6a697acacdd03c0fc61/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9d03a1e5c1e71e19bb05d6a697acacdd03c0fc61/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/9d03a1e5c1e71e19bb05d6a697acacdd03c0fc61/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d19580f7e6e81287dfc31457eeadd36316347957/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d19580f7e6e81287dfc31457eeadd36316347957/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/d19580f7e6e81287dfc31457eeadd36316347957/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -161,7 +161,7 @@ Department of Civil Engineering, University of Illinois
 <img src="./images/Basic_Convolutional_Neural_Network_for_Classification.png" alt="Figure 1: Basic Convolutional Neural Network for Classification." /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Basic Convolutional Neural Network for Classification.</strong></figcaption>
 </figure>
 </div>
-<h3 id="model-and-training">Model and training</h3>
+<h3 id="modeling-and-training">Modeling and training</h3>
 <p>Here we need to specify the hyperparameters of our layers:
 1. Convolutional layer. Convolution is an operation that use filter to extract information that we want to detect.
 a. Filter size determines how many filters that would apply on the input tensor to produce the same number of channels, each filter could detect their specified geometries with colors in the given kernel size.
@@ -184,10 +184,34 @@ a. Pool size and strides determine the dimensions of down-sample procedure.</p>
 <img src="./images/Model_Summary_and_Hyperparameters.png" alt="Figure 3: Model_Summary_and_Hyperparameters." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Model_Summary_and_Hyperparameters.</strong></figcaption>
 </figure>
 </div>
-<div class="line-block">training | validation | testing | Optimizer | Loss Function | Metrics | Epochs |<br />
-3360 | 840 | 1800 | Adam | Binary Crossentropy | Accuracy | 100 |</div>
-<p>Table: Hyperparameters.
-{#tbl:CNNHyperparameters}</p>
+<div id="tbl:CNNHyperparameters" class="tablenos">
+<table id="tbl:CNNHyperparameters">
+<caption><span>Table 1:</span> Hyperparameters.
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">training</th>
+<th style="text-align: left;">validation</th>
+<th style="text-align: left;">testing</th>
+<th style="text-align: left;">Optimizer</th>
+<th style="text-align: left;">Loss Function</th>
+<th style="text-align: left;">Metrics</th>
+<th style="text-align: left;">Epochs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">3360</td>
+<td style="text-align: left;">840</td>
+<td style="text-align: left;">1800</td>
+<td style="text-align: left;">Adam</td>
+<td style="text-align: left;">Binary Crossentropy</td>
+<td style="text-align: left;">Accuracy</td>
+<td style="text-align: left;">100</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h3 id="prediction-and-analysis">Prediction and Analysis</h3>
 <p>We can check our trained model by inputting the testing data, below is the confusion matrix our model generated:</p>
 <div id="fig:Confusion_Matrix" class="fignos">
@@ -215,7 +239,7 @@ We can further calculate the following parameters:</p>
 \]</span><span class="eqnos-number">(1)</span></span></p>
 <div id="tbl:Result_Analysis" class="tablenos">
 <table id="tbl:Result_Analysis">
-<caption><span>Table 1:</span> Result Analysis
+<caption><span>Table 2:</span> Result Analysis
 </caption>
 <thead>
 <tr class="header">
@@ -260,6 +284,20 @@ We can further calculate the following parameters:</p>
 </div>
 <p>It has overall good performance.</p>
 <h2 id="concrete-segmentation">Concrete Segmentation</h2>
+<p>The original U-Net architecture is shown below:</p>
+<div id="fig:U-net_Architecture" class="fignos">
+<figure>
+<img src="./images/U-net_Architecture.png" alt="Figure 6: U-net Architecture." /><figcaption aria-hidden="true"><span>Figure 6:</span> <strong>U-net Architecture.</strong></figcaption>
+</figure>
+</div>
+<h3 id="modeling-and-training-1">Modeling and Training</h3>
+<p>For achieving segmentation, we have built and trained two models, one based on our own architecture, and the other based on the paper.
+We perform a normalization before plug in the U-Net architecture based on the range of RGB number:</p>
+<div id="fig:Input" class="fignos">
+<figure>
+<img src="./images/Input_Normalization.png" style="height:1in" alt="Figure 7: U-net Architecture." /><figcaption aria-hidden="true"><span>Figure 7:</span> <strong>U-net Architecture.</strong></figcaption>
+</figure>
+</div>
 <h2 id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">

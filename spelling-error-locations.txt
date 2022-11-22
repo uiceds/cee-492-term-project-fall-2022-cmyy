@@ -30,9 +30,10 @@ content/03.intro.md:85:multiclass
 content/03.intro.md:85:Sigmoid
 content/03.intro.md:85:SoftMax
 content/03.intro.md:93:preprocess
-content/03.intro.md:100:Crossentropy
-content/03.intro.md:102:Hyperparameters
-content/03.intro.md:103:CNNHyperparameters
+content/03.intro.md:101:Crossentropy
+content/03.intro.md:103:Hyperparameters
+content/03.intro.md:104:CNNHyperparameters
+content/03.intro.md:157:RGB
 content/90.back-matter.md:6:datasets
 content/90.back-matter.md:6:kaggle
 content/90.back-matter.md:6:Kaggle
