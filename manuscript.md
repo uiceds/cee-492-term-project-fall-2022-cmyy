@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-11-21'
+date-meta: '2022-11-22'
 author-meta:
 - Yu-Sian Lin
 - Yueh-Ti Lee
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Concrete Crack Detection" />
   <meta property="og:title" content="Concrete Crack Detection" />
   <meta property="twitter:title" content="Concrete Crack Detection" />
-  <meta name="dc.date" content="2022-11-21" />
-  <meta name="citation_publication_date" content="2022-11-21" />
+  <meta name="dc.date" content="2022-11-22" />
+  <meta name="citation_publication_date" content="2022-11-22" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/db3322af8fb28707835b301f3e9363970b6b6906/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/db3322af8fb28707835b301f3e9363970b6b6906/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/db3322af8fb28707835b301f3e9363970b6b6906/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/35481d3fb7a357d7a51bce08c29b8aeb9ed3a77a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/35481d3fb7a357d7a51bce08c29b8aeb9ed3a77a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/35481d3fb7a357d7a51bce08c29b8aeb9ed3a77a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -154,6 +154,19 @@ Figure 4. Number of Train Images and Test Images
 
 
 ## Predictive Modeling
+
+Dataset:
+    1.  Concrete images with attached label 'Positive' or 'Negative'
+    2.	Concrete images and their masks
+    
+Goal:
+    1.	Concrete crack detection
+    2.	Concrete crack segmentation
+
+Architecture:
+    1.	Concrete crack detection based on convolutional neural network (CNN)
+    2.	Concrete crack segmentation based on U-Net and improved U-Net using Inception as backbone
+
 
 In our group project, we trained two models: 
 1.	Concrete crack detection based on convolutional neural network (CNN)
