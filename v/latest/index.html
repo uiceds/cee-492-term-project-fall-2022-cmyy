@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/269cae72ed1cac66eef4d2423fbac4e90ab9bcc2/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/269cae72ed1cac66eef4d2423fbac4e90ab9bcc2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/269cae72ed1cac66eef4d2423fbac4e90ab9bcc2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b07c8606b80d8057e19afa932c3cd4a5c3657da/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b07c8606b80d8057e19afa932c3cd4a5c3657da/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b07c8606b80d8057e19afa932c3cd4a5c3657da/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -153,16 +153,13 @@ Department of Civil and Environmental Engineering, University of Illinois
 <img src="./images/Model_for_Concrete_Crack_Classification_using_Keras.png" alt="Figure 4: Model for Concrete Crack Classification using_Keras" /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Model for Concrete Crack Classification using_Keras</strong></figcaption>
 </figure>
 </div>
-<p>The result of our network would be a number in (0,1). We may treat it as the probability of the existence of crack in the image. Noticing that the original images have the size (227,227,3), we would resize it into (120,120,3) in the preprocessing procedure. The detailed properties of the network are listed in Figure <a href="#fig:Model_Summary_and_Hyperparameters">5</a> and Table <a href="#tbl:CNNHyperparameters">1</a>:</p>
+<p>The result of our network would be a number in (0,1). We may treat it as the probability of the existence of crack in the image. Noticing that the original images have the size (227,227,3), we would resize it into (120,120,3) in the preprocessing procedure. The detailed properties of the network are listed in Figure <a href="#fig:Model_Summary_and_Hyperparameters">5</a> and Table ??:</p>
 <div id="fig:Model_Summary_and_Hyperparameters" class="fignos">
 <figure>
 <img src="./images/Model_Summary_and_Hyperparameters.png" style="height:4in" alt="Figure 5: Model Summary and Hyperparameters" /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Model Summary and Hyperparameters</strong></figcaption>
 </figure>
 </div>
-<div id="tbl:CNNHyperparameters" class="tablenos">
-<table id="tbl:CNNHyperparameters">
-<caption><span>Table 1:</span> Hyperparameters
-</caption>
+<table>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Training</th>
@@ -186,7 +183,8 @@ Department of Civil and Environmental Engineering, University of Illinois
 </tr>
 </tbody>
 </table>
-</div>
+<p><span class="center"><strong>Table: Hyperparameters</strong></span>
+{#tbl:CNNHyperparameters}</p>
 <h3 id="results-and-analysis">Results and Analysis</h3>
 <p>Below is the confusion matrix our model generated:</p>
 <div id="fig:Confusion_Matrix" class="fignos">
@@ -212,10 +210,10 @@ Department of Civil and Environmental Engineering, University of Illinois
 \\
 \mathrm{Weighted} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Support}_i\times \mathrm{Score}_i}
 \]</span><span class="eqnos-number">(1)</span></span></p>
-<p>Their specific values are shown in Table <a href="#tbl:Result_Analysis">2</a>:</p>
+<p>Their specific values are shown in Table <a href="#tbl:Result_Analysis">1</a>:</p>
 <div id="tbl:Result_Analysis" class="tablenos">
 <table id="tbl:Result_Analysis">
-<caption><span>Table 2:</span> Result Analysis
+<caption><span>Table 1:</span> Result Analysis
 </caption>
 <thead>
 <tr class="header">
@@ -287,10 +285,10 @@ We perform a normalization before plugging in the U-Net architecture based on th
 <img src="./images/Model_Summary.png" alt="Figure 11: Model Summary" /><figcaption aria-hidden="true"><span>Figure 11:</span> <strong>Model Summary</strong></figcaption>
 </figure>
 </div>
-<p>Other properties of this network is listed in Table <a href="#tbl:U-NetHyperparameters">3</a>:</p>
+<p>Other properties of this network is listed in Table <a href="#tbl:U-NetHyperparameters">2</a>:</p>
 <div id="tbl:U-NetHyperparameters" class="tablenos">
 <table id="tbl:U-NetHyperparameters">
-<caption><span>Table 3:</span> U-Net Hyperparameters.
+<caption><span>Table 2:</span> U-Net Hyperparameters.
 </caption>
 <thead>
 <tr class="header">
