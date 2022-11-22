@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/44122889021d89884c1fa2764a857eac1c6b408b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/44122889021d89884c1fa2764a857eac1c6b408b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/44122889021d89884c1fa2764a857eac1c6b408b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/31d017173cc9e2ce080fab716dca3816c6b8338f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/31d017173cc9e2ce080fab716dca3816c6b8338f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/31d017173cc9e2ce080fab716dca3816c6b8338f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -176,7 +176,9 @@ Architecture:
 
 ## Concrete crack detection 
 
-![**Basic Convolutional Neural Network for Classification.**](./images/Basic_Convolutional_Neural_Network_for_Classification.png)
+![
+**Basic Convolutional Neural Network for Classification.**
+](./images/Basic_Convolutional_Neural_Network_for_Classification.png)
 
 In our group project, we trained two models: 
 1.	Concrete crack detection based on convolutional neural network (CNN)
