@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7636853ae81bd19da212de8df71f8edb9d6b1d7f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7636853ae81bd19da212de8df71f8edb9d6b1d7f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7636853ae81bd19da212de8df71f8edb9d6b1d7f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/4eb3125430678c58bd366adb6dea4c7eb7f81e5b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/4eb3125430678c58bd366adb6dea4c7eb7f81e5b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/4eb3125430678c58bd366adb6dea4c7eb7f81e5b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -166,17 +166,27 @@ a. Pool size and strides determine the dimensions of down-sample procedure.</p>
 <p>And in the second convolutional block, we double the channels number to 32 with Conv2D, apply the same MaxPool2D.</p>
 <p>Finally, we process our data input an GlobalAveragePooling2D layer (because we are focusing on the whole image, not a part of it in segmentation) and dense the tensor to 1 with Sigmoid function (As we only have 1 class of result, for multiclass classification, use SoftMax).</p>
 <p>The result of our network would be a number in (0,1), we could treat this as a probability of crack in the image.</p>
-<p>Model for Concrete Crack Classification using Keras
-Model_for_Concrete_Crack_Classification_using_Keras</p>
 <div id="fig:Model_for_Concrete_Crack_Classification_using_Keras" class="fignos">
 <figure>
 <img src="./images/Model_for_Concrete_Crack_Classification_using_Keras.png" alt="Figure 2: Model_for_Concrete_Crack_Classification_using_Keras." /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Model_for_Concrete_Crack_Classification_using_Keras.</strong></figcaption>
 </figure>
 </div>
 <p>Notice that the original images have size of (227,227,3), we would resize it into (120,120,3) in preprocess procedure.</p>
-<p>Model Summary and Hyperparameters
-Model_Summary_and_Hyperparameters
-<img src="./images/Model_Summary_and_Hyperparameters.png" title="Wide image" id="fig:Model_Summary_and_Hyperparameters" alt="Model_Summary_and_Hyperparameters." /></p>
+<div id="fig:Model_Summary_and_Hyperparameters" class="fignos">
+<figure>
+<img src="./images/Model_Summary_and_Hyperparameters.png" alt="Figure 3: Model_Summary_and_Hyperparameters." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Model_Summary_and_Hyperparameters.</strong></figcaption>
+</figure>
+</div>
+<div class="line-block">training | 3360 |<br />
+validation | 840 |<br />
+testing | 1800 |</div>
+<p>|:———–|:—-:|
+| Optimizer | Adam |
+| Loss Function | Binary Crossentropy |
+| Metrics | Accuracy |
+| Epochs | 100 |</p>
+<p>Table: Hyperparameters.
+{#tbl:CNNHyperparameters}</p>
 <p>[Crack detection]
 Dataset: Surface Crack Detection | Kaggle Positive: 20000 Negative: 20000
 Training, validating, testing: 3360, 840, 1800
