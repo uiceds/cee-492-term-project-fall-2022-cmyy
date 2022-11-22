@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/23b8647b528edf827a4118b080ef53914dc8bf1b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/23b8647b528edf827a4118b080ef53914dc8bf1b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/23b8647b528edf827a4118b080ef53914dc8bf1b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5ebdd39af7b770b86853c280281035be1474d36b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5ebdd39af7b770b86853c280281035be1474d36b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/5ebdd39af7b770b86853c280281035be1474d36b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -104,7 +104,7 @@ manubot-clear-requests-cache: false
 
 The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information of the exact locations of cracks is smeared in the network. We aim to firstly rebuild a CNN-based model for crack detection, and then find and apply another model to locate the exact positions of cracks. 
 
-(please add potential applications or why this model is better)
+# please add more details about the potential applications of the second model or why this model is better
 
 We first train a CNN with the Surface Crack Detection dataset [@{https://www.kaggle.com/datasets/arunrk7/surface-crack-detection}] to judge if any concrete crack exists. The dataset contains images (each has $227 \times 227$ pixels and RGB channels) of concrete surfaces with or without crack. Each class contains $20000$ images. Examples are shown in Figure @fig:Negative_and_Positive:
 
@@ -114,12 +114,16 @@ We then train a CNN-based network call U-Net [@doi:10.1007/978-3-319-24574-4_28]
 
 ![**Origin and Mask Images from the Concrete Crack Conglomerate Dataset**](https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png "Tall image"){#fig:Origin_and_Mask height=2in}
 
-The dataset is splitted into a training set with 19801 images and a testing set with 2195 images. (details about the first dataset???)
+The dataset is splitted into a training set with 19801 images and a testing set with 2195 images. 
+
+# details about the first dataset
 
 ## Concrete Crack Detection 
 
 ![**Basic Convolutional Neural Network for Classification.**
 ](./images/Basic_Convolutional_Neural_Network_for_Classification.png "Wide image"){#fig:Basic_Convolutional_Neural_Network_for_Classification}
+
+# Please add descriptions to Figure @fig:Basic_Convolutional_Neural_Network_for_Classification, otherwiss delete it. 
 
 ### Modeling and training 
 Here we need to specify the hyperparameters of our layers:
