@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b07c8606b80d8057e19afa932c3cd4a5c3657da/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b07c8606b80d8057e19afa932c3cd4a5c3657da/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b07c8606b80d8057e19afa932c3cd4a5c3657da/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/2ab99ef28fa28e343edf5adbc42e4fd26bf08b17/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/2ab99ef28fa28e343edf5adbc42e4fd26bf08b17/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/2ab99ef28fa28e343edf5adbc42e4fd26bf08b17/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -144,7 +144,7 @@ The result of our network would be a number in (0,1). We may treat it as the pro
 |:-----------|:------|:------|:------|:------|:------|:------|
 | 3360 | 840  | 1800 | Adam | Binary Crossentropy | Accuracy | 100 | 
 
-[**Table: Hyperparameters**]{.center}
+**Table: Hyperparameters**
 {#tbl:CNNHyperparameters}
 
 ### Results and Analysis 
@@ -156,8 +156,7 @@ Below is the confusion matrix our model generated:
 
 and the loss during the training process: 
 
-![
-**Loss Evolution**
+![**Loss Evolution**
 ](./images/Loss_Evolution.png "Tall image"){#fig:Loss_Evolution height=3in}
 
 We can see that this trained model has good performance on the testing data. The training process only lasts for 25 epochs because of the early-stop procedure. We can further calculate the following parameters:
@@ -184,7 +183,7 @@ Their specific values are shown in Table @tbl:Result_Analysis:
 | Weighted Avg | 0.97 | 0.97 | 0.97 | 1000 |	
 
 
-Table: Result Analysis
+**Table: Result Analysis**
 {#tbl:Result_Analysis}
 
 In short, the network has overall good performance.
