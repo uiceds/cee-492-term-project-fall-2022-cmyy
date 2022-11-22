@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/841dac1257e115e2280e02b25ab63a65c50f26f6/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/841dac1257e115e2280e02b25ab63a65c50f26f6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/841dac1257e115e2280e02b25ab63a65c50f26f6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/c0172add43aaefa7fc5e22ab79d2c709470f1a78/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/c0172add43aaefa7fc5e22ab79d2c709470f1a78/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/c0172add43aaefa7fc5e22ab79d2c709470f1a78/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -126,13 +126,15 @@ Department of Civil and Environmental Engineering, University of Illinois
 <p>We first train a CNN with the Surface Crack Detection dataset <span class="citation" data-cites="ZtBdubRd">[<a href="#ref-ZtBdubRd" role="doc-biblioref">1</a>]</span> to judge if any concrete crack exists. The dataset contains images (each has <span class="math inline">\(227 \times 227\)</span> pixels and RGB channels) of concrete surfaces with or without crack. Each class contains <span class="math inline">\(20000\)</span> images. Examples are shown in Figure <a href="#fig:Negative_and_Positive">1</a>:</p>
 <div id="fig:Negative_and_Positive" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png" style="height:2in" alt="Figure 1: Negative and Positive Examples from the Surface Crack Detection Dataset" /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Negative and Positive Examples from the Surface Crack Detection Dataset</strong></figcaption>
+<img src="https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png" style="height:2in" alt="Figure 1: Negative and Positive Examples from the Surface Crack Detection Dataset" /><figcaption aria-hidden="true"><span>Figure 1:</span> <span class="center"><strong>Negative and Positive Examples from the Surface Crack Detection Dataset</strong></span></figcaption>
 </figure>
 </div>
 <h3 id="the-dataset-is-splitted-into-a-training-set-with-images-and-a-testing-set-with-images.">The dataset is splitted into a training set with ??? images and a testing set with ??? images.</h3>
 <p>We then train a CNN-based network call U-Net <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span> with the Concrete Crack Conglomerate Dataset <span class="citation" data-cites="ovjFCGWg">[<a href="#ref-ovjFCGWg" role="doc-biblioref">3</a>]</span> to segment the concrete from its cracks.</p>
 <p>The dataset contains over <span class="math inline">\(20000\)</span> crack images (each has <span class="math inline">\(448 \times 448\)</span> pixels and RGB channels). Each image data has an origin image and a mask image. Examples are shown in Figure ??:</p>
-<p>[<strong>Origin and Mask Images from the Concrete Crack Conglomerate Dataset</strong>]{.center}(https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png “Tall image”){#fig:Origin_and_Mask height=2in}{.center}</p>
+<figure>
+<img src="https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png" class="center" alt="Origin and Mask Images from the Concrete Crack Conglomerate Dataset" /><figcaption aria-hidden="true"><strong>Origin and Mask Images from the Concrete Crack Conglomerate Dataset</strong></figcaption>
+</figure>
 <p>The dataset is splitted into a training set with 19801 images and a testing set with 2195 images.</p>
 <h2 id="crack-detection">Crack Detection</h2>
 <h3 id="a-brief-introduction-to-cnn">A Brief Introduction to CNN</h3>
