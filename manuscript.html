@@ -72,15 +72,22 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a472ec2c30072e981a278d80c9958c170da1968c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a472ec2c30072e981a278d80c9958c170da1968c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a472ec2c30072e981a278d80c9958c170da1968c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/79c6d7f9bb8d07e41bca4a412ef76ef63535bf0c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/79c6d7f9bb8d07e41bca4a412ef76ef63535bf0c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/79c6d7f9bb8d07e41bca4a412ef76ef63535bf0c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
+  
+  <!-- pandoc-eqnos: equation style -->
+  <style>
+    .eqnos { display: inline-block; position: relative; width: 100%; }
+    .eqnos br { display: none; }
+    .eqnos-number { position: absolute; right: 0em; top: 50%; line-height: 0; }
+  </style>
 </head>
 <body>
 <header id="title-block-header">
@@ -228,54 +235,22 @@ a. Pool size and strides determine the dimensions of down-sample procedure.</p>
 </div>
 <div id="fig:Loss_Evolution" class="fignos">
 <figure>
-<img src="./images/Loss_Evolution.png" style="height:3in" alt="Figure 5: Loss Evolution." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Loss Evolution.</strong></figcaption>
+<img src="./images/Loss_Evolution.png" style="height:5in" alt="Figure 5: Loss Evolution." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Loss Evolution.</strong></figcaption>
 </figure>
 </div>
-<p>[Crack detection]
-Dataset: Surface Crack Detection | Kaggle Positive: 20000 Negative: 20000
-Training, validating, testing: 3360, 840, 1800
-Network: CNN</p>
-<figure>
-<img src="../fig7_sch_cla.png" alt="Figure 7" /><figcaption aria-hidden="true">Figure 7</figcaption>
-</figure>
-<p>Figure 5. Schematic of CNN</p>
-<figure>
-<img src="../fig8_code_cla.png" alt="Figure 8" /><figcaption aria-hidden="true">Figure 8</figcaption>
-</figure>
-<p>Figure 6. Code of CNN</p>
-<p>Input: images with 120x120x3 [height, width, channel (RGB)] (resized from 227x227)</p>
-<p>Output: some kind of probability (was proceed by sigmoid)</p>
-<p>Solver: Adam</p>
-<p>Loss: Binary Cross Entropy</p>
-<p>Testing result: True Positive, False Positive, True Negative, False Negative.</p>
-<p>Positive or negative was predicted by the network, and true or false is the result of prediction (right or wrong)</p>
-<figure>
-<img src="../fig14_confusion_matrix.png" alt="Figure 14" /><figcaption aria-hidden="true">Figure 14</figcaption>
-</figure>
-<p>Figure 7. Confusion Matrix of the Test Result</p>
-<p>[Crack Segmentation]
-Dataset: Concrete Crack Conglomerate Dataset (vt.edu)</p>
-<p>Would only use a part of it (107 for training and validating, 11 for testing) as U-Net is an effective architecture.</p>
-<p>Network: U-Net [1505.04597v1] U-Net: Convolutional Networks for Biomedical Image Segmentation (arxiv.org)</p>
-<figure>
-<img src="../fig9_sch_seg.png" alt="Figure 9" /><figcaption aria-hidden="true">Figure 9</figcaption>
-</figure>
-<p>Figure 8. Schematic of a U Net</p>
-<p>Here we would have input with 3 channel, and would become 16 channel after the first convolution.</p>
-<figure>
-<img src="../fig10_biowulf.png" alt="Figure 10" /><figcaption aria-hidden="true">Figure 10</figcaption>
-</figure>
-<p><img src="../fig11_result1.png" alt="Figure 11" /> <img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-cmyy/main/fig12_result2.png" alt="Figure 12" /></p>
-<p>Figure 9. Example of U Net Applied in Biomedical Image</p>
-<p>U net applied in crack detection Computer vision-based concrete crack detection using U-net fully convolutional networks - ScienceDirect (It has almost the same structure with original U-net, but we would use a different channel number, we would also use a different architecture with pretrained convolutional neural network as backbone (VGG, ResNet, Inception))</p>
-<figure>
-<img src="../fig13_code_seg.png" alt="Figure 13" /><figcaption aria-hidden="true">Figure 13</figcaption>
-</figure>
-<p>Figure 10. Code of U Net</p>
-<p>Input: images with 120x120x3 [height, width, channel (RGB)] (resized from 227x227)</p>
-<p>Output: some kind of probability (was proceed by sigmoid)</p>
-<p>Solver: Adam</p>
-<p>Loss: Binary Cross Entropy</p>
+<p>We can see that this trained model has good performance on the testing data, it only takes 25 epochs because of our early stop condition.
+We can further calculate the following parameters:</p>
+<p><span id="eq:regular-equation" class="eqnos"><span class="math display">\[
+\mathrm{Precision}=\frac{TP}{TP+FP}
+\\
+\mathrm{Recall}=\frac{TP}{TP+FN}
+\\
+\mathrm{Score}=2\times \frac{\mathrm{Precision}\times \mathrm{Recall}}{\mathrm{Precision}+\mathrm{Recall}}
+\\
+\mathrm{Macro} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Score}_i}
+\\
+\mathrm{Weighted} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Support}_i\times \mathrm{Score}_i}
+\]</span><span class="eqnos-number">(1)</span></span></p>
 <h2 id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
