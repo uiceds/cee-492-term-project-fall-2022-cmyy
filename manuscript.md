@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/87d827f235e9b1e4ac1b8a4aef41ce01b74010e4/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/87d827f235e9b1e4ac1b8a4aef41ce01b74010e4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/87d827f235e9b1e4ac1b8a4aef41ce01b74010e4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8073cd5352803b89d327f8b0a82c26d4e7aface1/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8073cd5352803b89d327f8b0a82c26d4e7aface1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8073cd5352803b89d327f8b0a82c26d4e7aface1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -222,6 +222,8 @@ We can see that this trained model has good performance on the testing data, it 
 We can further calculate the following parameters:
 
 $$
+\begin{equation}
+\begin{aligned}
 \mathrm{Precision}=\frac{TP}{TP+FP}
 \\
 \mathrm{Recall}=\frac{TP}{TP+FN}
@@ -231,6 +233,8 @@ $$
 \mathrm{Macro} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Score}_i}
 \\
 \mathrm{Weighted} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Support}_i\times \mathrm{Score}_i}
+\end{equation}
+\end{aligned}
 $${#eq:regular-equation}
 
 | | Precision | Recall | Score | Support |
