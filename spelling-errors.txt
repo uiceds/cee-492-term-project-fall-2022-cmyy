@@ -2,7 +2,7 @@ BatchNormalization
 Chengyou
 Classificationwill
 CNNHyperparameters
-Conv
+conv
 Convolutional
 Crossentropy
 dataset
@@ -17,7 +17,7 @@ nonlinearity
 overfitting
 preprocessing
 pretrained
-ReLU
+ReLu
 RGB
 Sian
 sigmoid
