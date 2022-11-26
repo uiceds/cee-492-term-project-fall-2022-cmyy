@@ -1,31 +1,7 @@
 ---
 title: "Concrete Crack Detection and Segmentation"
-keywords:
-  - markdown
-  - publishing
-  - manubot
 lang: en-US
 authors:
-  - github: yslin0114
-    name: Yu-Sian Lin
-    email: yusianl2@illinois.edu
-    affiliations:
-      - Department of Civil and Environmental Engineering, University of Illinois
-
-  - github: Yueh-Ti
-    name: Yueh-Ti Lee
-    email: yuehtil2@illinois.edu
-    affiliations:
-      - Department of Civil and Environmental Engineering, University of Illinois
-
-  - github: Minjiang-Zhu
-    name: Minjiang Zhu
-    email: mz51@uiuc.edu
-    affiliations:
-      - Department of Civil and Environmental Engineering, University of Illinois
-      
-  - github: TensorYue
-    name: Chengyou Yue
-    email: yue21@illinois.edu
+    name: Yu-Sian Lin, Chengyou Yue, Yueh-Ti Lee, Minjiang Zhu
     affiliations:
       - Department of Civil and Environmental Engineering, University of Illinois
