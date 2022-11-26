@@ -1,16 +1,9 @@
 ---
 title: Concrete Crack Detection and Segmentation
-keywords:
-- markdown
-- publishing
-- manubot
 lang: en-US
-date-meta: '2022-11-22'
+date-meta: '2022-11-26'
 author-meta:
-- Yu-Sian Lin
-- Yueh-Ti Lee
-- Minjiang Zhu
-- Chengyou Yue
+- Yu-Sian Lin, Chengyou Yue, Yueh-Ti Lee, Minjiang Zhu
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -21,21 +14,15 @@ header-includes: |-
   <meta name="citation_title" content="Concrete Crack Detection and Segmentation" />
   <meta property="og:title" content="Concrete Crack Detection and Segmentation" />
   <meta property="twitter:title" content="Concrete Crack Detection and Segmentation" />
-  <meta name="dc.date" content="2022-11-22" />
-  <meta name="citation_publication_date" content="2022-11-22" />
+  <meta name="dc.date" content="2022-11-26" />
+  <meta name="citation_publication_date" content="2022-11-26" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="Yu-Sian Lin" />
-  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois" />
-  <meta name="citation_author" content="Yueh-Ti Lee" />
-  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois" />
-  <meta name="citation_author" content="Minjiang Zhu" />
-  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois" />
-  <meta name="citation_author" content="Chengyou Yue" />
+  <meta name="citation_author" content="Yu-Sian Lin, Chengyou Yue, Yueh-Ti Lee, Minjiang Zhu" />
   <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
@@ -43,9 +30,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/4fc5299e7f47a2eb4010e2be83a79448866dfa0a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/4fc5299e7f47a2eb4010e2be83a79448866dfa0a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/4fc5299e7f47a2eb4010e2be83a79448866dfa0a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/884609b5ab80c252ba91610afedad2688c72a9c9/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/884609b5ab80c252ba91610afedad2688c72a9c9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/884609b5ab80c252ba91610afedad2688c72a9c9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,30 +51,7 @@ manubot-clear-requests-cache: false
 
 
 
-+ **Yu-Sian Lin**<br>
-    · ![GitHub icon](images/github.svg){.inline_icon}
-    [yslin0114](https://github.com/yslin0114)<br>
-  <small>
-     Department of Civil and Environmental Engineering, University of Illinois
-  </small>
-
-+ **Yueh-Ti Lee**<br>
-    · ![GitHub icon](images/github.svg){.inline_icon}
-    [Yueh-Ti](https://github.com/Yueh-Ti)<br>
-  <small>
-     Department of Civil and Environmental Engineering, University of Illinois
-  </small>
-
-+ **Minjiang Zhu**<br>
-    · ![GitHub icon](images/github.svg){.inline_icon}
-    [Minjiang-Zhu](https://github.com/Minjiang-Zhu)<br>
-  <small>
-     Department of Civil and Environmental Engineering, University of Illinois
-  </small>
-
-+ **Chengyou Yue**<br>
-    · ![GitHub icon](images/github.svg){.inline_icon}
-    [TensorYue](https://github.com/TensorYue)<br>
++ **Yu-Sian Lin, Chengyou Yue, Yueh-Ti Lee, Minjiang Zhu**<br><br>
   <small>
      Department of Civil and Environmental Engineering, University of Illinois
   </small>

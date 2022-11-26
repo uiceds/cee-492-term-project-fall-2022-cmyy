@@ -2,7 +2,7 @@ BatchNormalization
 Chengyou
 CNNHyperparameters
 conv
-convolutional
+Convolutional
 Crossentropy
 dataset
 GlobalAveragePooling
@@ -16,14 +16,12 @@ nonlinearity
 overfitting
 preprocessing
 pretrained
-ReLu
+ReLU
 RGB
 Sian
 sigmoid
 softmax
 splitted
-TensorYue
-yslin
 Yu
 Yue
 Yueh
