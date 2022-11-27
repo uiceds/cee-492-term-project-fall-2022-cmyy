@@ -62,9 +62,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d6f44986ee47ad969e506320f0d2cd8ba77a80d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d6f44986ee47ad969e506320f0d2cd8ba77a80d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d6f44986ee47ad969e506320f0d2cd8ba77a80d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/f30d5803aac82cb60ccf01ff8992a424ade3aea3/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/f30d5803aac82cb60ccf01ff8992a424ade3aea3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/f30d5803aac82cb60ccf01ff8992a424ade3aea3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -289,20 +289,20 @@ We perform a normalization before plugging in the U-Net architecture based on th
 <p>The training and testing losses are plotted in Figure <a href="#fig:U-Net_Loss">12</a>:</p>
 <div id="fig:U-Net_Loss" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png" style="height:3in" alt="Figure 12: U-Net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 12:</span> <strong>U-Net Loss Evaluation.</strong></figcaption>
+<img src="images/Evolution.png" style="height:3in" alt="Figure 12: U-Net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 12:</span> <strong>U-Net Loss Evaluation.</strong></figcaption>
 </figure>
 </div>
 <p>We can see that this trained model has good performance on the testing data. It only takes 30 epochs because of the early-stop procedure.</p>
 <h2 id="results-and-analysis-1">Results and Analysis</h2>
 <div id="fig:Prediction_Result" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/67733344/203314642-4d22a93d-8601-43ac-8747-9bf9cd1b1e0b.png" alt="Figure 13: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 13:</span> <strong>Prediction Result</strong></figcaption>
+<img src="images/Result.png" alt="Figure 13: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 13:</span> <strong>Prediction Result</strong></figcaption>
 </figure>
 </div>
-<p>The prediction results of our testing images is shown in <a href="#fig:Prediction_Result">14</a>. It performs well. However, we can also notice that in the testing image 7, the network recognizes the dark-colored zone as a crack. The reason is that the network is identify crack by detecting the edge of the color channels, we can illustrate this by predicting the crack from RGB color wheel.</p>
-<div id="fig:Prediction_Result" class="fignos">
+<p>The prediction results of our testing images is shown in <a href="#fig:Prediction_Result">13</a>. It performs well. However, we can also notice that in the testing image 7, the network recognizes the dark-colored zone as a crack. The reason is that the network is identify crack by detecting the edge of the color channels, we can illustrate this by predicting the crack from RGB color wheel.</p>
+<div id="fig:RGB_Result" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/67733344/203314642-4d22a93d-8601-43ac-8747-9bf9cd1b1e0b.png" alt="Figure 14: RGB Result" /><figcaption aria-hidden="true"><span>Figure 14:</span> <strong>RGB Result</strong></figcaption>
+<img src="images/RGB_compare.png" alt="Figure 14: RGB Result" /><figcaption aria-hidden="true"><span>Figure 14:</span> <strong>RGB Result</strong></figcaption>
 </figure>
 </div>
 <h2 id="reproducible-work">Reproducible Work</h2>
