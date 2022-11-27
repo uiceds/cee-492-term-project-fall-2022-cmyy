@@ -30,9 +30,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/31922d2abece01eb2a67fda72d68ed281c6b0ae3/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/31922d2abece01eb2a67fda72d68ed281c6b0ae3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/31922d2abece01eb2a67fda72d68ed281c6b0ae3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d6f44986ee47ad969e506320f0d2cd8ba77a80d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d6f44986ee47ad969e506320f0d2cd8ba77a80d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d6f44986ee47ad969e506320f0d2cd8ba77a80d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -180,7 +180,7 @@ Other properties of this network is listed in Table @tbl:U-NetHyperparameters:
 
 | Training   | Validation | Testing    | Optimizer | Loss Function | Metrics | Epochs |
 |:-----------|:------|:------|:------|:------|:------|:------|
-| 107 | 0.2 | 17 | Adam | Binary Crossentropy | Accuracy | 50 |
+| 107 | 0.1 | 17 | Adam | Binary Crossentropy | Accuracy | 50 |
 
 Table: **U-Net Hyperparameters**
 {#tbl:U-NetHyperparameters}
@@ -197,11 +197,11 @@ We can see that this trained model has good performance on the testing data. It 
 
 The prediction results of our testing images is shown in @fig:Prediction_Result. It performs well. However, we can also notice that in the testing image 7, the network recognizes the dark-colored zone as a crack. The reason is that the network is identify crack by detecting the edge of the color channels, we can illustrate this by predicting the crack from RGB color wheel.
 
-U-Net still learns well even the training dataset is very small. We can compare this result with the same network which is trained only by 30 images.
+![**RGB Result**](https://user-images.githubusercontent.com/67733344/203314642-4d22a93d-8601-43ac-8747-9bf9cd1b1e0b.png){#fig:Prediction_Result}
 
 ## Reproducible Work
 
-We also provide the network codes, pre-trained models and datasets for reproducible work, you can find it in 
+We also provide the network codes, pre-trained models and datasets for reproducible work, they are under content.reproducible folder.
 
 ## Reference
 

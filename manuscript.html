@@ -62,9 +62,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/31922d2abece01eb2a67fda72d68ed281c6b0ae3/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/31922d2abece01eb2a67fda72d68ed281c6b0ae3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/31922d2abece01eb2a67fda72d68ed281c6b0ae3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d6f44986ee47ad969e506320f0d2cd8ba77a80d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d6f44986ee47ad969e506320f0d2cd8ba77a80d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d6f44986ee47ad969e506320f0d2cd8ba77a80d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -276,7 +276,7 @@ We perform a normalization before plugging in the U-Net architecture based on th
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">107</td>
-<td style="text-align: left;">0.2</td>
+<td style="text-align: left;">0.1</td>
 <td style="text-align: left;">17</td>
 <td style="text-align: left;">Adam</td>
 <td style="text-align: left;">Binary Crossentropy</td>
@@ -299,10 +299,14 @@ We perform a normalization before plugging in the U-Net architecture based on th
 <img src="https://user-images.githubusercontent.com/67733344/203314642-4d22a93d-8601-43ac-8747-9bf9cd1b1e0b.png" alt="Figure 13: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 13:</span> <strong>Prediction Result</strong></figcaption>
 </figure>
 </div>
-<p>The prediction results of our testing images is shown in <a href="#fig:Prediction_Result">13</a>. It performs well. However, we can also notice that in the testing image 7, the network recognizes the dark-colored zone as a crack. The reason is that the network is identify crack by detecting the edge of the color channels, we can illustrate this by predicting the crack from RGB color wheel.</p>
-<p>U-Net still learns well even the training dataset is very small. We can compare this result with the same network which is trained only by 30 images.</p>
+<p>The prediction results of our testing images is shown in <a href="#fig:Prediction_Result">14</a>. It performs well. However, we can also notice that in the testing image 7, the network recognizes the dark-colored zone as a crack. The reason is that the network is identify crack by detecting the edge of the color channels, we can illustrate this by predicting the crack from RGB color wheel.</p>
+<div id="fig:Prediction_Result" class="fignos">
+<figure>
+<img src="https://user-images.githubusercontent.com/67733344/203314642-4d22a93d-8601-43ac-8747-9bf9cd1b1e0b.png" alt="Figure 14: RGB Result" /><figcaption aria-hidden="true"><span>Figure 14:</span> <strong>RGB Result</strong></figcaption>
+</figure>
+</div>
 <h2 id="reproducible-work">Reproducible Work</h2>
-<p>We also provide the network codes, pre-trained models and datasets for reproducible work, you can find it in</p>
+<p>We also provide the network codes, pre-trained models and datasets for reproducible work, they are under content.reproducible folder.</p>
 <h2 id="reference">Reference</h2>
 <p>U-Net: Convolutional Networks for Biomedical Image Segmentation
 <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span></p>

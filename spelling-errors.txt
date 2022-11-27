@@ -2,10 +2,10 @@ CFD
 Chengyou
 CNNHyperparameters
 Conv
-Convolutional
+convolutional
 CRACKTREE
 Crossentropy
-Dataset
+dataset
 datasets
 FCN
 GlobalAveragePooling
