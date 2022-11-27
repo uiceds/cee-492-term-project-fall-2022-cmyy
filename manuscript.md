@@ -30,9 +30,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/f30d5803aac82cb60ccf01ff8992a424ade3aea3/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/f30d5803aac82cb60ccf01ff8992a424ade3aea3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/f30d5803aac82cb60ccf01ff8992a424ade3aea3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b6326fc065181cf745853bcc4bf45efd6c5b8e5/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b6326fc065181cf745853bcc4bf45efd6c5b8e5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b6326fc065181cf745853bcc4bf45efd6c5b8e5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -147,9 +147,9 @@ Table: **Result Analysis**
 
 In short, the network has overall good performance.
 
-## Concrete Segmentation
+## Crack Segmentation
 
-### A Brief Introduction to CNN 
+### A Brief Introduction to U-Net 
 
 U-Net is built upon the so-called "Fully Convolutional Network", it was firstly introduced in 2015 and won the ISBI challenge for segmentation of neuronal structures in electron micropic stacks. The original U-Net architecture is shown below:
 
