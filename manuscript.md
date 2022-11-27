@@ -30,9 +30,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d6f44986ee47ad969e506320f0d2cd8ba77a80d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d6f44986ee47ad969e506320f0d2cd8ba77a80d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/1d6f44986ee47ad969e506320f0d2cd8ba77a80d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/f30d5803aac82cb60ccf01ff8992a424ade3aea3/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/f30d5803aac82cb60ccf01ff8992a424ade3aea3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/f30d5803aac82cb60ccf01ff8992a424ade3aea3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -187,17 +187,17 @@ Table: **U-Net Hyperparameters**
 
 The training and testing losses are plotted in Figure @fig:U-Net_Loss:
 
-![**U-Net Loss Evaluation.**](https://user-images.githubusercontent.com/67733344/203299831-e2a78d2b-2c6b-4945-b915-a073371f3380.png "Tall image"){#fig:U-Net_Loss height=3inch}
+![**U-Net Loss Evaluation.**](images/Evolution.png "Tall image"){#fig:U-Net_Loss height=3inch}
 
 We can see that this trained model has good performance on the testing data. It only takes 30 epochs because of the early-stop procedure.
 
 ## Results and Analysis 
 
-![**Prediction Result**](https://user-images.githubusercontent.com/67733344/203314642-4d22a93d-8601-43ac-8747-9bf9cd1b1e0b.png){#fig:Prediction_Result}
+![**Prediction Result**](images/Result.png){#fig:Prediction_Result}
 
 The prediction results of our testing images is shown in @fig:Prediction_Result. It performs well. However, we can also notice that in the testing image 7, the network recognizes the dark-colored zone as a crack. The reason is that the network is identify crack by detecting the edge of the color channels, we can illustrate this by predicting the crack from RGB color wheel.
 
-![**RGB Result**](https://user-images.githubusercontent.com/67733344/203314642-4d22a93d-8601-43ac-8747-9bf9cd1b1e0b.png){#fig:Prediction_Result}
+![**RGB Result**](images/RGB_compare.png){#fig:RGB_Result}
 
 ## Reproducible Work
 
