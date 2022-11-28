@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\content",
     "\\content\\images",
     "\\content\\reproducible",
     "\\content\\reproducible\\model",
     "\\content\\reproducible\\network"
   ],
-  "SelectedNode": "\\content",
+  "SelectedNode": "\\content\\03.intro.md",
   "PreviewInSolutionExplorer": false
 }
