@@ -1,7 +1,7 @@
 ---
 title: Concrete Crack Detection and Segmentation
 lang: en-US
-date-meta: '2022-11-27'
+date-meta: '2022-11-28'
 author-meta:
 - Yu-Sian Lin, Chengyou Yue, Yueh-Ti Lee, Minjiang Zhu
 header-includes: |-
@@ -14,8 +14,8 @@ header-includes: |-
   <meta name="citation_title" content="Concrete Crack Detection and Segmentation" />
   <meta property="og:title" content="Concrete Crack Detection and Segmentation" />
   <meta property="twitter:title" content="Concrete Crack Detection and Segmentation" />
-  <meta name="dc.date" content="2022-11-27" />
-  <meta name="citation_publication_date" content="2022-11-27" />
+  <meta name="dc.date" content="2022-11-28" />
+  <meta name="citation_publication_date" content="2022-11-28" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -30,9 +30,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b6326fc065181cf745853bcc4bf45efd6c5b8e5/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b6326fc065181cf745853bcc4bf45efd6c5b8e5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b6326fc065181cf745853bcc4bf45efd6c5b8e5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cb73807f792de1aee9bb56a8677c4fff5d154406/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cb73807f792de1aee9bb56a8677c4fff5d154406/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cb73807f792de1aee9bb56a8677c4fff5d154406/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -204,15 +204,6 @@ The prediction results of our testing images is shown in @fig:Prediction_Result.
 We also provide the network codes, pre-trained models and datasets for reproducible work, they are under content.reproducible folder.
 
 ## Reference
-
-U-Net: Convolutional Networks for Biomedical Image Segmentation
-[@doi:10.1007/978-3-319-24574-4_28]
-
-Computer vision-based concrete crack detection using U-net fully convolutional networks
-[@doi:10.1016/j.autcon.2019.04.005]
-
-Performance Evaluation of Deep CNN-Based Crack Detection and Localization Techniques for Concrete Structures
-[@doi:10.3390/s21051688]
 
 
 

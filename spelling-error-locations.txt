@@ -51,6 +51,4 @@ content/03.intro.md:135:RGB
 content/03.intro.md:137:RGB
 content/03.intro.md:141:datasets
 content/03.intro.md:141:pre
-content/03.intro.md:145:Convolutional
-content/03.intro.md:148:convolutional
 content/Exploratory Data Analysis.md:42:dataset
