@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Yu-Sian Lin, Chengyou Yue, Yueh-Ti Lee, Minjiang Zhu" />
-  <meta name="dcterms.date" content="2022-11-28" />
+  <meta name="dcterms.date" content="2022-12-05" />
   <title>Concrete Crack Detection and Segmentation</title>
   <style>
     code{white-space: pre-wrap;}
@@ -46,8 +46,8 @@
   <meta name="citation_title" content="Concrete Crack Detection and Segmentation" />
   <meta property="og:title" content="Concrete Crack Detection and Segmentation" />
   <meta property="twitter:title" content="Concrete Crack Detection and Segmentation" />
-  <meta name="dc.date" content="2022-11-28" />
-  <meta name="citation_publication_date" content="2022-11-28" />
+  <meta name="dc.date" content="2022-12-05" />
+  <meta name="citation_publication_date" content="2022-12-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -62,9 +62,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cb73807f792de1aee9bb56a8677c4fff5d154406/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cb73807f792de1aee9bb56a8677c4fff5d154406/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cb73807f792de1aee9bb56a8677c4fff5d154406/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/0920e0cd347971444976bd5c40e70d98ffd0b237/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/0920e0cd347971444976bd5c40e70d98ffd0b237/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/0920e0cd347971444976bd5c40e70d98ffd0b237/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -146,7 +146,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">4200</td>
-<td style="text-align: left;">0.2</td>
+<td style="text-align: left;">20%</td>
 <td style="text-align: left;">1800</td>
 <td style="text-align: left;">Adam</td>
 <td style="text-align: left;">Binary Crossentropy</td>
@@ -276,11 +276,11 @@ We perform a normalization before plugging in the U-Net architecture based on th
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">107</td>
-<td style="text-align: left;">0.1</td>
+<td style="text-align: left;">10%</td>
 <td style="text-align: left;">17</td>
 <td style="text-align: left;">Adam</td>
 <td style="text-align: left;">Binary Crossentropy</td>
-<td style="text-align: left;">Accuracy</td>
+<td style="text-align: left;">IoUScore</td>
 <td style="text-align: left;">50</td>
 </tr>
 </tbody>
@@ -293,18 +293,54 @@ We perform a normalization before plugging in the U-Net architecture based on th
 </figure>
 </div>
 <p>We can see that this trained model has good performance on the testing data. It only takes 30 epochs because of the early-stop procedure.</p>
-<h2 id="results-and-analysis-1">Results and Analysis</h2>
+<h3 id="results-and-analysis-1">Results and Analysis</h3>
 <div id="fig:Prediction_Result" class="fignos">
 <figure>
 <img src="images/Result.png" alt="Figure 13: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 13:</span> <strong>Prediction Result</strong></figcaption>
 </figure>
 </div>
-<p>The prediction results of our testing images is shown in <a href="#fig:Prediction_Result">13</a>. It performs well. However, we can also notice that in the testing image 7, the network recognizes the dark-colored zone as a crack. The reason is that the network is identify crack by detecting the edge of the color channels, we can illustrate this by predicting the crack from RGB color wheel.</p>
+<p>The prediction results of our testing images is shown in <a href="#fig:Prediction_Result">13</a>. It performs well. However, we can also notice that in the testing image 7, the network recognizes the dark-colored zone with noise concentraion (several disconnected noise region that are close to each other) as a crack. The reason is that the network is identify crack by detecting the edge of the color channels, we can illustrate this by predicting the crack from RGB color wheel.</p>
 <div id="fig:RGB_Result" class="fignos">
 <figure>
-<img src="images/RGB_compare.png" alt="Figure 14: RGB Result" /><figcaption aria-hidden="true"><span>Figure 14:</span> <strong>RGB Result</strong></figcaption>
+<img src="images/RGB_Result.png" alt="Figure 14: RGB Result" /><figcaption aria-hidden="true"><span>Figure 14:</span> <strong>RGB Result</strong></figcaption>
 </figure>
 </div>
+<p>To overcome this issue, we need to modify this network. Several Actions can be taken to omit this noise concentration.</p>
+<ol type="1">
+<li>Replace MaxPooling2D layers by AveragePooling2D
+AveragePooling2D could perform a flatten operation on its input. Rather than highlight the maximum point with MaxPooling2D, the network would generally get benefits on this process.</li>
+<li>Build Up Preprocessor
+2.1. Normalize by Gray Scale
+There is a trade off on gray scale process, we would lose information during this procedure, but we would take advantages as all the data is in the same stage with only one channel.
+2.2. Multi-Kernel filters
+This process was inspired by Inception network (It is the winner of the ImageNet Large Scale Visual Recognition Competition in 2014). The basic idea is to use multiple Convolution layers and Pooling layers to extract more information from the input data.
+We should notice that for achieving our goal in preprocessor, the non-trainable Pooling layer is necessary, in case the preprocessor would work on our purpose.</li>
+</ol>
+<p>We would not provide the detailed model in this case, because we want our discussion to focus on one question: would our model (trained on CFD dataset) works well with other dataset? We would answer this question in the next part.</p>
+<h2 id="conclusion-and-supplement">Conclusion and Supplement</h2>
+<h3 id="discussion">Discussion</h3>
+<p>Based on U-Net, we have trained the model that could label cracks. However, this model have poor performance on predicting the images with bad quality background (CRACK500, DeepCrack dataset). One reason is that the model was trained on CFD dataset, which contains high quality images with clear surface and obvious crack. Network architecture is the other reason.</p>
+<div id="fig:U-Net" class="fignos">
+<figure>
+<img src="images/U-Net_Result.png" alt="Figure 15: U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 15:</span> <strong>U-Net on Rough Surface Result</strong></figcaption>
+</figure>
+</div>
+<p>Instead of using these datasets, we can design a network that could be trained on CFD dataset and still works well on CRACK500, DeepCrack and other dataset with rough surface. Based on our previous work, we add an Inception network as our preprocessor, and achieve good prediction on other test images.</p>
+<p>This network named “Inception U-Net”, as the preprocessor is based on Inception, and processed by U-Net. We first show the result, then introduce the details of this network.</p>
+<div id="fig:Inception" class="fignos">
+<figure>
+<img src="images/Inception_Result.png" alt="Figure 16: Inception U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 16:</span> <strong>Inception U-Net on Rough Surface Result</strong></figcaption>
+</figure>
+</div>
+<p>We also provide a hypothesis for crack segmentation:
+MaxPooling2D works well on the shallow crack, but would fail on the deep crack; while AveragePooling wroks well on the deep crack, but might miss the shallow crack.</p>
+<h3 id="details-of-inception-u-net">Details of Inception U-Net</h3>
+<p>Inception U-Net model
+<img src="images/Inception_U-Net.png" id="fig:Inception" alt="Inception U-Net on Rough Surface Result" /></p>
+<p>Hyperparameter
+| Training | Validation | Testing | Optimizer | Loss Function | Metrics | Epochs |
+|:———–|:——|:——|:——|:——|:——|:——|
+| 107 | 10% | 17 | Adam | Binary Crossentropy | IoUScore | 100 |</p>
 <h2 id="reproducible-work">Reproducible Work</h2>
 <p>We also provide the network codes, pre-trained models and datasets for reproducible work, they are under content.reproducible folder.</p>
 <h2 class="unnumbered" id="reference">Reference</h2>

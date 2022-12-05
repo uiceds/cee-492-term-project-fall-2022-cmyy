@@ -1,7 +1,7 @@
 ---
 title: Concrete Crack Detection and Segmentation
 lang: en-US
-date-meta: '2022-11-28'
+date-meta: '2022-12-05'
 author-meta:
 - Yu-Sian Lin, Chengyou Yue, Yueh-Ti Lee, Minjiang Zhu
 header-includes: |-
@@ -14,8 +14,8 @@ header-includes: |-
   <meta name="citation_title" content="Concrete Crack Detection and Segmentation" />
   <meta property="og:title" content="Concrete Crack Detection and Segmentation" />
   <meta property="twitter:title" content="Concrete Crack Detection and Segmentation" />
-  <meta name="dc.date" content="2022-11-28" />
-  <meta name="citation_publication_date" content="2022-11-28" />
+  <meta name="dc.date" content="2022-12-05" />
+  <meta name="citation_publication_date" content="2022-12-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -30,9 +30,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cb73807f792de1aee9bb56a8677c4fff5d154406/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cb73807f792de1aee9bb56a8677c4fff5d154406/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/cb73807f792de1aee9bb56a8677c4fff5d154406/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/0920e0cd347971444976bd5c40e70d98ffd0b237/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/0920e0cd347971444976bd5c40e70d98ffd0b237/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/0920e0cd347971444976bd5c40e70d98ffd0b237/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,7 +101,7 @@ The result of our network would be a number in (0,1). We may treat it as the pro
 
 | Training   | Validation | Testing    | Optimizer | Loss Function | Metrics | Max Epochs |
 |:-----------|:------|:------|:------|:------|:------|:------|
-| 4200 | 0.2 | 1800 | Adam | Binary Crossentropy | Accuracy | 100 | 
+| 4200 | 20% | 1800 | Adam | Binary Crossentropy | Accuracy | 100 | 
 
 Table: **Hyperparameters**
 {#tbl:CNNHyperparameters}
@@ -180,7 +180,7 @@ Other properties of this network is listed in Table @tbl:U-NetHyperparameters:
 
 | Training   | Validation | Testing    | Optimizer | Loss Function | Metrics | Epochs |
 |:-----------|:------|:------|:------|:------|:------|:------|
-| 107 | 0.1 | 17 | Adam | Binary Crossentropy | Accuracy | 50 |
+| 107 | 10% | 17 | Adam | Binary Crossentropy | IoUScore | 50 |
 
 Table: **U-Net Hyperparameters**
 {#tbl:U-NetHyperparameters}
@@ -191,13 +191,53 @@ The training and testing losses are plotted in Figure @fig:U-Net_Loss:
 
 We can see that this trained model has good performance on the testing data. It only takes 30 epochs because of the early-stop procedure.
 
-## Results and Analysis 
+### Results and Analysis 
 
 ![**Prediction Result**](images/Result.png){#fig:Prediction_Result}
 
-The prediction results of our testing images is shown in @fig:Prediction_Result. It performs well. However, we can also notice that in the testing image 7, the network recognizes the dark-colored zone as a crack. The reason is that the network is identify crack by detecting the edge of the color channels, we can illustrate this by predicting the crack from RGB color wheel.
+The prediction results of our testing images is shown in @fig:Prediction_Result. It performs well. However, we can also notice that in the testing image 7, the network recognizes the dark-colored zone with noise concentraion (several disconnected noise region that are close to each other) as a crack. The reason is that the network is identify crack by detecting the edge of the color channels, we can illustrate this by predicting the crack from RGB color wheel.
 
-![**RGB Result**](images/RGB_compare.png){#fig:RGB_Result}
+![**RGB Result**](images/RGB_Result.png){#fig:RGB_Result}
+
+To overcome this issue, we need to modify this network. Several Actions can be taken to omit this noise concentration.
+
+1.	Replace MaxPooling2D layers by AveragePooling2D
+AveragePooling2D could perform a flatten operation on its input. Rather than highlight the maximum point with MaxPooling2D, the network would generally get benefits on this process.
+2.	Build Up Preprocessor
+2.1.	Normalize by Gray Scale
+There is a trade off on gray scale process, we would lose information during this procedure, but we would take advantages as all the data is in the same stage with only one channel.
+2.2.	Multi-Kernel filters
+This process was inspired by Inception network (It is the winner of the ImageNet Large Scale Visual Recognition Competition in 2014). The basic idea is to use multiple Convolution layers and Pooling layers to extract more information from the input data. 
+We should notice that for achieving our goal in preprocessor, the non-trainable Pooling layer is necessary, in case the preprocessor would work on our purpose.
+
+We would not provide the detailed model in this case, because we want our discussion to focus on one question: would our model (trained on CFD dataset) works well with other dataset? We would answer this question in the next part.
+
+## Conclusion and Supplement
+
+### Discussion
+
+Based on U-Net, we have trained the model that could label cracks. However, this model have poor performance on predicting the images with bad quality background (CRACK500, DeepCrack dataset). One reason is that the model was trained on CFD dataset, which contains high quality images with clear surface and obvious crack. Network architecture is the other reason. 
+
+![**U-Net on Rough Surface Result**](images/U-Net_Result.png){#fig:U-Net Result}
+
+Instead of using these datasets, we can design a network that could be trained on CFD dataset and still works well on CRACK500, DeepCrack and other dataset with rough surface. Based on our previous work, we add an Inception network as our preprocessor, and achieve good prediction on other test images.
+
+This network named "Inception U-Net", as the preprocessor is based on Inception, and processed by U-Net. We first show the result, then introduce the details of this network.
+
+![**Inception U-Net on Rough Surface Result**](images/Inception_Result.png){#fig:Inception U-Net Result}
+
+We also provide a hypothesis for crack segmentation: 
+MaxPooling2D works well on the shallow crack, but would fail on the deep crack; while AveragePooling wroks well on the deep crack, but might miss the shallow crack.
+
+### Details of Inception U-Net
+
+Inception U-Net model
+![**Inception U-Net on Rough Surface Result**](images/Inception_U-Net.png){#fig:Inception U-Net Network}
+
+Hyperparameter
+| Training   | Validation | Testing    | Optimizer | Loss Function | Metrics | Epochs |
+|:-----------|:------|:------|:------|:------|:------|:------|
+| 107 | 10% | 17 | Adam | Binary Crossentropy | IoUScore | 100 |
 
 ## Reproducible Work
 
