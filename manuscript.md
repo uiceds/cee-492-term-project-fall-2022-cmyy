@@ -30,9 +30,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a4baa91dfbf0c2f04bce9f86b17eb9615d2b67a4/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a4baa91dfbf0c2f04bce9f86b17eb9615d2b67a4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a4baa91dfbf0c2f04bce9f86b17eb9615d2b67a4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7ea602e9186da7a6696113293319e2ebc2d98ec5/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7ea602e9186da7a6696113293319e2ebc2d98ec5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7ea602e9186da7a6696113293319e2ebc2d98ec5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,7 +79,7 @@ The dataset contains over $20000$ crack images which include subsets named CFD, 
 
 U-Net is an elegant architecture that can work with very few training images and yield precise segmentations. [@doi:10.1007/978-3-319-24574-4_28] Different from the large number of images used in classification, we only chose the CFD sets with 107 images for training and 11 for testing.
 
-## Crack Detection
+## Crack Detection by CNN
 
 ### A Brief Introduction to CNN 
 
@@ -147,7 +147,7 @@ Table: **Result Analysis**
 
 In short, the network has overall good performance.
 
-## Crack Segmentation
+## Crack Segmentation by U-Net
 
 ### A Brief Introduction to U-Net 
 
@@ -156,7 +156,7 @@ U-Net is built upon the so-called "Fully Convolutional Network", it was first in
 ![**U-net Architecture.**
 ](./images/U-net_Architecture.png "Wide image"){#fig:U-net_Architecture}
 
-Different from FCN, it supplements a usual contracting network with successive layers, where pooling operators are replaced by upsampling operators. It would keep the output from each convolutional layer by either concatenating it without sampling results or simply adding them together. This modification could take advantage of these procedures to overcome the trade-off between localization accuracy and the use of context (FCN requires more max-pooling layers that reduce the localization accuracy, while small patches allow the network to see only little context).
+Different from FCN, it supplements a usual contracting network with successive layers, where pooling operators are replaced by upsampling operators. It would keep the output from each convolutional layer by either concatenating it with the unsampled results or simply adding them together. This modification can take advantage of these procedures to overcome the trade-off between localization accuracy and the use of context (FCN requires more max-pooling layers which reduce the localization accuracy, while small patches allow the network to see only little context).
 
 ### Modeling and Training 
 
@@ -195,46 +195,33 @@ We can see that this trained model performs well on the testing data. It only ta
 
 ![**Prediction Result**](images/Result.png){#fig:Prediction_Result}
 
-The prediction results of our testing images are shown in @fig:Prediction_Result. It performs well. However, we can also notice that in testing image 7, the network recognizes the dark-colored zone with noise concentration (several disconnected noise regions close to each other) as a crack. The reason is that the network identifies cracks by detecting the edge of the color channels; we can illustrate this by predicting the crack from the RGB color wheel.
+The prediction results of our testing images are shown in Figure @fig:Prediction_Result. It performs well. However, we can also notice that in testing image 7, the network recognizes the dark-colored zone with noise concentration (several disconnected noise regions close to each other) as a crack. The reason is that the network identifies cracks by detecting the edge of the color channels, which can be illustrated by predicting the crack from the RGB color wheel as shown in Figure @fig:RGB_wheel_Result:
 
-![**RGB Result**](images/RGB_Result.png){#fig:RGB_Result}
+![**RGB wheel Result**](images/RGB_Result.png){#fig:RGB_wheel_Result}
 
-To overcome this issue, we need to modify this network. Several Actions can be taken to omit this noise concentration.
+Several actions can be taken to avoid this noise concentration:
 
-1.	Replace MaxPooling2D layers by AveragePooling2D
-AveragePooling2D could perform a flatten operation on its input. Rather than highlight the maximum point with MaxPooling2D, the network would generally benefit from this process.
-2.	Build Up Preprocessor
-2.1.	Normalize by Gray Scale
-There is a trade-off in the grayscale process. We would lose information during this procedure, but we would take advantage as all the data is in the same stage with only one channel.
-2.2.	Multi-Kernel filters
-This process was inspired by the Inception network (the winner of the ImageNet Large Scale Visual Recognition Competition in 2014). The basic idea is to use multiple convolutional and pooling layers to extract more information from the input data. 
+1. **Replace MaxPooling2D layers by AveragePooling2D.** AveragePooling2D could perform a flatten operation on its input. Rather than highlight the maximum point with MaxPooling2D, the network would generally benefit from this process.
+2. **Build Up Preprocessor**
+    a. *Normalize by Gray Scale.* There is a trade-off in the grayscale process: we will lose information during this procedure, but we can also take advantage as all the data is in the same stage with only one channel.
+    b. *Multi-Kernel filters.* This process was inspired by the Inception network (the winner of the ImageNet Large Scale Visual Recognition Competition in 2014). The basic idea is to use multiple convolutional and pooling layers to extract more information from the input data. 
 
 The non-trainable Pooling layer is necessary to ensure the preprocessor works on our purpose.
 
-We would not provide the detailed model in this case because we focus on one question: will our model (trained on the CFD dataset) work well with other datasets? We will answer this question in the next part.
+We would not provide the detailed model in this case because we focus on one question: will our model (trained on the CFD dataset) work well with other datasets? We will answer this question in the next section.
 
-## Conclusion and Supplement
+## Crack Segmentation on Rough Surfaces by Interception U-Net
 
-### Discussion
+Based on U-Net, we have trained the model that can label cracks. However, this model performs poorly in predicting images with bad-quality backgrounds (e.g., CRACK500, DeepCrack dataset, as shown in Figure @fig:U-Net_Result). One reason is that the model was trained on the CFD dataset, which contains high-quality images with clear surfaces and obvious cracks. Network architecture is the other reason. 
 
-Based on U-Net, we have trained the model that could label cracks. However, this model performs poorly in predicting images with bad-quality backgrounds (e.g., CRACK500, DeepCrack dataset). One reason is that the model was trained on the CFD dataset, which contains high-quality images with clear surfaces and obvious cracks. Network architecture is the other reason. 
+![**U-Net on Rough Surface Result**](images/U-Net_Result.png){#fig:U-Net_Result}
 
-![**U-Net on Rough Surface Result**](images/U-Net_Result.png){#fig:U-Net Result}
+Instead of transfer the training to these datasets, we can design a network that is still trained on the CFD dataset and but also works well on CRACK500, DeepCrack, and other datasets with rough surfaces. Based on our previous work, we add an Inception network as our preprocessor and achieve good prediction on other test images. The new network is named "Inception U-Net", as the preprocessor is based on Inception and processed by U-Net. The segmentation results obtained by the new network is shown in Figure @fig:Inception_U-Net_Result, and the hyperparameters of this network are listed in Table @tbl:Hyperparameter:
 
-Instead of using these datasets, we can design a network that could be trained on the CFD dataset and still works well on CRACK500, DeepCrack, and other datasets with rough surfaces. Based on our previous work, we add an Inception network as our preprocessor and achieve good prediction on other test images.
-
-This network is named "Inception U-Net", as the preprocessor is based on Inception and processed by U-Net. We first show the result, then introduce the details of this network.
-
-![**Inception U-Net on Rough Surface Result**](images/Inception_Result.png){#fig:Inception U-Net Result}
-
-We also provide a hypothesis for crack segmentation: 
-MaxPooling2D works well on the shallow crack but would fail on the deep crack, while AveragePooling works well on the deep crack but might miss the shallow crack.
-
-### Details of Inception U-Net
+![**Inception U-Net on Rough Surface Result**](images/Inception_Result.png){#fig:Inception_U-Net_Result}
 
 Inception U-Net model
 ![**Inception U-Net on Rough Surface Result**](images/Inception_U-Net.png){#fig:Inception U-Net Network}
-
 
 | Training   | Validation | Testing    | Optimizer | Loss Function | Metrics | Epochs |
 |:-----------|:------|:------|:------|:------|:------|:------|
@@ -242,6 +229,12 @@ Inception U-Net model
 
 Table: **U-Net Hyperparameters**
 {#tbl:Hyperparameter}
+
+We also put forward a hypothesis for crack segmentation: *MaxPooling2D works well on the shallow crack but may fail on the deep crack, while AveragePooling works well on the deep crack but might miss the shallow crack.*
+
+## Conclusion
+
+
 
 ## Reproducible Work
 

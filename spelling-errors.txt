@@ -13,7 +13,7 @@ FCN
 GlobalAveragePooling
 grayscale
 Hyperparameter
-Hyperparameters
+hyperparameters
 ImageNet
 IoUScore
 ISBI
@@ -33,6 +33,7 @@ segmentations
 Sian
 sigmoid
 softmax
+unsampled
 upsampling
 Yu
 Yue
