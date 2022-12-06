@@ -1,4 +1,5 @@
 content/04.cont.md:3:Convolutional
+content/04.cont.md:3:overfitting
 content/04.cont.md:5:dataset
 content/04.cont.md:5:dataset
 content/04.cont.md:5:datasets
@@ -59,9 +60,6 @@ content/04.cont.md:143:grayscale
 content/04.cont.md:144:convolutional
 content/04.cont.md:144:ImageNet
 content/04.cont.md:146:preprocessor
-content/04.cont.md:148:CFD
-content/04.cont.md:148:dataset
-content/04.cont.md:148:datasets
 content/04.cont.md:152:CFD
 content/04.cont.md:152:dataset
 content/04.cont.md:152:dataset
