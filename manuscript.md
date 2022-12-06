@@ -30,9 +30,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/662ffe21392b8fca000f4fbc89d8999fc595bba7/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/662ffe21392b8fca000f4fbc89d8999fc595bba7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/662ffe21392b8fca000f4fbc89d8999fc595bba7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6671b94f1449bc5ceda4fcd4e32d8ec088ba0a7c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6671b94f1449bc5ceda4fcd4e32d8ec088ba0a7c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6671b94f1449bc5ceda4fcd4e32d8ec088ba0a7c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -208,7 +208,7 @@ Several actions can be taken to avoid this noise concentration:
 
 The non-trainable Pooling layer is necessary to ensure the preprocessor works on our purpose. The origin image 7 and the trained image 7 obtained by the modified U-Net is shown in Figure @fig:Image7:
 
-![**The Origin Image 7 and Image 7 Obtained by the Modified U-Net**](https://user-images.githubusercontent.com/67733344/205847672-aa82ddfb-f0d7-4ca7-8233-b5a6566876ee.png){#fig:Image7}
+![**The Origin Image 7 and Image 7 Obtained by the Modified U-Net**](https://user-images.githubusercontent.com/67733344/205847672-aa82ddfb-f0d7-4ca7-8233-b5a6566876ee.png "Tall image"){#fig:Image7 height=3in}
 
 ## Crack Segmentation on Rough Surfaces by Interception U-Net
 

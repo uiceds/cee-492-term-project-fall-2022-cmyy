@@ -3,7 +3,7 @@ CFD
 Chengyou
 CNNHyperparameters
 Conv
-Convolutional
+convolutional
 CRACKTREE
 Crossentropy
 dataset
@@ -27,7 +27,7 @@ nonlinearity
 overfitting
 pre
 preprocessing
-Preprocessor
+preprocessor
 ReLu
 RGB
 segmentations
