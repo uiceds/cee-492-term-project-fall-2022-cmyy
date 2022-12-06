@@ -62,9 +62,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bb48270a27a1d06f2595a3e43114d46bc6d35375/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bb48270a27a1d06f2595a3e43114d46bc6d35375/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bb48270a27a1d06f2595a3e43114d46bc6d35375/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/662ffe21392b8fca000f4fbc89d8999fc595bba7/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/662ffe21392b8fca000f4fbc89d8999fc595bba7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/662ffe21392b8fca000f4fbc89d8999fc595bba7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,7 +91,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 </small></li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information on the exact locations of cracks is smeared in the network. We aim first to build a CNN-based model for crack detection and then apply another model called U-Net to locate and show the exact positions of cracks.</p>
+<p>The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information on the exact locations of cracks is smeared in the network. We aim first to build a CNN-based model for crack detection and then apply another model called U-Net to locate and show the exact positions of cracks. We also solved the problem that U-Net would recognize dark areas as cracks and an overfitting problem.</p>
 <p>We first train a CNN with the Surface Crack Detection dataset <span class="citation" data-cites="ZtBdubRd">[<a href="#ref-ZtBdubRd" role="doc-biblioref">1</a>]</span> to judge if any concrete crack exists. The dataset contains images (each has <span class="math inline">\(227 \times 227\)</span> pixels and RGB channels) of concrete surfaces with or without cracks. Each class contains <span class="math inline">\(20000\)</span> images. Examples are shown in Figure <a href="#fig:Negative_and_Positive">1</a>:</p>
 <div id="fig:Negative_and_Positive" class="fignos">
 <figure>
@@ -317,10 +317,10 @@ We perform a normalization before plugging in the U-Net architecture based on th
 <img src="images/Result.png" alt="Figure 13: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 13:</span> <strong>Prediction Result</strong></figcaption>
 </figure>
 </div>
-<p>The prediction results of our testing images are shown in Figure <a href="#fig:Prediction_Result">13</a>. It performs well. However, we can also notice that in testing image 7, the network recognizes the dark-colored zone with noise concentration (several disconnected noise regions close to each other) as a crack. The reason is that the network identifies cracks by detecting the edge of the color channels, which can be illustrated by predicting the crack from the RGB color wheel as shown in Figure <a href="#fig:RGB_wheel_Result">14</a>:</p>
-<div id="fig:RGB_wheel_Result" class="fignos">
+<p>The prediction results of our testing images are shown in Figure <a href="#fig:Prediction_Result">13</a>. It performs well. However, we can also notice that in testing image 7, the network recognizes the dark-colored zone with noise concentration (several disconnected noise regions close to each other) as a crack. The reason is that the network identifies cracks by detecting the edge of the color channels, which can be illustrated by predicting the crack from the RGB color wheel as shown in Figure <a href="#fig:RGB_Wheel_Result">14</a>:</p>
+<div id="fig:RGB_Wheel_Result" class="fignos">
 <figure>
-<img src="images/RGB_Result.png" alt="Figure 14: RGB wheel Result" /><figcaption aria-hidden="true"><span>Figure 14:</span> <strong>RGB wheel Result</strong></figcaption>
+<img src="images/RGB_Result.png" alt="Figure 14: RGB Wheel Result" /><figcaption aria-hidden="true"><span>Figure 14:</span> <strong>RGB Wheel Result</strong></figcaption>
 </figure>
 </div>
 <p>Several actions can be taken to avoid this noise concentration:</p>
@@ -332,24 +332,28 @@ We perform a normalization before plugging in the U-Net architecture based on th
 <li><em>Multi-Kernel filters.</em> This process was inspired by the Inception network (the winner of the ImageNet Large Scale Visual Recognition Competition in 2014). The basic idea is to use multiple convolutional and pooling layers to extract more information from the input data.</li>
 </ol></li>
 </ol>
-<p>The non-trainable Pooling layer is necessary to ensure the preprocessor works on our purpose.</p>
-<p>We would not provide the detailed model in this case because we focus on one question: will our model (trained on the CFD dataset) work well with other datasets? We will answer this question in the next section.</p>
-<h2 id="crack-segmentation-on-rough-surfaces-by-interception-u-net">Crack Segmentation on Rough Surfaces by Interception U-Net</h2>
-<p>Based on U-Net, we have trained the model that can label cracks. However, this model performs poorly in predicting images with bad-quality backgrounds (e.g., CRACK500, DeepCrack dataset, as shown in Figure <a href="#fig:U-Net_Result">15</a>). One reason is that the model was trained on the CFD dataset, which contains high-quality images with clear surfaces and obvious cracks. Network architecture is the other reason.</p>
-<div id="fig:U-Net_Result" class="fignos">
+<p>The non-trainable Pooling layer is necessary to ensure the preprocessor works on our purpose. The origin image 7 and the trained image 7 obtained by the modified U-Net is shown in Figure <a href="#fig:Image7">15</a>:</p>
+<div id="fig:Image7" class="fignos">
 <figure>
-<img src="images/U-Net_Result.png" alt="Figure 15: U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 15:</span> <strong>U-Net on Rough Surface Result</strong></figcaption>
+<img src="https://user-images.githubusercontent.com/67733344/205847672-aa82ddfb-f0d7-4ca7-8233-b5a6566876ee.png" alt="Figure 15: The Origin Image 7 and Image 7 Obtained by the Modified U-Net" /><figcaption aria-hidden="true"><span>Figure 15:</span> <strong>The Origin Image 7 and Image 7 Obtained by the Modified U-Net</strong></figcaption>
 </figure>
 </div>
-<p>Instead of transfer the training to these datasets, we can design a network that is still trained on the CFD dataset and but also works well on CRACK500, DeepCrack, and other datasets with rough surfaces. Based on our previous work, we add an Inception network (as shown in <a href="#fig:Inception_U-Net_Network">17</a>) as our preprocessor and achieve good prediction on other test images. The new network is named “Inception U-Net”, as the preprocessor is based on Inception and processed by U-Net. The segmentation results obtained by the new network is shown in Figure <a href="#fig:Inception_U-Net_Result">16</a>, and the hyperparameters of this network are listed in Table <a href="#tbl:Hyperparameter">4</a>:</p>
+<h2 id="crack-segmentation-on-rough-surfaces-by-interception-u-net">Crack Segmentation on Rough Surfaces by Interception U-Net</h2>
+<p>Based on U-Net, we have trained the model that can label cracks. However, this model performs poorly in predicting images with bad-quality backgrounds (e.g., CRACK500, DeepCrack dataset, as shown in Figure <a href="#fig:U-Net_Result">16</a>). One reason is that the model was trained on the CFD dataset, which contains high-quality images with clear surfaces and obvious cracks, making the network over-trained. Network architecture is the other reason.</p>
+<div id="fig:U-Net_Result" class="fignos">
+<figure>
+<img src="images/U-Net_Result.png" alt="Figure 16: U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 16:</span> <strong>U-Net on Rough Surface Result</strong></figcaption>
+</figure>
+</div>
+<p>Instead of transfer the training to these datasets, we can design a network that is still trained on the CFD dataset and but also works well on CRACK500, DeepCrack, and other datasets with rough surfaces. Based on our previous work, we add an Inception network (as shown in <a href="#fig:Inception_U-Net_Network">18</a>) as our preprocessor and achieve good prediction on other test images. The new network is named “Inception U-Net”, as the preprocessor is based on Inception and processed by U-Net. The segmentation results obtained by the new network is shown in Figure <a href="#fig:Inception_U-Net_Result">17</a>, and the hyperparameters of this network are listed in Table <a href="#tbl:Hyperparameter">4</a>:</p>
 <div id="fig:Inception_U-Net_Result" class="fignos">
 <figure>
-<img src="images/Inception_Result.png" alt="Figure 16: Inception U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 16:</span> <strong>Inception U-Net on Rough Surface Result</strong></figcaption>
+<img src="images/Inception_Result.png" alt="Figure 17: Inception U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 17:</span> <strong>Inception U-Net on Rough Surface Result</strong></figcaption>
 </figure>
 </div>
 <div id="fig:Inception_U-Net_Network" class="fignos">
 <figure>
-<img src="images/Inception_U-Net.png" alt="Figure 17: Inception U-Net Structure" /><figcaption aria-hidden="true"><span>Figure 17:</span> <strong>Inception U-Net Structure</strong></figcaption>
+<img src="images/Inception_U-Net.png" alt="Figure 18: Inception U-Net Structure" /><figcaption aria-hidden="true"><span>Figure 18:</span> <strong>Inception U-Net Structure</strong></figcaption>
 </figure>
 </div>
 <div id="tbl:Hyperparameter" class="tablenos">
