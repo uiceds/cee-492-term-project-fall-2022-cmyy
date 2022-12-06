@@ -62,9 +62,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/0e2b1f9984ca54ad1c66c410ddcb19f766d60364/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/0e2b1f9984ca54ad1c66c410ddcb19f766d60364/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/0e2b1f9984ca54ad1c66c410ddcb19f766d60364/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a4baa91dfbf0c2f04bce9f86b17eb9615d2b67a4/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a4baa91dfbf0c2f04bce9f86b17eb9615d2b67a4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/a4baa91dfbf0c2f04bce9f86b17eb9615d2b67a4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,22 +91,22 @@ Department of Civil and Environmental Engineering, University of Illinois
 </small></li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information of the exact locations of cracks is smeared in the network. We aim to firstly build a CNN-based model for crack detection, and then find and apply another model with the architecture called U-Net to locate the exact positions of cracks.</p>
-<p>We first train a CNN with the Surface Crack Detection dataset <span class="citation" data-cites="ZtBdubRd">[<a href="#ref-ZtBdubRd" role="doc-biblioref">1</a>]</span> to judge if any concrete crack exists. The dataset contains images (each has <span class="math inline">\(227 \times 227\)</span> pixels and RGB channels) of concrete surfaces with or without crack. Each class contains <span class="math inline">\(20000\)</span> images. Examples are shown in Figure <a href="#fig:Negative_and_Positive">17</a>:</p>
+<p>The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information on the exact locations of cracks is smeared in the network. We aim first to build a CNN-based model for crack detection and then find and apply another model with the architecture called U-Net to locate the exact positions of cracks.</p>
+<p>We first train a CNN with the Surface Crack Detection dataset <span class="citation" data-cites="ZtBdubRd">[<a href="#ref-ZtBdubRd" role="doc-biblioref">1</a>]</span> to judge if any concrete crack exists. The dataset contains images (each has <span class="math inline">\(227 \times 227\)</span> pixels and RGB channels) of concrete surfaces with or without cracks. Each class contains <span class="math inline">\(20000\)</span> images. Examples are shown in Figure <a href="#fig:Negative_and_Positive">1</a>:</p>
 <div id="fig:Negative_and_Positive" class="fignos">
 <figure>
 <img src="https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png" style="height:2in" alt="Figure 1: Negative and Positive Examples from the Surface Crack Detection Dataset" /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Negative and Positive Examples from the Surface Crack Detection Dataset</strong></figcaption>
 </figure>
 </div>
-<p>The dataset is split into a training set with 4200 images and a testing set with 1800 images which are randomly selected from the dataset.</p>
-<p>We then train a FCN-based network called U-Net <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span> with the Concrete Crack Conglomerate Dataset <span class="citation" data-cites="ovjFCGWg">[<a href="#ref-ovjFCGWg" role="doc-biblioref">3</a>]</span> to segment the concrete from its cracks.</p>
-<p>The dataset contains over <span class="math inline">\(20000\)</span> crack images which include subsets named CFD, CRACK500, CRACKTREE etc. (each has <span class="math inline">\(448 \times 448\)</span> pixels and RGB channels). Each image data has an origin image and a mask image. Examples are shown in Figure <a href="#fig:Origin_and_Mask">18</a>:</p>
+<p>The dataset is split into a training set with 4200 images and a testing set with 1800 images randomly selected from the dataset.</p>
+<p>We then train an FCN-based network called U-Net <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span> with the Concrete Crack Conglomerate Dataset <span class="citation" data-cites="ovjFCGWg">[<a href="#ref-ovjFCGWg" role="doc-biblioref">3</a>]</span> to segment the concrete from its cracks.</p>
+<p>The dataset contains over <span class="math inline">\(20000\)</span> crack images which include subsets named CFD, CRACK500, CRACKTREE etc. (each has <span class="math inline">\(448 \times 448\)</span> pixels and RGB channels). Each image data has an original image and a mask image. Examples are shown in Figure <a href="#fig:Origin_and_Mask">2</a>:</p>
 <div id="fig:Origin_and_Mask" class="fignos">
 <figure>
 <img src="https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png" style="height:2in" alt="Figure 2: Origin and Mask Images from the Concrete Crack Conglomerate Dataset" /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Origin and Mask Images from the Concrete Crack Conglomerate Dataset</strong></figcaption>
 </figure>
 </div>
-<p>U-Net is an elegant architecture which can work with very few training images and yield precise segmentations. <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span> Different from the large number of images used in classification, we only choose the CFD sets with 107 images for training and 11 for testing.</p>
+<p>U-Net is an elegant architecture that can work with very few training images and yield precise segmentations. <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span> Different from the large number of images used in classification, we only chose the CFD sets with 107 images for training and 11 for testing.</p>
 <h2 id="crack-detection">Crack Detection</h2>
 <h3 id="a-brief-introduction-to-cnn">A Brief Introduction to CNN</h3>
 <div id="fig:Basic_Convolutional_Neural_Network_for_Classification" class="fignos">
@@ -114,15 +114,15 @@ Department of Civil and Environmental Engineering, University of Illinois
 <img src="./images/Basic_Convolutional_Neural_Network_for_Classification.png" alt="Figure 3: Basic Convolutional Neural Network for Classification." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Basic Convolutional Neural Network for Classification.</strong></figcaption>
 </figure>
 </div>
-<p>CNN network is briefly introduced in this section. As shown in Figure <a href="#fig:Basic_Convolutional_Neural_Network_for_Classification">19</a>, a typical CNN network involves several convolutional and pooling layers, and then several fully connected layers. Convolution is an operation that uses filter to extract information that we want to detect. The filter size determines how many filters will be applied to the input data. The kernel size determines the size of the area that the filters would apply to. Activation function is added to import nonlinearity into the model, considering the operation of filter is linear. MaxPooling is a down-sampling operation that allows our network to capture deeper information from its original dimensions. The pool size and strides determine the dimensions of the down-sample procedure. Notice that the sigmoid function (rather than the softmax function shown in Figure <a href="#fig:Basic_Convolutional_Neural_Network_for_Classification">19</a>) will be applied in our model, as as we only have two classes of results (True or False).</p>
+<p>CNN network is briefly introduced in this section. As shown in Figure <a href="#fig:Basic_Convolutional_Neural_Network_for_Classification">3</a>, a typical CNN network involves several convolutional and pooling layers and several fully connected layers. Convolution is an operation that uses filters to extract information that we want to detect. The filter size determines how many filters will be applied to the input data. The kernel size determines the size of the area to which the filters would apply. Activation functions are added to import nonlinearity into the model, considering the linear filter operation. MaxPooling is a down-sampling operation that allows our network to capture deeper information from its original dimensions. The pool size and strides determine the dimensions of the down-sample procedure. Notice that the sigmoid function (rather than the softmax function shown in Figure <a href="#fig:Basic_Convolutional_Neural_Network_for_Classification">3</a>) will be applied in our model, as we only have two classes of results (True or False).</p>
 <h3 id="network-design">Network Design</h3>
-<p>In the first convolutional block, we would specify 16 filters (consider 8 straight lines and 8 curves) with 3 by 3 kernels (consider the size of crack is relatively small), assign ReLu as the activation function in the Conv2D layer, and go deeper with a pool size of 2 by 2 in the MaxPool2D layer. In the second convolutional block, we double the channels number to 32 with Conv2D and apply the same MaxPool2D. Finally, we apply an GlobalAveragePooling2D layer, as we are focusing on the whole image rather than a part of it in segmentation. The coding form of this model is shown in Figure <a href="#fig:Model_for_Concrete_Crack_Classification_using_Keras">20</a>:</p>
+<p>In the first convolutional block, we would specify 16 filters (consider 8 straight lines and 8 curves) with 3 by 3 kernels (considering the size of the crack is relatively small), assign ReLu as the activation function in the Conv2D layer, and go deeper with a pool size of 2 by 2 in the MaxPool2D layer. In the second convolutional block, we double the channel number to 32 with Conv2D and apply the same MaxPool2D. Finally, we apply a GlobalAveragePooling2D layer, focusing on the whole image rather than a part of it in segmentation. The coding form of this model is shown in Figure <a href="#fig:Model_for_Concrete_Crack_Classification_using_Keras">4</a>:</p>
 <div id="fig:Model_for_Concrete_Crack_Classification_using_Keras" class="fignos">
 <figure>
 <img src="./images/Model_for_Concrete_Crack_Classification_using_Keras.png" alt="Figure 4: Model for Concrete Crack Classification using_Keras" /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Model for Concrete Crack Classification using_Keras</strong></figcaption>
 </figure>
 </div>
-<p>The result of our network would be a number in (0,1). We may treat it as the probability of the existence of crack in the image. Noticing that the original images have the size (227,227,3), we would resize it into (120,120,3) in the preprocessing procedure. The detailed properties of the network are listed in Figure <a href="#fig:Model_Summary_and_Hyperparameters">21</a> and Table <a href="#tbl:CNNHyperparameters">4</a>:</p>
+<p>The result of our network would be a number in (0,1). We may treat it as the probability of the existence of cracks in the image. Noticing that the original images have the size (227,227,3), we would resize it into (120,120,3) in the preprocessing procedure. The detailed properties of the network are listed in Figure <a href="#fig:Model_Summary_and_Hyperparameters">5</a> and Table <a href="#tbl:CNNHyperparameters">1</a>:</p>
 <div id="fig:Model_Summary_and_Hyperparameters" class="fignos">
 <figure>
 <img src="./images/Model_Summary_and_Hyperparameters.png" style="height:4in" alt="Figure 5: Model Summary and Hyperparameters" /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Model Summary and Hyperparameters</strong></figcaption>
@@ -169,7 +169,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 <img src="./images/Loss_Evolution.png" style="height:3in" alt="Figure 7: Loss Evolution" /><figcaption aria-hidden="true"><span>Figure 7:</span> <strong>Loss Evolution</strong></figcaption>
 </figure>
 </div>
-<p>We can see that this trained model has good performance on the testing data. The training process only lasts for 25 epochs because of the early-stop procedure. We can further calculate the following parameters:</p>
+<p>We can see that this trained model performs well on the testing data. The training process only lasts for 25 epochs because of the early-stop procedure. We can further calculate the following parameters:</p>
 <p><span id="eq:regular-equation" class="eqnos"><span class="math display">\[
 \mathrm{Precision}=\frac{TP}{TP+FP}
 \\
@@ -181,7 +181,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 \\
 \mathrm{Weighted} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Support}_i\times \mathrm{Score}_i}
 \]</span><span class="eqnos-number">(1)</span></span></p>
-<p>Their specific values are shown in Table <a href="#tbl:Result_Analysis">5</a>:</p>
+<p>Their specific values are shown in Table <a href="#tbl:Result_Analysis">2</a>:</p>
 <div id="tbl:Result_Analysis" class="tablenos">
 <table id="tbl:Result_Analysis">
 <caption><span>Table 2:</span> <strong>Result Analysis</strong>
@@ -230,34 +230,34 @@ Department of Civil and Environmental Engineering, University of Illinois
 <p>In short, the network has overall good performance.</p>
 <h2 id="crack-segmentation">Crack Segmentation</h2>
 <h3 id="a-brief-introduction-to-u-net">A Brief Introduction to U-Net</h3>
-<p>U-Net is built upon the so-called “Fully Convolutional Network”, it was firstly introduced in 2015 and won the ISBI challenge for segmentation of neuronal structures in electron micropic stacks. The original U-Net architecture is shown below:</p>
+<p>U-Net is built upon the so-called “Fully Convolutional Network”, it was first introduced in 2015 and won the ISBI challenge for segmentation of neuronal structures in electron microscopic stacks. The original U-Net architecture is shown below:</p>
 <div id="fig:U-net_Architecture" class="fignos">
 <figure>
 <img src="./images/U-net_Architecture.png" alt="Figure 8: U-net Architecture." /><figcaption aria-hidden="true"><span>Figure 8:</span> <strong>U-net Architecture.</strong></figcaption>
 </figure>
 </div>
-<p>Different from FCN, it supplement a usual contracting network by successive layers, where pooling operators are replaced by upsampling operators. It would keep the output from each convolutional layers and either concatenate it with upsampling result or simply add them together. This modification could take advantages from these precedures, to overcome the trade-off between localiztion accuracy and the use of context (FCN requires more max-pooling layers that reduce the localization accuracy, while small patches allow the network to see only little context).</p>
+<p>Different from FCN, it supplements a usual contracting network with successive layers, where pooling operators are replaced by upsampling operators. It would keep the output from each convolutional layer by either concatenating it without sampling results or simply adding them together. This modification could take advantage of these procedures to overcome the trade-off between localization accuracy and the use of context (FCN requires more max-pooling layers that reduce the localization accuracy, while small patches allow the network to see only little context).</p>
 <h3 id="modeling-and-training">Modeling and Training</h3>
-<p>To achieve segmentation, we have built and trained two models, one based on our own architecture, and the other based on the paper.
-We perform a normalization before plugging in the U-Net architecture based on the range of RGB numbers, as shown in <a href="#fig:Input_Normalization">25</a>:</p>
+<p>To achieve segmentation, we have built and trained two models, one based on our architecture and the other based on the paper.
+We perform a normalization before plugging in the U-Net architecture based on the range of RGB numbers, as shown in <a href="#fig:Input_Normalization">9</a>:</p>
 <div id="fig:Input_Normalization" class="fignos">
 <figure>
 <img src="./images/Input_Normalization.png" alt="Figure 9: Input Normalization" /><figcaption aria-hidden="true"><span>Figure 9:</span> <strong>Input Normalization</strong></figcaption>
 </figure>
 </div>
-<p>In the previous classification model, we have shown that the first convolutional block only needs 16 filters to perform well. We also add a random dropout in each convolution block to prevent the overfitting problem. Based on this experiment, we modified U-Net architecture as shown in Figure <a href="#fig:Modified_U-Net_Architecture">26</a>:</p>
+<p>In the previous classification model, we have shown that the first convolutional block only needs 16 filters to perform well. We also add a random dropout in each convolution block to prevent the overfitting problem. Based on this experiment, we modified U-Net architecture as shown in Figure <a href="#fig:Modified_U-Net_Architecture">10</a>:</p>
 <div id="fig:Modified_U-Net_Architecture" class="fignos">
 <figure>
 <img src="./images/Modified_U-Net_Architecture.png" alt="Figure 10: Modified U-Net Architecture" /><figcaption aria-hidden="true"><span>Figure 10:</span> <strong>Modified U-Net Architecture</strong></figcaption>
 </figure>
 </div>
-<p>The original images have the size (448,448,3). We would keep this size for this network, but there is still a resizing procedure that allows this network to predict images with different sizes. The detailed architecture of this model is summarized in Figure <a href="#fig:Model_Summary">27</a>:</p>
+<p>The original images have the size (448,448,3). We would keep this size for this network, but there is still a resizing procedure that allows this network to predict images with different sizes. The detailed architecture of this model is summarized in Figure <a href="#fig:Model_Summary">11</a>:</p>
 <div id="fig:Model_Summary" class="fignos">
 <figure>
 <img src="./images/Model_Summary.png" alt="Figure 11: Model Summary" /><figcaption aria-hidden="true"><span>Figure 11:</span> <strong>Model Summary</strong></figcaption>
 </figure>
 </div>
-<p>Other properties of this network is listed in Table <a href="#tbl:U-NetHyperparameters">6</a>:</p>
+<p>Other properties of this network are listed in Table <a href="#tbl:U-NetHyperparameters">3</a>:</p>
 <div id="tbl:U-NetHyperparameters" class="tablenos">
 <table id="tbl:U-NetHyperparameters">
 <caption><span>Table 3:</span> <strong>U-Net Hyperparameters</strong>
@@ -286,277 +286,23 @@ We perform a normalization before plugging in the U-Net architecture based on th
 </tbody>
 </table>
 </div>
-<p>The training and testing losses are plotted in Figure <a href="#fig:U-Net_Loss">28</a>:</p>
+<p>The training and testing losses are plotted in Figure <a href="#fig:U-Net_Loss">12</a>:</p>
 <div id="fig:U-Net_Loss" class="fignos">
 <figure>
 <img src="images/Evolution.png" style="height:3in" alt="Figure 12: U-Net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 12:</span> <strong>U-Net Loss Evaluation.</strong></figcaption>
 </figure>
 </div>
-<p>We can see that this trained model has good performance on the testing data. It only takes 30 epochs because of the early-stop procedure.</p>
+<p>We can see that this trained model performs well on the testing data. It only takes 30 epochs because of the early-stop procedure.</p>
 <h3 id="results-and-analysis-1">Results and Analysis</h3>
 <div id="fig:Prediction_Result" class="fignos">
 <figure>
 <img src="images/Result.png" alt="Figure 13: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 13:</span> <strong>Prediction Result</strong></figcaption>
 </figure>
 </div>
-<p>The prediction results of our testing images is shown in <a href="#fig:Prediction_Result">29</a>. It performs well. However, we can also notice that in the testing image 7, the network recognizes the dark-colored zone with noise concentraion (several disconnected noise region that are close to each other) as a crack. The reason is that the network is identify crack by detecting the edge of the color channels, we can illustrate this by predicting the crack from RGB color wheel.</p>
+<p>The prediction results of our testing images are shown in <a href="#fig:Prediction_Result">13</a>. It performs well. However, we can also notice that in testing image 7, the network recognizes the dark-colored zone with noise concentration (several disconnected noise regions close to each other) as a crack. The reason is that the network identifies cracks by detecting the edge of the color channels; we can illustrate this by predicting the crack from the RGB color wheel.</p>
 <div id="fig:RGB_Result" class="fignos">
 <figure>
 <img src="images/RGB_Result.png" alt="Figure 14: RGB Result" /><figcaption aria-hidden="true"><span>Figure 14:</span> <strong>RGB Result</strong></figcaption>
-</figure>
-</div>
-<p>To overcome this issue, we need to modify this network. Several Actions can be taken to omit this noise concentration.</p>
-<ol type="1">
-<li>Replace MaxPooling2D layers by AveragePooling2D
-AveragePooling2D could perform a flatten operation on its input. Rather than highlight the maximum point with MaxPooling2D, the network would generally get benefits on this process.</li>
-<li>Build Up Preprocessor
-2.1. Normalize by Gray Scale
-There is a trade off on gray scale process, we would lose information during this procedure, but we would take advantages as all the data is in the same stage with only one channel.
-2.2. Multi-Kernel filters
-This process was inspired by Inception network (It is the winner of the ImageNet Large Scale Visual Recognition Competition in 2014). The basic idea is to use multiple Convolution layers and Pooling layers to extract more information from the input data.
-We should notice that for achieving our goal in preprocessor, the non-trainable Pooling layer is necessary, in case the preprocessor would work on our purpose.</li>
-</ol>
-<p>We would not provide the detailed model in this case, because we want our discussion to focus on one question: would our model (trained on CFD dataset) works well with other dataset? We would answer this question in the next part.</p>
-<h2 id="conclusion-and-supplement">Conclusion and Supplement</h2>
-<h3 id="discussion">Discussion</h3>
-<p>Based on U-Net, we have trained the model that could label cracks. However, this model have poor performance on predicting the images with bad quality background (CRACK500, DeepCrack dataset). One reason is that the model was trained on CFD dataset, which contains high quality images with clear surface and obvious crack. Network architecture is the other reason.</p>
-<div id="fig:U-Net" class="fignos">
-<figure>
-<img src="images/U-Net_Result.png" alt="Figure 15: U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 15:</span> <strong>U-Net on Rough Surface Result</strong></figcaption>
-</figure>
-</div>
-<p>Instead of using these datasets, we can design a network that could be trained on CFD dataset and still works well on CRACK500, DeepCrack and other dataset with rough surface. Based on our previous work, we add an Inception network as our preprocessor, and achieve good prediction on other test images.</p>
-<p>This network named “Inception U-Net”, as the preprocessor is based on Inception, and processed by U-Net. We first show the result, then introduce the details of this network.</p>
-<div id="fig:Inception" class="fignos">
-<figure>
-<img src="images/Inception_Result.png" alt="Figure 16: Inception U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 16:</span> <strong>Inception U-Net on Rough Surface Result</strong></figcaption>
-</figure>
-</div>
-<p>We also provide a hypothesis for crack segmentation:
-MaxPooling2D works well on the shallow crack, but would fail on the deep crack; while AveragePooling wroks well on the deep crack, but might miss the shallow crack.</p>
-<h3 id="details-of-inception-u-net">Details of Inception U-Net</h3>
-<p>Inception U-Net model
-<img src="images/Inception_U-Net.png" id="fig:Inception" alt="Inception U-Net on Rough Surface Result" /></p>
-<p>Hyperparameter
-| Training | Validation | Testing | Optimizer | Loss Function | Metrics | Epochs |
-|:———–|:——|:——|:——|:——|:——|:——|
-| 107 | 10% | 17 | Adam | Binary Crossentropy | IoUScore | 100 |</p>
-<h2 id="reproducible-work">Reproducible Work</h2>
-<p>We also provide the network codes, pre-trained models and datasets for reproducible work, they are under content.reproducible folder.</p>
-<h2 id="reference">Reference</h2>
-<h2 id="introduction-1">Introduction</h2>
-<p>The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information on the exact locations of cracks is smeared in the network. We aim first to build a CNN-based model for crack detection and then find and apply another model with the architecture called U-Net to locate the exact positions of cracks.</p>
-<p>We first train a CNN with the Surface Crack Detection dataset <span class="citation" data-cites="ZtBdubRd">[<a href="#ref-ZtBdubRd" role="doc-biblioref">1</a>]</span> to judge if any concrete crack exists. The dataset contains images (each has <span class="math inline">\(227 \times 227\)</span> pixels and RGB channels) of concrete surfaces with or without cracks. Each class contains <span class="math inline">\(20000\)</span> images. Examples are shown in Figure <a href="#fig:Negative_and_Positive">17</a>:</p>
-<div id="fig:Negative_and_Positive" class="fignos">
-<figure>
-<img src="https://user-images.githubusercontent.com/67733344/203328454-b16bba03-9eae-4936-83f6-8878ec4b2fa3.png" style="height:2in" alt="Figure 17: Negative and Positive Examples from the Surface Crack Detection Dataset" /><figcaption aria-hidden="true"><span>Figure 17:</span> <strong>Negative and Positive Examples from the Surface Crack Detection Dataset</strong></figcaption>
-</figure>
-</div>
-<p>The dataset is split into a training set with 4200 images and a testing set with 1800 images randomly selected from the dataset.</p>
-<p>We then train an FCN-based network called U-Net <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span> with the Concrete Crack Conglomerate Dataset <span class="citation" data-cites="ovjFCGWg">[<a href="#ref-ovjFCGWg" role="doc-biblioref">3</a>]</span> to segment the concrete from its cracks.</p>
-<p>The dataset contains over <span class="math inline">\(20000\)</span> crack images which include subsets named CFD, CRACK500, CRACKTREE etc. (each has <span class="math inline">\(448 \times 448\)</span> pixels and RGB channels). Each image data has an original image and a mask image. Examples are shown in Figure <a href="#fig:Origin_and_Mask">18</a>:</p>
-<div id="fig:Origin_and_Mask" class="fignos">
-<figure>
-<img src="https://user-images.githubusercontent.com/67733344/203328939-52346bad-ea56-4424-bc9b-76f47f5a83dd.png" style="height:2in" alt="Figure 18: Origin and Mask Images from the Concrete Crack Conglomerate Dataset" /><figcaption aria-hidden="true"><span>Figure 18:</span> <strong>Origin and Mask Images from the Concrete Crack Conglomerate Dataset</strong></figcaption>
-</figure>
-</div>
-<p>U-Net is an elegant architecture that can work with very few training images and yield precise segmentations. <span class="citation" data-cites="TutLhFSz">[<a href="#ref-TutLhFSz" role="doc-biblioref">2</a>]</span> Different from the large number of images used in classification, we only chose the CFD sets with 107 images for training and 11 for testing.</p>
-<h2 id="crack-detection-1">Crack Detection</h2>
-<h3 id="a-brief-introduction-to-cnn-1">A Brief Introduction to CNN</h3>
-<div id="fig:Basic_Convolutional_Neural_Network_for_Classification" class="fignos">
-<figure>
-<img src="./images/Basic_Convolutional_Neural_Network_for_Classification.png" alt="Figure 19: Basic Convolutional Neural Network for Classification." /><figcaption aria-hidden="true"><span>Figure 19:</span> <strong>Basic Convolutional Neural Network for Classification.</strong></figcaption>
-</figure>
-</div>
-<p>CNN network is briefly introduced in this section. As shown in Figure <a href="#fig:Basic_Convolutional_Neural_Network_for_Classification">19</a>, a typical CNN network involves several convolutional and pooling layers and several fully connected layers. Convolution is an operation that uses filters to extract information that we want to detect. The filter size determines how many filters will be applied to the input data. The kernel size determines the size of the area to which the filters would apply. Activation functions are added to import nonlinearity into the model, considering the linear filter operation. MaxPooling is a down-sampling operation that allows our network to capture deeper information from its original dimensions. The pool size and strides determine the dimensions of the down-sample procedure. Notice that the sigmoid function (rather than the softmax function shown in Figure <a href="#fig:Basic_Convolutional_Neural_Network_for_Classification">19</a>) will be applied in our model, as we only have two classes of results (True or False).</p>
-<h3 id="network-design-1">Network Design</h3>
-<p>In the first convolutional block, we would specify 16 filters (consider 8 straight lines and 8 curves) with 3 by 3 kernels (considering the size of the crack is relatively small), assign ReLu as the activation function in the Conv2D layer, and go deeper with a pool size of 2 by 2 in the MaxPool2D layer. In the second convolutional block, we double the channel number to 32 with Conv2D and apply the same MaxPool2D. Finally, we apply a GlobalAveragePooling2D layer, focusing on the whole image rather than a part of it in segmentation. The coding form of this model is shown in Figure <a href="#fig:Model_for_Concrete_Crack_Classification_using_Keras">20</a>:</p>
-<div id="fig:Model_for_Concrete_Crack_Classification_using_Keras" class="fignos">
-<figure>
-<img src="./images/Model_for_Concrete_Crack_Classification_using_Keras.png" alt="Figure 20: Model for Concrete Crack Classification using_Keras" /><figcaption aria-hidden="true"><span>Figure 20:</span> <strong>Model for Concrete Crack Classification using_Keras</strong></figcaption>
-</figure>
-</div>
-<p>The result of our network would be a number in (0,1). We may treat it as the probability of the existence of cracks in the image. Noticing that the original images have the size (227,227,3), we would resize it into (120,120,3) in the preprocessing procedure. The detailed properties of the network are listed in Figure <a href="#fig:Model_Summary_and_Hyperparameters">21</a> and Table <a href="#tbl:CNNHyperparameters">4</a>:</p>
-<div id="fig:Model_Summary_and_Hyperparameters" class="fignos">
-<figure>
-<img src="./images/Model_Summary_and_Hyperparameters.png" style="height:4in" alt="Figure 21: Model Summary and Hyperparameters" /><figcaption aria-hidden="true"><span>Figure 21:</span> <strong>Model Summary and Hyperparameters</strong></figcaption>
-</figure>
-</div>
-<div id="tbl:CNNHyperparameters" class="tablenos">
-<table id="tbl:CNNHyperparameters">
-<caption><span>Table 4:</span> <strong>Hyperparameters</strong>
-</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Training</th>
-<th style="text-align: left;">Validation</th>
-<th style="text-align: left;">Testing</th>
-<th style="text-align: left;">Optimizer</th>
-<th style="text-align: left;">Loss Function</th>
-<th style="text-align: left;">Metrics</th>
-<th style="text-align: left;">Max Epochs</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">4200</td>
-<td style="text-align: left;">20%</td>
-<td style="text-align: left;">1800</td>
-<td style="text-align: left;">Adam</td>
-<td style="text-align: left;">Binary Crossentropy</td>
-<td style="text-align: left;">Accuracy</td>
-<td style="text-align: left;">100</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="results-and-analysis-2">Results and Analysis</h3>
-<p>Below is the confusion matrix our model generated:</p>
-<div id="fig:Confusion_Matrix" class="fignos">
-<figure>
-<img src="./images/Confusion_Matrix.png" style="height:3in" alt="Figure 22: Confusion Matrix" /><figcaption aria-hidden="true"><span>Figure 22:</span> <strong>Confusion Matrix</strong></figcaption>
-</figure>
-</div>
-<p>and the loss during the training process:</p>
-<div id="fig:Loss_Evolution" class="fignos">
-<figure>
-<img src="./images/Loss_Evolution.png" style="height:3in" alt="Figure 23: Loss Evolution" /><figcaption aria-hidden="true"><span>Figure 23:</span> <strong>Loss Evolution</strong></figcaption>
-</figure>
-</div>
-<p>We can see that this trained model performs well on the testing data. The training process only lasts for 25 epochs because of the early-stop procedure. We can further calculate the following parameters:</p>
-<p><span id="eq:regular-equation" class="eqnos"><span class="math display">\[
-\mathrm{Precision}=\frac{TP}{TP+FP}
-\\
-\mathrm{Recall}=\frac{TP}{TP+FN}
-\\
-\mathrm{Score}=2\times \frac{\mathrm{Precision}\times \mathrm{Recall}}{\mathrm{Precision}+\mathrm{Recall}}
-\\
-\mathrm{Macro} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Score}_i}
-\\
-\mathrm{Weighted} \mathrm{Avg}=\frac{1}{n}\sum_{i=1}^n{\mathrm{Support}_i\times \mathrm{Score}_i}
-\]</span><span class="eqnos-number">(2)</span></span></p>
-<p>Their specific values are shown in Table <a href="#tbl:Result_Analysis">5</a>:</p>
-<div id="tbl:Result_Analysis" class="tablenos">
-<table id="tbl:Result_Analysis">
-<caption><span>Table 5:</span> <strong>Result Analysis</strong>
-</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: left;">Precision</th>
-<th style="text-align: left;">Recall</th>
-<th style="text-align: left;">Score</th>
-<th style="text-align: left;">Support</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Negative</td>
-<td style="text-align: left;">0.96</td>
-<td style="text-align: left;">0.99</td>
-<td style="text-align: left;">0.98</td>
-<td style="text-align: left;">917</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Positive</td>
-<td style="text-align: left;">0.99</td>
-<td style="text-align: left;">0.96</td>
-<td style="text-align: left;">0.97</td>
-<td style="text-align: left;">883</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Macro Avg</td>
-<td style="text-align: left;">0.98</td>
-<td style="text-align: left;">0.97</td>
-<td style="text-align: left;">0.97</td>
-<td style="text-align: left;">1800</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Weighted Avg</td>
-<td style="text-align: left;">0.97</td>
-<td style="text-align: left;">0.97</td>
-<td style="text-align: left;">0.97</td>
-<td style="text-align: left;">1000</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>In short, the network has overall good performance.</p>
-<h2 id="crack-segmentation-1">Crack Segmentation</h2>
-<h3 id="a-brief-introduction-to-u-net-1">A Brief Introduction to U-Net</h3>
-<p>U-Net is built upon the so-called “Fully Convolutional Network”, it was first introduced in 2015 and won the ISBI challenge for segmentation of neuronal structures in electron microscopic stacks. The original U-Net architecture is shown below:</p>
-<div id="fig:U-net_Architecture" class="fignos">
-<figure>
-<img src="./images/U-net_Architecture.png" alt="Figure 24: U-net Architecture." /><figcaption aria-hidden="true"><span>Figure 24:</span> <strong>U-net Architecture.</strong></figcaption>
-</figure>
-</div>
-<p>Different from FCN, it supplements a usual contracting network with successive layers, where pooling operators are replaced by upsampling operators. It would keep the output from each convolutional layer by either concatenating it without sampling results or simply adding them together. This modification could take advantage of these procedures to overcome the trade-off between localization accuracy and the use of context (FCN requires more max-pooling layers that reduce the localization accuracy, while small patches allow the network to see only little context).</p>
-<h3 id="modeling-and-training-1">Modeling and Training</h3>
-<p>To achieve segmentation, we have built and trained two models, one based on our architecture and the other based on the paper.
-We perform a normalization before plugging in the U-Net architecture based on the range of RGB numbers, as shown in <a href="#fig:Input_Normalization">25</a>:</p>
-<div id="fig:Input_Normalization" class="fignos">
-<figure>
-<img src="./images/Input_Normalization.png" alt="Figure 25: Input Normalization" /><figcaption aria-hidden="true"><span>Figure 25:</span> <strong>Input Normalization</strong></figcaption>
-</figure>
-</div>
-<p>In the previous classification model, we have shown that the first convolutional block only needs 16 filters to perform well. We also add a random dropout in each convolution block to prevent the overfitting problem. Based on this experiment, we modified U-Net architecture as shown in Figure <a href="#fig:Modified_U-Net_Architecture">26</a>:</p>
-<div id="fig:Modified_U-Net_Architecture" class="fignos">
-<figure>
-<img src="./images/Modified_U-Net_Architecture.png" alt="Figure 26: Modified U-Net Architecture" /><figcaption aria-hidden="true"><span>Figure 26:</span> <strong>Modified U-Net Architecture</strong></figcaption>
-</figure>
-</div>
-<p>The original images have the size (448,448,3). We would keep this size for this network, but there is still a resizing procedure that allows this network to predict images with different sizes. The detailed architecture of this model is summarized in Figure <a href="#fig:Model_Summary">27</a>:</p>
-<div id="fig:Model_Summary" class="fignos">
-<figure>
-<img src="./images/Model_Summary.png" alt="Figure 27: Model Summary" /><figcaption aria-hidden="true"><span>Figure 27:</span> <strong>Model Summary</strong></figcaption>
-</figure>
-</div>
-<p>Other properties of this network are listed in Table <a href="#tbl:U-NetHyperparameters">6</a>:</p>
-<div id="tbl:U-NetHyperparameters" class="tablenos">
-<table id="tbl:U-NetHyperparameters">
-<caption><span>Table 6:</span> <strong>U-Net Hyperparameters</strong>
-</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Training</th>
-<th style="text-align: left;">Validation</th>
-<th style="text-align: left;">Testing</th>
-<th style="text-align: left;">Optimizer</th>
-<th style="text-align: left;">Loss Function</th>
-<th style="text-align: left;">Metrics</th>
-<th style="text-align: left;">Epochs</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">107</td>
-<td style="text-align: left;">10%</td>
-<td style="text-align: left;">17</td>
-<td style="text-align: left;">Adam</td>
-<td style="text-align: left;">Binary Crossentropy</td>
-<td style="text-align: left;">IoUScore</td>
-<td style="text-align: left;">50</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>The training and testing losses are plotted in Figure <a href="#fig:U-Net_Loss">28</a>:</p>
-<div id="fig:U-Net_Loss" class="fignos">
-<figure>
-<img src="images/Evolution.png" style="height:3in" alt="Figure 28: U-Net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 28:</span> <strong>U-Net Loss Evaluation.</strong></figcaption>
-</figure>
-</div>
-<p>We can see that this trained model performs well on the testing data. It only takes 30 epochs because of the early-stop procedure.</p>
-<h3 id="results-and-analysis-3">Results and Analysis</h3>
-<div id="fig:Prediction_Result" class="fignos">
-<figure>
-<img src="images/Result.png" alt="Figure 29: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 29:</span> <strong>Prediction Result</strong></figcaption>
-</figure>
-</div>
-<p>The prediction results of our testing images are shown in <a href="#fig:Prediction_Result">29</a>. It performs well. However, we can also notice that in testing image 7, the network recognizes the dark-colored zone with noise concentration (several disconnected noise regions close to each other) as a crack. The reason is that the network identifies cracks by detecting the edge of the color channels; we can illustrate this by predicting the crack from the RGB color wheel.</p>
-<div id="fig:RGB_Result" class="fignos">
-<figure>
-<img src="images/RGB_Result.png" alt="Figure 30: RGB Result" /><figcaption aria-hidden="true"><span>Figure 30:</span> <strong>RGB Result</strong></figcaption>
 </figure>
 </div>
 <p>To overcome this issue, we need to modify this network. Several Actions can be taken to omit this noise concentration.</p>
@@ -571,29 +317,29 @@ This process was inspired by the Inception network (the winner of the ImageNet L
 </ol>
 <p>The non-trainable Pooling layer is necessary to ensure the preprocessor works on our purpose.</p>
 <p>We would not provide the detailed model in this case because we focus on one question: will our model (trained on the CFD dataset) work well with other datasets? We will answer this question in the next part.</p>
-<h2 id="conclusion-and-supplement-1">Conclusion and Supplement</h2>
-<h3 id="discussion-1">Discussion</h3>
+<h2 id="conclusion-and-supplement">Conclusion and Supplement</h2>
+<h3 id="discussion">Discussion</h3>
 <p>Based on U-Net, we have trained the model that could label cracks. However, this model performs poorly in predicting images with bad-quality backgrounds (e.g., CRACK500, DeepCrack dataset). One reason is that the model was trained on the CFD dataset, which contains high-quality images with clear surfaces and obvious cracks. Network architecture is the other reason.</p>
 <div id="fig:U-Net" class="fignos">
 <figure>
-<img src="images/U-Net_Result.png" alt="Figure 31: U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 31:</span> <strong>U-Net on Rough Surface Result</strong></figcaption>
+<img src="images/U-Net_Result.png" alt="Figure 15: U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 15:</span> <strong>U-Net on Rough Surface Result</strong></figcaption>
 </figure>
 </div>
 <p>Instead of using these datasets, we can design a network that could be trained on the CFD dataset and still works well on CRACK500, DeepCrack, and other datasets with rough surfaces. Based on our previous work, we add an Inception network as our preprocessor and achieve good prediction on other test images.</p>
 <p>This network is named “Inception U-Net”, as the preprocessor is based on Inception and processed by U-Net. We first show the result, then introduce the details of this network.</p>
 <div id="fig:Inception" class="fignos">
 <figure>
-<img src="images/Inception_Result.png" alt="Figure 32: Inception U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 32:</span> <strong>Inception U-Net on Rough Surface Result</strong></figcaption>
+<img src="images/Inception_Result.png" alt="Figure 16: Inception U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 16:</span> <strong>Inception U-Net on Rough Surface Result</strong></figcaption>
 </figure>
 </div>
 <p>We also provide a hypothesis for crack segmentation:
 MaxPooling2D works well on the shallow crack but would fail on the deep crack, while AveragePooling works well on the deep crack but might miss the shallow crack.</p>
-<h3 id="details-of-inception-u-net-1">Details of Inception U-Net</h3>
+<h3 id="details-of-inception-u-net">Details of Inception U-Net</h3>
 <p>Inception U-Net model
 <img src="images/Inception_U-Net.png" id="fig:Inception" alt="Inception U-Net on Rough Surface Result" /></p>
 <div id="tbl:Hyperparameter" class="tablenos">
 <table id="tbl:Hyperparameter">
-<caption><span>Table 7:</span> <strong>U-Net Hyperparameters</strong>
+<caption><span>Table 4:</span> <strong>U-Net Hyperparameters</strong>
 </caption>
 <thead>
 <tr class="header">
@@ -619,9 +365,9 @@ MaxPooling2D works well on the shallow crack but would fail on the deep crack, w
 </tbody>
 </table>
 </div>
-<h2 id="reproducible-work-1">Reproducible Work</h2>
+<h2 id="reproducible-work">Reproducible Work</h2>
 <p>We also provide the network codes, pre-trained models, and datasets for reproducible work under the ‘content.reproducible’ folder.</p>
-<h2 class="unnumbered" id="reference-1">Reference</h2>
+<h2 class="unnumbered" id="reference">Reference</h2>
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
 <div id="ref-ZtBdubRd" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Surface Crack Detection</strong> <a href="https://www.kaggle.com/datasets/arunrk7/surface-crack-detection">https://www.kaggle.com/datasets/arunrk7/surface-crack-detection</a></div>
