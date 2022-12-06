@@ -6,7 +6,7 @@ Conv
 Convolutional
 CRACKTREE
 Crossentropy
-dataset
+Dataset
 datasets
 DeepCrack
 FCN
@@ -27,7 +27,7 @@ nonlinearity
 overfitting
 pre
 preprocessing
-preprocessor
+Preprocessor
 ReLu
 RGB
 segmentations

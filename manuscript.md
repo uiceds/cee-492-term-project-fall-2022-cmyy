@@ -30,9 +30,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/be8432b96908b98f87141f7d5c30e7700c010c19/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/be8432b96908b98f87141f7d5c30e7700c010c19/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/be8432b96908b98f87141f7d5c30e7700c010c19/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bb48270a27a1d06f2595a3e43114d46bc6d35375/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bb48270a27a1d06f2595a3e43114d46bc6d35375/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/bb48270a27a1d06f2595a3e43114d46bc6d35375/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -178,7 +178,7 @@ The original images have the size (448,448,3). We would keep this size for this 
 
 Other properties of this network are listed in Table @tbl:U-NetHyperparameters:
 
-| Training   | Validation | Testing    | Optimizer | Loss Function | Metrics | Epochs |
+| Training   | Validation frac in training | Testing    | Optimizer | Loss Function | Metrics | Epochs |
 |:-----------|:------|:------|:------|:------|:------|:------|
 | 107 | 10% | 17 | Adam | Binary Crossentropy | IoUScore | 50 |
 

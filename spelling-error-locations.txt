@@ -47,6 +47,7 @@ content/04.cont.md:101:RGB
 content/04.cont.md:106:convolutional
 content/04.cont.md:106:overfitting
 content/04.cont.md:116:NetHyperparameters
+content/04.cont.md:118:frac
 content/04.cont.md:120:Crossentropy
 content/04.cont.md:120:IoUScore
 content/04.cont.md:122:Hyperparameters
