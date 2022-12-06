@@ -62,9 +62,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/94e81c1163005584393c2be0e619a20b676af88a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/94e81c1163005584393c2be0e619a20b676af88a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/94e81c1163005584393c2be0e619a20b676af88a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b0696b4951a8874cff891c2a6f86ce5164f0e26/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b0696b4951a8874cff891c2a6f86ce5164f0e26/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b0696b4951a8874cff891c2a6f86ce5164f0e26/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -323,14 +323,17 @@ We perform a normalization before plugging in the U-Net architecture based on th
 <img src="images/U-Net_Result.png" alt="Figure 15: U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 15:</span> <strong>U-Net on Rough Surface Result</strong></figcaption>
 </figure>
 </div>
-<p>Instead of transfer the training to these datasets, we can design a network that is still trained on the CFD dataset and but also works well on CRACK500, DeepCrack, and other datasets with rough surfaces. Based on our previous work, we add an Inception network as our preprocessor and achieve good prediction on other test images. The new network is named “Inception U-Net”, as the preprocessor is based on Inception and processed by U-Net. The segmentation results obtained by the new network is shown in Figure <a href="#fig:Inception_U-Net_Result">16</a>, and the hyperparameters of this network are listed in Table <a href="#tbl:Hyperparameter">4</a>:</p>
+<p>Instead of transfer the training to these datasets, we can design a network that is still trained on the CFD dataset and but also works well on CRACK500, DeepCrack, and other datasets with rough surfaces. Based on our previous work, we add an Inception network (as shown in <a href="#fig:Inception_U-Net_Network">17</a>) as our preprocessor and achieve good prediction on other test images. The new network is named “Inception U-Net”, as the preprocessor is based on Inception and processed by U-Net. The segmentation results obtained by the new network is shown in Figure <a href="#fig:Inception_U-Net_Result">16</a>, and the hyperparameters of this network are listed in Table <a href="#tbl:Hyperparameter">4</a>:</p>
 <div id="fig:Inception_U-Net_Result" class="fignos">
 <figure>
 <img src="images/Inception_Result.png" alt="Figure 16: Inception U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 16:</span> <strong>Inception U-Net on Rough Surface Result</strong></figcaption>
 </figure>
 </div>
-<p>Inception U-Net model
-<img src="images/Inception_U-Net.png" id="fig:Inception" alt="Inception U-Net on Rough Surface Result" /></p>
+<div id="fig:Inception_U-Net_Network" class="fignos">
+<figure>
+<img src="images/Inception_U-Net.png" alt="Figure 17: Inception U-Net Structure" /><figcaption aria-hidden="true"><span>Figure 17:</span> <strong>Inception U-Net Structure</strong></figcaption>
+</figure>
+</div>
 <div id="tbl:Hyperparameter" class="tablenos">
 <table id="tbl:Hyperparameter">
 <caption><span>Table 4:</span> <strong>U-Net Hyperparameters</strong>
