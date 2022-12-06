@@ -30,9 +30,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/94e81c1163005584393c2be0e619a20b676af88a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/94e81c1163005584393c2be0e619a20b676af88a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/94e81c1163005584393c2be0e619a20b676af88a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b0696b4951a8874cff891c2a6f86ce5164f0e26/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b0696b4951a8874cff891c2a6f86ce5164f0e26/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/8b0696b4951a8874cff891c2a6f86ce5164f0e26/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -216,12 +216,11 @@ Based on U-Net, we have trained the model that can label cracks. However, this m
 
 ![**U-Net on Rough Surface Result**](images/U-Net_Result.png){#fig:U-Net_Result}
 
-Instead of transfer the training to these datasets, we can design a network that is still trained on the CFD dataset and but also works well on CRACK500, DeepCrack, and other datasets with rough surfaces. Based on our previous work, we add an Inception network as our preprocessor and achieve good prediction on other test images. The new network is named "Inception U-Net", as the preprocessor is based on Inception and processed by U-Net. The segmentation results obtained by the new network is shown in Figure @fig:Inception_U-Net_Result, and the hyperparameters of this network are listed in Table @tbl:Hyperparameter:
+Instead of transfer the training to these datasets, we can design a network that is still trained on the CFD dataset and but also works well on CRACK500, DeepCrack, and other datasets with rough surfaces. Based on our previous work, we add an Inception network (as shown in @fig:Inception_U-Net_Network) as our preprocessor and achieve good prediction on other test images. The new network is named "Inception U-Net", as the preprocessor is based on Inception and processed by U-Net. The segmentation results obtained by the new network is shown in Figure @fig:Inception_U-Net_Result, and the hyperparameters of this network are listed in Table @tbl:Hyperparameter:
 
 ![**Inception U-Net on Rough Surface Result**](images/Inception_Result.png){#fig:Inception_U-Net_Result}
 
-Inception U-Net model
-![**Inception U-Net on Rough Surface Result**](images/Inception_U-Net.png){#fig:Inception U-Net Network}
+![**Inception U-Net Structure**](images/Inception_U-Net.png){#fig:Inception_U-Net_Network}
 
 | Training   | Validation | Testing    | Optimizer | Loss Function | Metrics | Epochs |
 |:-----------|:------|:------|:------|:------|:------|:------|

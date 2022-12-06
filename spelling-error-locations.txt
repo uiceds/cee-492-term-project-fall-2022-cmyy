@@ -68,13 +68,13 @@ content/04.cont.md:156:Hyperparameter
 content/04.cont.md:156:hyperparameters
 content/04.cont.md:156:preprocessor
 content/04.cont.md:156:preprocessor
-content/04.cont.md:165:Crossentropy
-content/04.cont.md:165:IoUScore
-content/04.cont.md:167:Hyperparameters
-content/04.cont.md:168:Hyperparameter
-content/04.cont.md:170:AveragePooling
-content/04.cont.md:176:overfitting
-content/04.cont.md:177:AveragePooling
-content/04.cont.md:181:datasets
-content/04.cont.md:181:pre
+content/04.cont.md:164:Crossentropy
+content/04.cont.md:164:IoUScore
+content/04.cont.md:166:Hyperparameters
+content/04.cont.md:167:Hyperparameter
+content/04.cont.md:169:AveragePooling
+content/04.cont.md:175:overfitting
+content/04.cont.md:176:AveragePooling
+content/04.cont.md:180:datasets
+content/04.cont.md:180:pre
 content/Exploratory Data Analysis.md:42:dataset
