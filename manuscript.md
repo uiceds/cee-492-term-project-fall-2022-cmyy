@@ -30,9 +30,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7ea602e9186da7a6696113293319e2ebc2d98ec5/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7ea602e9186da7a6696113293319e2ebc2d98ec5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/7ea602e9186da7a6696113293319e2ebc2d98ec5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/94e81c1163005584393c2be0e619a20b676af88a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/94e81c1163005584393c2be0e619a20b676af88a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/94e81c1163005584393c2be0e619a20b676af88a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -63,7 +63,7 @@ manubot-clear-requests-cache: false
 
 ## Introduction
 
-The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information on the exact locations of cracks is smeared in the network. We aim first to build a CNN-based model for crack detection and then find and apply another model with the architecture called U-Net to locate the exact positions of cracks. 
+The existence of cracks in concrete materials is of vital importance in Civil Engineering. An accurate and fast method to detect the existence of cracks in concrete images is always sought by engineers. Nowadays, even though a Convolutional neural network (CNN) based model can easily tell the existence of concrete cracks, the information on the exact locations of cracks is smeared in the network. We aim first to build a CNN-based model for crack detection and then apply another model called U-Net to locate and show the exact positions of cracks. 
 
 We first train a CNN with the Surface Crack Detection dataset [@{https://www.kaggle.com/datasets/arunrk7/surface-crack-detection}] to judge if any concrete crack exists. The dataset contains images (each has $227 \times 227$ pixels and RGB channels) of concrete surfaces with or without cracks. Each class contains $20000$ images. Examples are shown in Figure @fig:Negative_and_Positive:
 
@@ -230,15 +230,18 @@ Inception U-Net model
 Table: **U-Net Hyperparameters**
 {#tbl:Hyperparameter}
 
-We also put forward a hypothesis for crack segmentation: *MaxPooling2D works well on the shallow crack but may fail on the deep crack, while AveragePooling works well on the deep crack but might miss the shallow crack.*
+We also put forward a hypothesis for crack segmentation: *MaxPooling2D works well for thin cracks but may fail for thick cracks, while AveragePooling plays a reverse role.*
 
 ## Conclusion
 
+In traditional CNN-based image crack-detection, people aim to train a network to tell a figure with or without cracks with simply two labels. However, how exactly such a network learns to recognize cracks is hard to measure. In this project, we reproduced CNN labeling images with or without cracks and modified and improved U-Net's ability to segment cracks. Results from U-Net tell much more about the location, shape, and length of cracks than mere labeling from CNN. We also tried to solve several potential issues in U-Net, including recognizing concentrated dark areas as cracks and performing badly on rough surface images. In practice, we also found that:
 
+1. The model should not have extremely low loss to avoid overfitting. 
+2. MaxPooling2D works better for thin cracks, while AveragePooling works better for thick cracks.
 
 ## Reproducible Work
 
-We also provide the network codes, pre-trained models, and datasets for reproducible work under the ‘content.reproducible’ folder.
+The network codes, pre-trained models, and datasets for reproducible work are provided in the ‘content.reproducible’ folder.
 
 ## Reference
 

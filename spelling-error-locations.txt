@@ -73,6 +73,8 @@ content/04.cont.md:165:IoUScore
 content/04.cont.md:167:Hyperparameters
 content/04.cont.md:168:Hyperparameter
 content/04.cont.md:170:AveragePooling
-content/04.cont.md:178:datasets
-content/04.cont.md:178:pre
+content/04.cont.md:176:overfitting
+content/04.cont.md:177:AveragePooling
+content/04.cont.md:181:datasets
+content/04.cont.md:181:pre
 content/Exploratory Data Analysis.md:42:dataset
