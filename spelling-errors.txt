@@ -6,10 +6,11 @@ Conv
 Convolutional
 CRACKTREE
 Crossentropy
-Dataset
+dataset
 datasets
 DeepCrack
 FCN
+frac
 GlobalAveragePooling
 grayscale
 Hyperparameter

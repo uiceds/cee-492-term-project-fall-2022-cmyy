@@ -27,9 +27,15 @@ content/04.cont.md:29:ReLu
 content/04.cont.md:34:CNNHyperparameters
 content/04.cont.md:34:preprocessing
 content/04.cont.md:36:Hyperparameters
+content/04.cont.md:39:frac
 content/04.cont.md:41:Crossentropy
 content/04.cont.md:43:Hyperparameters
 content/04.cont.md:44:CNNHyperparameters
+content/04.cont.md:61:frac
+content/04.cont.md:63:frac
+content/04.cont.md:65:frac
+content/04.cont.md:67:frac
+content/04.cont.md:69:frac
 content/04.cont.md:91:Convolutional
 content/04.cont.md:91:ISBI
 content/04.cont.md:96:convolutional
@@ -68,6 +74,7 @@ content/04.cont.md:156:Hyperparameter
 content/04.cont.md:156:hyperparameters
 content/04.cont.md:156:preprocessor
 content/04.cont.md:156:preprocessor
+content/04.cont.md:162:frac
 content/04.cont.md:164:Crossentropy
 content/04.cont.md:164:IoUScore
 content/04.cont.md:166:Hyperparameters
