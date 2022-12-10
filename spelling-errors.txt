@@ -3,7 +3,7 @@ CFD
 Chengyou
 CNNHyperparameters
 Conv
-convolutional
+Convolutional
 CRACKTREE
 Crossentropy
 dataset

@@ -1,7 +1,7 @@
 ---
 title: Concrete Crack Detection and Segmentation
 lang: en-US
-date-meta: '2022-12-06'
+date-meta: '2022-12-10'
 author-meta:
 - Yu-Sian Lin, Chengyou Yue, Yueh-Ti Lee, Minjiang Zhu
 header-includes: |-
@@ -14,8 +14,8 @@ header-includes: |-
   <meta name="citation_title" content="Concrete Crack Detection and Segmentation" />
   <meta property="og:title" content="Concrete Crack Detection and Segmentation" />
   <meta property="twitter:title" content="Concrete Crack Detection and Segmentation" />
-  <meta name="dc.date" content="2022-12-06" />
-  <meta name="citation_publication_date" content="2022-12-06" />
+  <meta name="dc.date" content="2022-12-10" />
+  <meta name="citation_publication_date" content="2022-12-10" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -30,9 +30,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6671b94f1449bc5ceda4fcd4e32d8ec088ba0a7c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6671b94f1449bc5ceda4fcd4e32d8ec088ba0a7c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6671b94f1449bc5ceda4fcd4e32d8ec088ba0a7c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/32fb29ce1a789e056e14e5495706179536492942/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/32fb29ce1a789e056e14e5495706179536492942/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/32fb29ce1a789e056e14e5495706179536492942/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -94,7 +94,7 @@ In the first convolutional block, we would specify 16 filters (consider 8 straig
 ![**Model for Concrete Crack Classification using_Keras**
 ](./images/Model_for_Concrete_Crack_Classification_using_Keras.png "Wide image"){#fig:Model_for_Concrete_Crack_Classification_using_Keras}
 
-The result of our network would be a number in (0,1). We may treat it as the probability of the existence of cracks in the image. Noticing that the original images have the size (227,227,3), we would resize it into (120,120,3) in the preprocessing procedure. The detailed properties of the network are listed in Figure @fig:Model_Summary_and_Hyperparameters and Table @tbl:CNNHyperparameters:
+The result of our network would be a number in (0,1). We may treat it as the probability of the existence of cracks in the image. Noticing that the original images have the size (227,227,3), we would resize it into (120,120,3) in the preprocessing procedure. The detailed properties of the network are listed in Figure @fig:Model_Summary and Table @tbl:CNNHyperparameters:
 
 ![**Model Summary and Hyperparameters**
 ](./images/Model_Summary_and_Hyperparameters.png "Tall image"){#fig:Model_Summary_and_Hyperparameters height=4in}
@@ -174,7 +174,7 @@ In the previous classification model, we have shown that the first convolutional
 The original images have the size (448,448,3). We would keep this size for this network, but there is still a resizing procedure that allows this network to predict images with different sizes. The detailed architecture of this model is summarized in Figure @fig:Model_Summary:
 
 ![**Model Summary**
-](./images/Model_Summary.png "Wide image"){#fig:Model_Summary}
+](./images/Model_Summary.png ""Tall image"){#fig:Model_Summary}
 
 Other properties of this network are listed in Table @tbl:U-NetHyperparameters:
 

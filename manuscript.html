@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Yu-Sian Lin, Chengyou Yue, Yueh-Ti Lee, Minjiang Zhu" />
-  <meta name="dcterms.date" content="2022-12-06" />
+  <meta name="dcterms.date" content="2022-12-10" />
   <title>Concrete Crack Detection and Segmentation</title>
   <style>
     code{white-space: pre-wrap;}
@@ -46,8 +46,8 @@
   <meta name="citation_title" content="Concrete Crack Detection and Segmentation" />
   <meta property="og:title" content="Concrete Crack Detection and Segmentation" />
   <meta property="twitter:title" content="Concrete Crack Detection and Segmentation" />
-  <meta name="dc.date" content="2022-12-06" />
-  <meta name="citation_publication_date" content="2022-12-06" />
+  <meta name="dc.date" content="2022-12-10" />
+  <meta name="citation_publication_date" content="2022-12-10" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -62,9 +62,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6671b94f1449bc5ceda4fcd4e32d8ec088ba0a7c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6671b94f1449bc5ceda4fcd4e32d8ec088ba0a7c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/6671b94f1449bc5ceda4fcd4e32d8ec088ba0a7c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/32fb29ce1a789e056e14e5495706179536492942/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/32fb29ce1a789e056e14e5495706179536492942/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-cmyy/v/32fb29ce1a789e056e14e5495706179536492942/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -122,7 +122,7 @@ Department of Civil and Environmental Engineering, University of Illinois
 <img src="./images/Model_for_Concrete_Crack_Classification_using_Keras.png" alt="Figure 4: Model for Concrete Crack Classification using_Keras" /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Model for Concrete Crack Classification using_Keras</strong></figcaption>
 </figure>
 </div>
-<p>The result of our network would be a number in (0,1). We may treat it as the probability of the existence of cracks in the image. Noticing that the original images have the size (227,227,3), we would resize it into (120,120,3) in the preprocessing procedure. The detailed properties of the network are listed in Figure <a href="#fig:Model_Summary_and_Hyperparameters">5</a> and Table <a href="#tbl:CNNHyperparameters">1</a>:</p>
+<p>The result of our network would be a number in (0,1). We may treat it as the probability of the existence of cracks in the image. Noticing that the original images have the size (227,227,3), we would resize it into (120,120,3) in the preprocessing procedure. The detailed properties of the network are listed in Figure ?? and Table <a href="#tbl:CNNHyperparameters">1</a>:</p>
 <div id="fig:Model_Summary_and_Hyperparameters" class="fignos">
 <figure>
 <img src="./images/Model_Summary_and_Hyperparameters.png" style="height:4in" alt="Figure 5: Model Summary and Hyperparameters" /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Model Summary and Hyperparameters</strong></figcaption>
@@ -260,12 +260,8 @@ We perform a normalization before plugging in the U-Net architecture based on th
 <img src="./images/Modified_U-Net_Architecture.png" alt="Figure 10: Modified U-Net Architecture" /><figcaption aria-hidden="true"><span>Figure 10:</span> <strong>Modified U-Net Architecture</strong></figcaption>
 </figure>
 </div>
-<p>The original images have the size (448,448,3). We would keep this size for this network, but there is still a resizing procedure that allows this network to predict images with different sizes. The detailed architecture of this model is summarized in Figure <a href="#fig:Model_Summary">11</a>:</p>
-<div id="fig:Model_Summary" class="fignos">
-<figure>
-<img src="./images/Model_Summary.png" alt="Figure 11: Model Summary" /><figcaption aria-hidden="true"><span>Figure 11:</span> <strong>Model Summary</strong></figcaption>
-</figure>
-</div>
+<p>The original images have the size (448,448,3). We would keep this size for this network, but there is still a resizing procedure that allows this network to predict images with different sizes. The detailed architecture of this model is summarized in Figure ??:</p>
+<p>[<strong>Model Summary</strong>](./images/Model_Summary.png ““Tall image”){#fig:Model_Summary}</p>
 <p>Other properties of this network are listed in Table <a href="#tbl:U-NetHyperparameters">3</a>:</p>
 <div id="tbl:U-NetHyperparameters" class="tablenos">
 <table id="tbl:U-NetHyperparameters">
@@ -304,23 +300,23 @@ We perform a normalization before plugging in the U-Net architecture based on th
 </tbody>
 </table>
 </div>
-<p>The training and testing losses are plotted in Figure <a href="#fig:U-Net_Loss">12</a>:</p>
+<p>The training and testing losses are plotted in Figure <a href="#fig:U-Net_Loss">11</a>:</p>
 <div id="fig:U-Net_Loss" class="fignos">
 <figure>
-<img src="images/Evolution.png" style="height:3in" alt="Figure 12: U-Net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 12:</span> <strong>U-Net Loss Evaluation.</strong></figcaption>
+<img src="images/Evolution.png" style="height:3in" alt="Figure 11: U-Net Loss Evaluation." /><figcaption aria-hidden="true"><span>Figure 11:</span> <strong>U-Net Loss Evaluation.</strong></figcaption>
 </figure>
 </div>
 <p>We can see that this trained model performs well on the testing data. It only takes 30 epochs because of the early-stop procedure.</p>
 <h3 id="results-and-analysis-1">Results and Analysis</h3>
 <div id="fig:Prediction_Result" class="fignos">
 <figure>
-<img src="images/Result.png" alt="Figure 13: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 13:</span> <strong>Prediction Result</strong></figcaption>
+<img src="images/Result.png" alt="Figure 12: Prediction Result" /><figcaption aria-hidden="true"><span>Figure 12:</span> <strong>Prediction Result</strong></figcaption>
 </figure>
 </div>
-<p>The prediction results of our testing images are shown in Figure <a href="#fig:Prediction_Result">13</a>. It performs well. However, we can also notice that in testing image 7, the network recognizes the dark-colored zone with noise concentration (several disconnected noise regions close to each other) as a crack. The reason is that the network identifies cracks by detecting the edge of the color channels, which can be illustrated by predicting the crack from the RGB color wheel as shown in Figure <a href="#fig:RGB_Wheel_Result">14</a>:</p>
+<p>The prediction results of our testing images are shown in Figure <a href="#fig:Prediction_Result">12</a>. It performs well. However, we can also notice that in testing image 7, the network recognizes the dark-colored zone with noise concentration (several disconnected noise regions close to each other) as a crack. The reason is that the network identifies cracks by detecting the edge of the color channels, which can be illustrated by predicting the crack from the RGB color wheel as shown in Figure <a href="#fig:RGB_Wheel_Result">13</a>:</p>
 <div id="fig:RGB_Wheel_Result" class="fignos">
 <figure>
-<img src="images/RGB_Result.png" alt="Figure 14: RGB Wheel Result" /><figcaption aria-hidden="true"><span>Figure 14:</span> <strong>RGB Wheel Result</strong></figcaption>
+<img src="images/RGB_Result.png" alt="Figure 13: RGB Wheel Result" /><figcaption aria-hidden="true"><span>Figure 13:</span> <strong>RGB Wheel Result</strong></figcaption>
 </figure>
 </div>
 <p>Several actions can be taken to avoid this noise concentration:</p>
@@ -332,28 +328,28 @@ We perform a normalization before plugging in the U-Net architecture based on th
 <li><em>Multi-Kernel filters.</em> This process was inspired by the Inception network (the winner of the ImageNet Large Scale Visual Recognition Competition in 2014). The basic idea is to use multiple convolutional and pooling layers to extract more information from the input data.</li>
 </ol></li>
 </ol>
-<p>The non-trainable Pooling layer is necessary to ensure the preprocessor works on our purpose. The origin image 7 and the trained image 7 obtained by the modified U-Net is shown in Figure <a href="#fig:Image7">15</a>:</p>
+<p>The non-trainable Pooling layer is necessary to ensure the preprocessor works on our purpose. The origin image 7 and the trained image 7 obtained by the modified U-Net is shown in Figure <a href="#fig:Image7">14</a>:</p>
 <div id="fig:Image7" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/67733344/205847672-aa82ddfb-f0d7-4ca7-8233-b5a6566876ee.png" style="height:3in" alt="Figure 15: The Origin Image 7 and Image 7 Obtained by the Modified U-Net" /><figcaption aria-hidden="true"><span>Figure 15:</span> <strong>The Origin Image 7 and Image 7 Obtained by the Modified U-Net</strong></figcaption>
+<img src="https://user-images.githubusercontent.com/67733344/205847672-aa82ddfb-f0d7-4ca7-8233-b5a6566876ee.png" style="height:3in" alt="Figure 14: The Origin Image 7 and Image 7 Obtained by the Modified U-Net" /><figcaption aria-hidden="true"><span>Figure 14:</span> <strong>The Origin Image 7 and Image 7 Obtained by the Modified U-Net</strong></figcaption>
 </figure>
 </div>
 <h2 id="crack-segmentation-on-rough-surfaces-by-interception-u-net">Crack Segmentation on Rough Surfaces by Interception U-Net</h2>
-<p>Based on U-Net, we have trained the model that can label cracks. However, this model performs poorly in predicting images with bad-quality backgrounds (e.g., CRACK500, DeepCrack dataset, as shown in Figure <a href="#fig:U-Net_Result">16</a>). One reason is that the model was trained on the CFD dataset, which contains high-quality images with clear surfaces and obvious cracks, making the network over-trained. Network architecture is the other reason.</p>
+<p>Based on U-Net, we have trained the model that can label cracks. However, this model performs poorly in predicting images with bad-quality backgrounds (e.g., CRACK500, DeepCrack dataset, as shown in Figure <a href="#fig:U-Net_Result">15</a>). One reason is that the model was trained on the CFD dataset, which contains high-quality images with clear surfaces and obvious cracks, making the network over-trained. Network architecture is the other reason.</p>
 <div id="fig:U-Net_Result" class="fignos">
 <figure>
-<img src="images/U-Net_Result.png" alt="Figure 16: U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 16:</span> <strong>U-Net on Rough Surface Result</strong></figcaption>
+<img src="images/U-Net_Result.png" alt="Figure 15: U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 15:</span> <strong>U-Net on Rough Surface Result</strong></figcaption>
 </figure>
 </div>
-<p>Instead of transfer the training to these datasets, we can design a network that is still trained on the CFD dataset and but also works well on CRACK500, DeepCrack, and other datasets with rough surfaces. Based on our previous work, we add an Inception network (as shown in <a href="#fig:Inception_U-Net_Network">18</a>) as our preprocessor and achieve good prediction on other test images. The new network is named “Inception U-Net”, as the preprocessor is based on Inception and processed by U-Net. The segmentation results obtained by the new network is shown in Figure <a href="#fig:Inception_U-Net_Result">17</a>, and the hyperparameters of this network are listed in Table <a href="#tbl:Hyperparameter">4</a>:</p>
+<p>Instead of transfer the training to these datasets, we can design a network that is still trained on the CFD dataset and but also works well on CRACK500, DeepCrack, and other datasets with rough surfaces. Based on our previous work, we add an Inception network (as shown in <a href="#fig:Inception_U-Net_Network">17</a>) as our preprocessor and achieve good prediction on other test images. The new network is named “Inception U-Net”, as the preprocessor is based on Inception and processed by U-Net. The segmentation results obtained by the new network is shown in Figure <a href="#fig:Inception_U-Net_Result">16</a>, and the hyperparameters of this network are listed in Table <a href="#tbl:Hyperparameter">4</a>:</p>
 <div id="fig:Inception_U-Net_Result" class="fignos">
 <figure>
-<img src="images/Inception_Result.png" alt="Figure 17: Inception U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 17:</span> <strong>Inception U-Net on Rough Surface Result</strong></figcaption>
+<img src="images/Inception_Result.png" alt="Figure 16: Inception U-Net on Rough Surface Result" /><figcaption aria-hidden="true"><span>Figure 16:</span> <strong>Inception U-Net on Rough Surface Result</strong></figcaption>
 </figure>
 </div>
 <div id="fig:Inception_U-Net_Network" class="fignos">
 <figure>
-<img src="images/Inception_U-Net.png" alt="Figure 18: Inception U-Net Structure" /><figcaption aria-hidden="true"><span>Figure 18:</span> <strong>Inception U-Net Structure</strong></figcaption>
+<img src="images/Inception_U-Net.png" alt="Figure 17: Inception U-Net Structure" /><figcaption aria-hidden="true"><span>Figure 17:</span> <strong>Inception U-Net Structure</strong></figcaption>
 </figure>
 </div>
 <div id="tbl:Hyperparameter" class="tablenos">
