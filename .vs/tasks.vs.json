@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-cee-492-term-project-fall-2022-cmyy",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}

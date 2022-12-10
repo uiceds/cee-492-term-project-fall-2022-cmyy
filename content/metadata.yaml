@@ -1,26 +1,7 @@
 ---
-title: "Manuscript Title"
-keywords:
-  - markdown
-  - publishing
-  - manubot
+title: "Concrete Crack Detection and Segmentation"
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - name: "Yu-Sian Lin, Chengyou Yue, Yueh-Ti Lee, Minjiang Zhu"
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of Civil and Environmental Engineering, University of Illinois
